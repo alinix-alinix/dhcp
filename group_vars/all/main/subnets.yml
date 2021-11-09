@@ -1,0 +1,14 @@
+Subnets:
+  vlan40:
+    active: true
+    subnet: 192.168.40.0
+    option_routers: 192.168.40.254
+    pool_range_start: 192.168.40.40
+    pool_range_end: 192.168.40.230
+  
+  vlan41:
+    active: true
+    subnet: 192.168.41.0
+    option_routers: 192.168.41.254
+    pool_range_start: 192.168.41.40
+    pool_range_end: 192.168.41.230
