@@ -41,16 +41,36 @@ one-lease-per-client on;
 
 
 #####################OFFICE SUBNETS#####################################################
-##################VLAN 40 A-VLAN##################18.02.2020 s.stepanov#################
-subnet {{ subnet }} netmask {{ DEFAULT_NETMASK }}
+
+
+##################{{ Subnet_offices.item.0.name }}#################
+subnet {{ Subnet_offices.item.0.subnet }} netmask {{ DEFAULT_NETMASK }}
 {
     option domain-name {{ DHCP_OPTION_DOMAIN_NAME }};
-    option subnet-mask {{ netmask }};
-    option routers {{ option_routers }};
+    option subnet-mask {{ Subnet_offices.item.0.netmask }};
+    option routers {{ Subnet_offices.item.0.option_routers }};
     option domain-name-servers {{ DOMAIN_NAME_SERVER_1 }}, {{ DOMAIN_NAME_SERVER_2 }};
     pool
     {
     failover peer "failover-dhcp";        
-    range {{ pool_range_start }} {{ pool_range_end }};
+    range {{ Subnet_offices.item.0.pool_range_start }} {{ Subnet_offices.item.0.pool_range_end }};
+    }
+}
+
+
+#####################SHOPS SUBNETS#####################################################
+
+
+##################{{ Subnet_shops.item.0.name }}#################
+subnet {{ Subnet_shops.item.0.subnet }} netmask {{ DEFAULT_NETMASK }}
+{
+    option domain-name {{ DHCP_OPTION_DOMAIN_NAME }};
+    option subnet-mask {{ Subnet_shops.item.0.netmask }};
+    option routers {{ Subnet_shops.item.0.option_routers }};
+    option domain-name-servers {{ DOMAIN_NAME_SERVER_1 }}, {{ DOMAIN_NAME_SERVER_2 }};
+    pool
+    {
+    failover peer "failover-dhcp";        
+    range {{ Subnet_shops.item.0.pool_range_start }} {{ Subnet_shops.item.0.pool_range_end }};
     }
 }

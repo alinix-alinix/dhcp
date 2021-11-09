@@ -1,14 +1,32 @@
-Subnets:
-  vlan40:
-    active: true
-    subnet: 192.168.40.0
-    option_routers: 192.168.40.254
-    pool_range_start: 192.168.40.40
-    pool_range_end: 192.168.40.230
-  
-  vlan41:
-    active: true
-    subnet: 192.168.41.0
-    option_routers: 192.168.41.254
-    pool_range_start: 192.168.41.40
-    pool_range_end: 192.168.41.230
+---
+Network:
+  group:
+    - name: "Subnets_offices"
+      subnets:
+        - name: "network 40 offices"
+          active: true
+          subnet: 192.168.40.0
+          option_routers: 192.168.40.254
+          pool_range_start: 192.168.40.40
+          pool_range_end: 192.168.40.230
+        - name: "network 41 offices"
+          active: true
+          subnet: 192.168.41.0
+          option_routers: 192.168.41.254
+          pool_range_start: 192.168.41.40
+          pool_range_end: 192.168.41.230
+    
+    - name: "Subnets_shops"
+      subnets:
+        - name: network 120 - shops
+          active: true
+          subnet: 192.168.120.0
+          option_routers: 192.168.120.254
+          pool_range_start: 192.168.120.150
+          pool_range_end: 192.168.120.200
+        - name: network 121 - shops
+          active: true
+          subnet: 192.168.121.0
+          option_routers: 192.168.121.254
+          pool_range_start: 192.168.121.150
+          pool_range_end: 192.168.121.200

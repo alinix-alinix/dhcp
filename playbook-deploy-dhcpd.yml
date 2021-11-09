@@ -1,6 +1,6 @@
 ---
 - gather_facts: false
-  hosts: DHCP_hosts
+  hosts: dhcp_hosts
   name: deploy fresh dhcp instance
   roles:
     - role: deploy-dhcpd
