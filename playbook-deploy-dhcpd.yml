@@ -1,6 +1,6 @@
 ---
 - gather_facts: false
   hosts: DHCP_hosts
-  name: deploy fresh prometheus instance
+  name: deploy fresh dhcp instance
   roles:
     - role: deploy-dhcpd
