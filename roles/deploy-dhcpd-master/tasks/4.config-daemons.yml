@@ -1,0 +1,25 @@
+---
+#- name: Enable service httpd, and not touch the state
+#  service:
+#    name: httpd
+ 
+
+- name: Start service httpd, if not started
+  service:
+    name: httpd
+    enabled: yes
+    state: started
+
+- name: enable and start firewalld
+  service: 
+    name: firewalld
+    enabled: yes
+    state: started
+
+
+- name: allow dhcp in firewalld
+  firewalld:
+    service: dhcpd
+    permanent: yes
+    state: enabled
+#    immediate: yes

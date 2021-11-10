@@ -5,5 +5,5 @@
   import_tasks: 2.disable-selinux.yml
 - name: copy config files 
   import_tasks: 3.copy-conf-files.yml
-#- name: copy config files 
-#  import_tasks: 4.config-daemons.yml
+- name: config daemons 
+  import_tasks: 4.config-daemons.yml

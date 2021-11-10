@@ -1,0 +1,14 @@
+---
+- name: Enable and start service httpd,
+  service:
+    name: httpd
+    enabled: yes
+    state: started
+ 
+
+- name: allow dhcp in firewalld
+  firewalld:
+    service: dhcpd
+    permanent: yes
+    state: enabled
+#    immediate: yes

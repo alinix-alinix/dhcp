@@ -58,5 +58,5 @@ subnet {{ Network.group[outer_loop_index].subnets[loop.index0].subnet }} netmask
     range {{ Network.group[outer_loop_index].subnets[loop.index0].pool_range_start }} {{ Network.group[outer_loop_index].subnets[loop.index0].pool_range_end }};
     }
 }
-  {%endfor%}}
-{% endfor %}}
+  {% endfor %}
+{% endfor %}
