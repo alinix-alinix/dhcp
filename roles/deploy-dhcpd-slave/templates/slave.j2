@@ -1,3 +1,7 @@
+{{ ansible_managed | comment }}
+# {{ git_repo.url }}
+# admin {{ git_repo.admin }} bus {{ git_repo.bus }}
+
 failover peer "failover-dhcp" {
   secondary; # This defines the slave
   address {{ DHCP_SLAVE }}; ##MUST BE REPLACED WITH A SLAVE VARIABLE
@@ -40,37 +44,22 @@ one-lease-per-client on;
 
 
 
-#####################OFFICE SUBNETS#####################################################
+{% for i in range(Network.group|length) %}
+{% set outer_loop_index = loop.index0 %}
+  {% for j in range(Network.group[outer_loop_index].subnets|length) %}
 
-
-##################{{ Subnet_offices.item.0.name }}#################
-subnet {{ Subnet_offices.item.0.subnet }} netmask {{ DEFAULT_NETMASK }}
+##################{{ Network.group[outer_loop_index].subnets[loop.index0].name }}#################
+subnet {{ Network.group[outer_loop_index].subnets[loop.index0].subnet }} netmask {{ DEFAULT_NETMASK }}
 {
     option domain-name {{ DHCP_OPTION_DOMAIN_NAME }};
-    option subnet-mask {{ Subnet_offices.item.0.netmask }};
-    option routers {{ Subnet_offices.item.0.option_routers }};
+    option subnet-mask {{ DEFAULT_NETMASK }};
+    option routers {{ Network.group[outer_loop_index].subnets[loop.index0].option_routers }};
     option domain-name-servers {{ DOMAIN_NAME_SERVER_1 }}, {{ DOMAIN_NAME_SERVER_2 }};
     pool
     {
     failover peer "failover-dhcp";        
-    range {{ Subnet_offices.item.0.pool_range_start }} {{ Subnet_offices.item.0.pool_range_end }};
+    range {{ Network.group[outer_loop_index].subnets[loop.index0].pool_range_start }} {{ Network.group[outer_loop_index].subnets[loop.index0].pool_range_end }};
     }
 }
-
-
-#####################SHOPS SUBNETS#####################################################
-
-
-##################{{ Subnet_shops.item.0.name }}#################
-subnet {{ Subnet_shops.item.0.subnet }} netmask {{ DEFAULT_NETMASK }}
-{
-    option domain-name {{ DHCP_OPTION_DOMAIN_NAME }};
-    option subnet-mask {{ Subnet_shops.item.0.netmask }};
-    option routers {{ Subnet_shops.item.0.option_routers }};
-    option domain-name-servers {{ DOMAIN_NAME_SERVER_1 }}, {{ DOMAIN_NAME_SERVER_2 }};
-    pool
-    {
-    failover peer "failover-dhcp";        
-    range {{ Subnet_shops.item.0.pool_range_start }} {{ Subnet_shops.item.0.pool_range_end }};
-    }
-}
+  {%endfor%}}
+{% endfor %}}

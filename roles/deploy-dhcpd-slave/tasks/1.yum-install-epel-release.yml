@@ -1,0 +1,20 @@
+---
+- name: "install packages"
+  yum:
+    name: "{{ item }}"
+    state: latest
+    update_cache: true
+  with_items:
+    - epel-release    
+    - bash-completion
+    - atop
+    - htop
+    - iftop
+    - firewalld
+    - dhcp
+
+- name: "yum update"
+  yum:
+    name: '*'
+    state: latest
+    

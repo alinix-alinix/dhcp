@@ -1,0 +1,6 @@
+---
+- name: "create dhcp config files"
+  template:
+    backup: "no"
+    dest: "/config/etc/dhcp/dhcpd.conf"
+    src: "/home/alx/git/dhcp/roles/deploy-dhcpd-slave/templates/slave.j2"

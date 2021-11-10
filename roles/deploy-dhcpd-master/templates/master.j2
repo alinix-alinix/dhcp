@@ -1,8 +1,12 @@
+{{ ansible_managed | comment }}
+# {{ git_repo.url }}
+# admin {{ git_repo.admin }} bus {{ git_repo.bus }}
+
 failover peer "failover-dhcp" {
   primary; # This defines the master
-  address {{ DHCP_MASTER }}; ##MUST BE REPLACED WITH A MASTER VARIABLE
+  address {{ DHCP_MASTER }}; 
   port {{ DHCP_PEER_PORT }}; ##for data exchange between hosts
-  peer address {{ DHCP_SLAVE }}; ##MUST BE REPLACED WITH A SLAVE VARIABLE
+  peer address {{ DHCP_SLAVE }};
   peer port {{ DHCP_PEER_PORT }}; ##for data exchange between hosts
   max-response-delay 60;
   max-unacked-updates 10;
@@ -38,7 +42,7 @@ one-lease-per-client on;
 
 
 {% for i in range(Network.group|length) %}
-  {% set outer_loop_index = loop.index0 %}
+{% set outer_loop_index = loop.index0 %}
   {% for j in range(Network.group[outer_loop_index].subnets|length) %}
 
 ##################{{ Network.group[outer_loop_index].subnets[loop.index0].name }}#################
