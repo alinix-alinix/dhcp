@@ -2,15 +2,18 @@
 - name: Print some debug information 
   debug: 
     msg: "{{ Network.group }}"       
-  
+
+- name: Print some debug information 1 
+  debug: 
+    msg: "{{ Network.group.0.subnets.1.name }}"         
 
 - name: "create dhcp config files"
   template:
     backup: "no"
     dest: "/config/etc/dhcp/dhcpd.conf"
     src: "/home/alx/git/dhcp/roles/deploy-dhcpd/templates/master.j2"
-  with_subelements:
-    - "{{ Network.group }}"
-    - subnets
-  when: item.1.active
+  #with_subelements:
+  #  - "{{ Network.group }}"
+  #  - subnets
+  #when: item.1.active
 
