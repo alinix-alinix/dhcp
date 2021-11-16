@@ -6,16 +6,11 @@ all:
           ansible_ssh_host: 192.168.14.25
           ansible_ssh_port: 22
           ansible_ssh_user: root
+          INV_VAR_SECONDARY_HOST: 192.168.80.90 #must match slave ip-address
+          INV_VAR_MCLT: "mclt 3600;"
         slave:
           ansible_ssh_host: 192.168.14.25
           ansible_ssh_port: 22
-          ansible_ssh_user: root        
-#        master:
-#          ansible_ssh_host: 192.168.9.99
-#          ansible_ssh_port: 22
-#          ansible_ssh_user: root
-#        slave:
-#          ansible_ssh_host: 192.168.9.199
-#          ansible_ssh_port: 22
-#          ansible_ssh_user: root
-          
+          ansible_ssh_user: root
+          INV_VAR_SECONDARY_HOST: 192.168.80.91 #must match master ip-address
+          INV_VAR_MCLT: "### mclt 3600; - must be declared on master"

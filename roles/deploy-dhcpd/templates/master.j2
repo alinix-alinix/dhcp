@@ -4,13 +4,13 @@
 
 failover peer "failover-dhcp" {
   primary; # This defines the master
-  address {{ DHCP_MASTER }}; 
+  address {{ ansible_ssh_host }}; 
   port {{ DHCP_PEER_PORT }}; ##for data exchange between hosts
-  peer address {{ DHCP_SLAVE }};
+  peer address {{ INV_VAR_SECONDARY_HOST }};
   peer port {{ DHCP_PEER_PORT }}; ##for data exchange between hosts
   max-response-delay 60;
   max-unacked-updates 10;
-  mclt 3600; ## Maximum client lead time must be declared on MASTER, and not on a SLAVE
+  {{INV_VAR_MCLT}}
   split 128; # 128 is balanced; use 255 if primary is 100% responsible until failure
   load balance max seconds 3;
 }

@@ -8,7 +8,8 @@
   template:
     backup: "no"
     dest: "{{DHCP_CONF_PATH}}/{{DHCP_FILE_NAME}}"
-    src: "/home/alx/git/dhcp/roles/deploy-dhcpd-master/templates/master.j2"
+    src: "master.j2"
+    
 
 #- name: "create dhcpd config file symlink"
 #  file:  
