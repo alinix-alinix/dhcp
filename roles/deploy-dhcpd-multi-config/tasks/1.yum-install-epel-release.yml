@@ -1,0 +1,21 @@
+---
+- name: "install packages"
+  yum:
+    name:
+      - epel-release    
+      - bash-completion
+      - atop
+      - htop
+      - iftop
+      - firewalld
+      - dhcp
+    state: latest
+    update_cache: true
+
+
+
+- name: "yum update"
+  yum:
+    name: '*'
+    state: latest
+    
