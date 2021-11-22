@@ -1,0 +1,8 @@
+---
+- name: "create dhcp config file"
+  template:
+    backup: "no"
+    dest: "{{DHCP_SYSTEM_PATH}}/{{DHCP_FILE_NAME}}"
+    src: "master.j2"
+    #validate: /usr/sbin/dhcpd -cf %s
+   

@@ -1,9 +1,9 @@
 ---
-- name: Start service httpd, if not started
+- name: Start service dhcpd, if not started
   service:
-    name: httpd
-    enabled: yes
-    state: started
+    name: dhcpd
+    enabled: no
+    state: stopped
 
 - name: enable and start firewalld
   service: 
@@ -14,7 +14,7 @@
 
 - name: allow dhcp in firewalld
   firewalld:
-    service: dhcpd
+    service: dhcp
     permanent: yes
     state: enabled
 #    immediate: yes
