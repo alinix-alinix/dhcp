@@ -44,7 +44,7 @@ one-lease-per-client on;
 {% for i in range(Network.group|length) %}
 {% set outer_loop_index = loop.index0 %}
 {% for j in range(Network.group[outer_loop_index].subnets|length) %}
-{% if Network.group[outer_loop_index].subnets[loop.index0].active %}include "{{DHCP_SYSTEM_PATH}}/{{ Network.group[outer_loop_index].subnets[loop.index0].name }}.conf";
+{% if Network.group[outer_loop_index].subnets[loop.index0].active %}include "{{ DHCP_SUBNET_CONF_PATH }}/{{ Network.group[outer_loop_index].subnets[loop.index0].name }}.conf";
 {% endif %}
 {% endfor %}
 {% endfor %}

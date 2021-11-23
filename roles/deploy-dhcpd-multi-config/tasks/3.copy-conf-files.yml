@@ -1,15 +1,20 @@
 ---
+- name: "create subnet conf files"
+  file:
+    path: "{{ DHCP_SUBNET_CONF_PATH }}"
+    state: directory
+    owner: dhcpd
+    mode: '0755'
 - name: "create main dhcp config file"
   template:
     backup: "no"
     dest: "{{DHCP_SYSTEM_PATH}}/{{DHCP_FILE_NAME}}"
     src: "dhcpd_conf_header.j2"
     #validate: /usr/sbin/dhcpd -cf %s
-   
 - name: "create subnets dhcp config file"
   template:
     backup: "no"
-    dest: "{{DHCP_SYSTEM_PATH}}/{{item.1.name}}.conf"
+    dest: "{{ DHCP_SUBNET_CONF_PATH }}/{{item.1.name}}.conf"
     src: "dhcpd_conf_footer.j2"
   loop: "{{ Network.group|subelements('subnets') }}"
   loop_control:
