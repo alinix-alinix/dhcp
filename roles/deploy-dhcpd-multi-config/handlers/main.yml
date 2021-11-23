@@ -1,0 +1,6 @@
+---
+- name: "Restart dhcpd instance"
+  service:
+    name: dhcpd
+    state: restarted
+

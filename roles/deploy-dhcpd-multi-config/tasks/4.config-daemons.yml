@@ -2,8 +2,8 @@
 - name: Start service dhcpd, if not started
   service:
     name: dhcpd
-    enabled: no
-    state: stopped
+    enabled: yes
+    state: started
 
 - name: enable and start firewalld
   service: 

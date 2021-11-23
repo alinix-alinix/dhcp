@@ -9,6 +9,7 @@
       - iftop
       - firewalld
       - dhcp
+      - nano
     state: latest
     update_cache: true
 
