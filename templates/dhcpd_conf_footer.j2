@@ -2,13 +2,15 @@
 # {{ git_repo.url }}
 # admin {{ git_repo.admin }} bus {{ git_repo.bus }}
 
-##################{{ item.1.name }} reason: {{ item.1.reason }}#################
+##################name: {{ item.1.name }}, description: {{ item.1.description }}#################
 subnet {{ item.1.subnet }} netmask {{ DEFAULT_NETMASK }}
 {
     option domain-name "{{ DHCP_OPTION_DOMAIN_NAME }}";
     option subnet-mask {{ DEFAULT_NETMASK }};
     option routers {{ item.1.option_routers }};
-    option domain-name-servers {{ DOMAIN_NAME_SERVER_1 }}, {{ DOMAIN_NAME_SERVER_2 }};
+    {% if item.1.guest %}option domain-name-servers {{ GUEST_DOMAIN_NAME_SERVER_1 }}, {{ GUEST_DOMAIN_NAME_SERVER_2 }};    
+    {% else %}option domain-name-servers {{ DOMAIN_NAME_SERVER_1 }}, {{ DOMAIN_NAME_SERVER_2 }};{% endif %}
+    
     pool
     {
     failover peer "failover-dhcp";        

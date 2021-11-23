@@ -3,33 +3,223 @@ Network:
   group:
     - name: "Subnets_offices"
       subnets:
-        - name: "network-40-offices"
+        - name: "test-172-network"
+          description: "test network"
           active: true
+          guest: true
+          subnet: 172.29.30.0
+          option_routers: 172.29.30.1
+          pool_range_start: 172.29.30.150
+          pool_range_end: 172.29.30.200
+        - name: "network-40-offices"
+          description: "initial"
+          active: true
+          guest: false
           subnet: 192.168.40.0
           option_routers: 192.168.40.254
           pool_range_start: 192.168.40.40
-          pool_range_end: 192.168.40.230
-          reason: "initial"
+          pool_range_end: 192.168.40.230          
         - name: "network-41-offices"
+          description: "initial"
           active: true
+          guest: false
           subnet: 192.168.41.0
           option_routers: 192.168.41.254
           pool_range_start: 192.168.41.40
           pool_range_end: 192.168.41.230
+        - name: "network-200-wifi"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.200.0
+          option_routers: 192.168.200.254
+          pool_range_start: 192.168.200.50
+          pool_range_end: 192.168.200.200
           reason: "initial"
+        - name: "network-201-wifi-guests"
+          description: "initial"
+          active: true
+          guest: true
+          subnet: 192.168.201.0
+          option_routers: 192.168.201.254
+          pool_range_start: 192.168.201.50
+          pool_range_end: 192.168.201.200
+        - name: "network-213-IT-Dept"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.213.0
+          option_routers: 192.168.213.254
+          pool_range_start: 192.168.213.51
+          pool_range_end: 192.168.213.100
+        - name: "network-214-Development"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.214.0
+          option_routers: 192.168.214.254
+          pool_range_start: 192.168.214.150
+          pool_range_end: 192.168.214.200
+        - name: "network-36-vlan222-RDP-BOSSES"
+          description: "initial"
+          active: false
+          guest: false
+          subnet: 192.168.36.0
+          option_routers: 192.168.36.254
+          pool_range_start: 192.168.36.150
+          pool_range_end: 192.168.36.200        
+        - name: "network-3-vlan303-CRM"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.3.0
+          option_routers: 192.168.3.254
+          pool_range_start: 192.168.3.50
+          pool_range_end: 192.168.3.200 
+        - name: "network-14-vlan302-RDPs"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.14.0
+          option_routers: 192.168.14.254
+          pool_range_start: 192.168.14.150
+          pool_range_end: 192.168.14.200
+        - name: "network-5-vlan305-IT-MGMT"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.5.0
+          option_routers: 192.168.5.254
+          pool_range_start: 192.168.5.100
+          pool_range_end: 192.168.5.200         
+        - name: "network-6-vlan306-1c"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.6.0
+          option_routers: 192.168.6.254
+          pool_range_start: 192.168.6.100
+          pool_range_end: 192.168.6.200         
+        - name: "network-7-vlan307-IPMI"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.7.0
+          option_routers: 192.168.7.254
+          pool_range_start: 192.168.7.100
+          pool_range_end: 192.168.7.200 
+        - name: "network-9-vlan309-Crystalls"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.9.0
+          option_routers: 192.168.9.254
+          pool_range_start: 192.168.9.100
+          pool_range_end: 192.168.9.200      
+        - name: "network-10-vlan310-Networking"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.10.0
+          option_routers: 192.168.10.254
+          pool_range_start: 192.168.10.150
+          pool_range_end: 192.168.10.200         
+   
     - name: "Subnets_shops"
       subnets:
-        - name: "network-120-shops"
+        - name: "network-240-vlan25-s-kovalevoi"
+          description: "initial"
           active: true
-          subnet: 192.168.120.0
-          option_routers: 192.168.120.254
-          pool_range_start: 192.168.120.150
-          pool_range_end: 192.168.120.200
-          reason: "initial"
-        - name: "network-121-shops"
+          guest: false
+          subnet: 192.168.240.0
+          option_routers: 192.168.240.254
+          pool_range_start: 192.168.240.150
+          pool_range_end: 192.168.240.200
+        - name: "network-32-vlan32-murino-tikhaya"
+          description: "initial"
           active: true
-          subnet: 192.168.121.0
-          option_routers: 192.168.121.254
-          pool_range_start: 192.168.121.150
-          pool_range_end: 192.168.121.200
-          reason: "initial"
+          guest: false
+          subnet: 192.168.32.0
+          option_routers: 192.168.32.254
+          pool_range_start: 192.168.32.150
+          pool_range_end: 192.168.32.200
+        - name: "network-45-vlan45-s-korzuna"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.45.0
+          option_routers: 192.168.45.254
+          pool_range_start: 192.168.45.150
+          pool_range_end: 192.168.45.200
+        - name: "network-46-vlan46-utochkina-6"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.46.0
+          option_routers: 192.168.46.254
+          pool_range_start: 192.168.46.150
+          pool_range_end: 192.168.46.200
+        - name: "network-47-vlan47-pargolovskaya"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.47.0
+          option_routers: 192.168.47.254
+          pool_range_start: 192.168.47.150
+          pool_range_end: 192.168.47.200
+        - name: "network-49-vlan49-slavy15"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.49.0
+          option_routers: 192.168.49.254
+          pool_range_start: 192.168.49.150
+          pool_range_end: 192.168.49.200
+        - name: "network-52-vlan52-tulskaya9"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.52.0
+          option_routers: 192.168.52.254
+          pool_range_start: 192.168.52.150
+          pool_range_end: 192.168.52.200
+        - name: "network-53-vlan53-pushkin-moskovksya"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.53.0
+          option_routers: 192.168.53.254
+          pool_range_start: 192.168.53.150
+          pool_range_end: 192.168.53.200
+        - name: "network-54-vlan54-tarasova12"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.54.0
+          option_routers: 192.168.54.254
+          pool_range_start: 192.168.54.150
+          pool_range_end: 192.168.54.200
+        - name: "network-55-vlan55-razjezaya44"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.55.0
+          option_routers: 192.168.55.254
+          pool_range_start: 192.168.55.150
+          pool_range_end: 192.168.55.200
+        - name: "network-56-vlan56-kolpinskoe32"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.56.0
+          option_routers: 192.168.56.254
+          pool_range_start: 192.168.56.150
+          pool_range_end: 192.168.56.200
+        - name: "network-57-vlan57-fuchika2"
+          description: "initial"
+          active: true
+          guest: false
+          subnet: 192.168.57.0
+          option_routers: 192.168.57.254
+          pool_range_start: 192.168.57.150
+          pool_range_end: 192.168.57.200

@@ -1,7 +1,7 @@
 ---
 - gather_facts: false
   hosts: dhcp_hosts
-  name: deploy fresh dhcp master instance
+  name: deploy fresh dhcp master and slave instances
   roles:
     - role: deploy-dhcpd-single-config
     

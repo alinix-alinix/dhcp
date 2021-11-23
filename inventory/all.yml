@@ -20,3 +20,14 @@ all:
           INV_VAR_HOST_STATUS: "secondary;"
           INV_VAR_HOST_LOAD_BALANCE: ""
           INV_VAR_HOST_LOAD_BALANCE_SPLIT: ""
+    DNS_hosts:
+      hosts:
+        Host_1:
+          ansible_ssh_host: 192.168.19.51
+          ansible_ssh_port: 22
+          ansible_ssh_user: root
+        Host_2:
+          ansible_ssh_host: 192.168.19.52
+          ansible_ssh_port: 22
+          ansible_ssh_user: root
+          
