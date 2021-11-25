@@ -1,0 +1,10 @@
+---
+- name: "Restarted unbound"
+  service:
+    name: unbound.service
+    state: restarted
+
+- name: "Reload bird"
+  service:
+    name: bird.service
+    state: reloaded

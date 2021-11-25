@@ -1,0 +1,6 @@
+---
+# vars file for dns-service
+git_repo:
+  url: "https://gitlab.petcorp.ru/sysadmins/service/DNS"
+  admin: "g.balandin@petshop.ru"
+  bus: "alexey.gorbachev@petshop.ru"

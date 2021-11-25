@@ -1,0 +1,13 @@
+---
+- name: "2.yum sec update"
+  import_tasks: 2.yum-sec-update.yml
+- name: "3.yum install ovpn"
+  import_tasks: 3.yum-install-package.yml
+- name: "4.set-firewalld"
+  import_tasks: 4.set-firewalld.yml
+- name: "8.fetch-roots-NS.yml"
+  import_tasks: 8.fetch-roots-NS.yml
+- name: "7.regen-conf-unbound.yml"
+  import_tasks: 7.regen-conf-unbound.yml
+- name: "10.systemd daemons creation"
+  import_tasks: 10.systemd-daemon.yml

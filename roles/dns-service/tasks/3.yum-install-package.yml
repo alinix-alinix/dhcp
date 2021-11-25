@@ -1,0 +1,19 @@
+---
+- name: "install packages"
+  yum:
+    name:
+      - centos-release
+      - bash-completion
+      - atop
+      - iftop
+      - htop
+      - sysstat
+      - firewalld
+      - jq
+      - bird
+      - unbound
+      - bind-utils
+      - fail2ban
+      - tmux
+    state: present
+    update_cache: true

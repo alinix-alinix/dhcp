@@ -1,0 +1,16 @@
+---
+- name: "regenerate config file for unbound"
+  template:
+    dest: "/etc/unbound/unbound.conf"
+    src: "dns/unbound.conf.j2"
+    validate: /usr/sbin/unbound-checkconf -f %s
+  notify:
+    - Restarted unbound
+
+- name: "regenerate config file /etc/bird.conf"
+  template:
+    dest: "/etc/bird.conf"
+    src: "bird/bird.conf.j2"
+    validate: /usr/sbin/bird -p -c %s
+  notify:
+    - Reload bird

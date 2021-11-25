@@ -1,0 +1,6 @@
+---
+ospf:
+  debug: "all"
+  area:
+    id: 10.255.200.254
+  time: 10

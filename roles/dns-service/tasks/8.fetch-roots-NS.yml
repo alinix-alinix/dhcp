@@ -1,0 +1,24 @@
+---
+- name: "copy named.root"
+  get_url:
+    url: "https://www.internic.net/domain/named.root"
+    dest: "/etc/unbound/named.root"
+    checksum: "md5:{{ lookup('url', 'https://www.internic.net/domain/named.root.md5') }}"
+    owner: root
+    mode: '0644'
+
+- name: "copy root.zone"
+  get_url:
+    url: "https://www.internic.net/domain/root.zone"
+    dest: "/etc/unbound/root.zone"
+    checksum: "md5:{{ lookup('url', 'https://www.internic.net/domain/root.zone.md5') }}"
+    owner: root
+    mode: '0644'
+
+- name: "copy root.hints"
+  get_url:
+    url: "https://www.internic.net/domain/named.cache"
+    dest: "/etc/unbound/named.cache"
+    checksum: "md5:{{ lookup('url', 'https://www.internic.net/domain/named.cache.md5') }}"
+    owner: root
+    mode: '0644'
