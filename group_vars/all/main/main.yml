@@ -9,7 +9,7 @@ DHCP_LEASE_TIME_DEFAULT: 86400
 ###
 
 ###DHCP SUBNET OPTIONS
-VAR_BOOTP_FILENAME: "/pxelinux.0"
+VAR_BOOTP_FILENAME: "/ipxelinux.0"
 VAR_BOOTP_SERVER_NAME: "192.168.14.80"
 VAR_OPTION_NTP_SERVER: 88.147.254.232 #ntp2.stratum2.ru
 DHCP_OPTION_DOMAIN_NAME: "local.petcorp.ru"
@@ -32,3 +32,4 @@ git_repo:
   admin: "s.stepanov@petshop.ru"
   bus: "alexey.gorbachev@petshop.ru"
 
+...
