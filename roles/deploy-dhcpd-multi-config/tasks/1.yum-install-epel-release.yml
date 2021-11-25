@@ -10,13 +10,11 @@
       - firewalld
       - dhcp
       - nano
+      - tmux
     state: latest
     update_cache: true
-
-
 
 - name: "yum update"
   yum:
     name: '*'
     state: latest
-    

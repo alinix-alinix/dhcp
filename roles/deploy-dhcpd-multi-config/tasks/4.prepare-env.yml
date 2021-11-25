@@ -1,0 +1,6 @@
+---
+- name: copy tmux files
+  copy: 
+    src: ".tmux.conf"
+    dest: "/root/.tmux.conf"
+    owner: root

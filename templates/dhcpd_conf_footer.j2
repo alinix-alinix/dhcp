@@ -9,6 +9,7 @@ subnet {{ item.1.subnet }} netmask {{ DEFAULT_NETMASK }}
     option domain-search "{{ DHCP_OPTION_DNS_SEARCH }}";
     option subnet-mask {{ DEFAULT_NETMASK }};
     option routers {{ item.1.option_routers }};
+    option ntp-servers {{ item.1.option_ntp_server }};
     {% if item.1.guest %}option domain-name-servers {{ GUEST_DOMAIN_NAME_SERVER_1 }}, {{ GUEST_DOMAIN_NAME_SERVER_2 }};    
     {% else %}option domain-name-servers {{ DOMAIN_NAME_SERVER_1 }}, {{ DOMAIN_NAME_SERVER_2 }};{% endif %}
     
@@ -17,5 +18,8 @@ subnet {{ item.1.subnet }} netmask {{ DEFAULT_NETMASK }}
     failover peer "failover-dhcp";        
     range {{ item.1.pool_range_start }} {{ item.1.pool_range_end }};
     }
+    {% if item.1.bootp %}filename "{{ item.1.bootp_filename }}";{% endif %}
+    {% if item.1.bootp %}next-server {{ item.1.bootp_server_name }};{% endif %}
+    
 }
 

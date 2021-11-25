@@ -1,0 +1,29 @@
+---
+- name: "disable selinux"
+  selinux:
+    state: disabled
+
+- name: Start service dhcpd, if not started
+  service:
+    name: "{{ item.name }}"
+    enabled: "{{ item.enabled }}"
+    state: "{{ item.state }}"
+  loop:
+    - {name: 'dhcpd', enabled: "true", state: "started"}
+    - {name: 'firewalld', enabled: "true", state: "started"}
+  loop_control:
+    label:
+      - "{{ item }}"
+
+- name: allow dhcp peer port in firewalld
+  firewalld:
+    port: "{{ DHCP_PEER_PORT }}/tcp"
+    permanent: yes
+    state: enabled
+
+- name: allow dhcp in firewalld
+  firewalld:
+    service: dhcp
+    permanent: yes
+    state: enabled
+

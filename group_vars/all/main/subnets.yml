@@ -7,6 +7,10 @@ Network:
           description: "test network"
           active: true
           guest: false
+          bootp: true
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.19.0
           option_routers: 192.168.19.254
           pool_range_start: 192.168.19.201
@@ -15,6 +19,10 @@ Network:
           description: "test network"
           active: true
           guest: true
+          bootp: true
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"          
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 172.29.30.0
           option_routers: 172.29.30.1
           pool_range_start: 172.29.30.150
@@ -23,6 +31,10 @@ Network:
           description: "test network"
           active: false
           guest: true
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"          
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 172.29.30.0
           option_routers: 172.29.30.1
           pool_range_start: 172.29.30.150
@@ -31,6 +43,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}" 
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.40.0
           option_routers: 192.168.40.254
           pool_range_start: 192.168.40.40
@@ -39,6 +55,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.41.0
           option_routers: 192.168.41.254
           pool_range_start: 192.168.41.40
@@ -47,6 +67,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.200.0
           option_routers: 192.168.200.254
           pool_range_start: 192.168.200.50
@@ -56,6 +80,10 @@ Network:
           description: "initial"
           active: true
           guest: true
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"          
           subnet: 192.168.201.0
           option_routers: 192.168.201.254
           pool_range_start: 192.168.201.50
@@ -64,6 +92,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.213.0
           option_routers: 192.168.213.254
           pool_range_start: 192.168.213.51
@@ -72,6 +104,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.214.0
           option_routers: 192.168.214.254
           pool_range_start: 192.168.214.150
@@ -80,6 +116,10 @@ Network:
           description: "initial"
           active: false
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.36.0
           option_routers: 192.168.36.254
           pool_range_start: 192.168.36.150
@@ -88,6 +128,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.3.0
           option_routers: 192.168.3.254
           pool_range_start: 192.168.3.50
@@ -96,6 +140,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.14.0
           option_routers: 192.168.14.254
           pool_range_start: 192.168.14.150
@@ -104,6 +152,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.5.0
           option_routers: 192.168.5.254
           pool_range_start: 192.168.5.100
@@ -112,6 +164,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.6.0
           option_routers: 192.168.6.254
           pool_range_start: 192.168.6.100
@@ -120,6 +176,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.7.0
           option_routers: 192.168.7.254
           pool_range_start: 192.168.7.100
@@ -128,6 +188,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.9.0
           option_routers: 192.168.9.254
           pool_range_start: 192.168.9.100
@@ -136,6 +200,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: true
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.10.0
           option_routers: 192.168.10.254
           pool_range_start: 192.168.10.150
@@ -147,6 +215,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.46.0
           option_routers: 192.168.46.254
           pool_range_start: 192.168.46.150
@@ -155,6 +227,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.45.0
           option_routers: 192.168.45.254
           pool_range_start: 192.168.45.150
@@ -163,6 +239,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.47.0
           option_routers: 192.168.47.254
           pool_range_start: 192.168.47.150
@@ -171,6 +251,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.49.0
           option_routers: 192.168.49.254
           pool_range_start: 192.168.49.150
@@ -179,6 +263,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.52.0
           option_routers: 192.168.52.254
           pool_range_start: 192.168.52.150
@@ -187,6 +275,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.53.0
           option_routers: 192.168.53.254
           pool_range_start: 192.168.53.150
@@ -195,6 +287,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.54.0
           option_routers: 192.168.54.254
           pool_range_start: 192.168.54.150
@@ -203,6 +299,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.55.0
           option_routers: 192.168.55.254
           pool_range_start: 192.168.55.150
@@ -211,6 +311,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.56.0
           option_routers: 192.168.56.254
           pool_range_start: 192.168.56.150
@@ -219,6 +323,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.57.0
           option_routers: 192.168.57.254
           pool_range_start: 192.168.57.150
@@ -227,6 +335,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.58.0
           option_routers: 192.168.58.254
           pool_range_start: 192.168.58.150
@@ -235,6 +347,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.70.0
           option_routers: 192.168.70.254
           pool_range_start: 192.168.70.150
@@ -243,6 +359,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.71.0
           option_routers: 192.168.71.254
           pool_range_start: 192.168.71.150
@@ -251,6 +371,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.74.0
           option_routers: 192.168.74.254
           pool_range_start: 192.168.74.150
@@ -259,6 +383,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.86.0
           option_routers: 192.168.86.254
           pool_range_start: 192.168.86.150
@@ -267,6 +395,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.96.0
           option_routers: 192.168.96.254
           pool_range_start: 192.168.96.150
@@ -275,6 +407,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.97.0
           option_routers: 192.168.97.254
           pool_range_start: 192.168.97.150
@@ -283,6 +419,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.32.0
           option_routers: 192.168.32.254
           pool_range_start: 192.168.32.150
@@ -291,6 +431,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.102.0
           option_routers: 192.168.102.254
           pool_range_start: 192.168.102.150
@@ -299,6 +443,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.101.0
           option_routers: 192.168.101.254
           pool_range_start: 192.168.101.150
@@ -307,6 +455,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.115.0
           option_routers: 192.168.115.254
           pool_range_start: 192.168.115.150
@@ -315,6 +467,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.103.0
           option_routers: 192.168.103.254
           pool_range_start: 192.168.103.150
@@ -323,6 +479,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.104.0
           option_routers: 192.168.104.254
           pool_range_start: 192.168.104.150
@@ -331,6 +491,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.105.0
           option_routers: 192.168.105.254
           pool_range_start: 192.168.105.150
@@ -339,6 +503,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.106.0
           option_routers: 192.168.106.254
           pool_range_start: 192.168.106.150
@@ -347,6 +515,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.116.0
           option_routers: 192.168.116.254
           pool_range_start: 192.168.116.150
@@ -355,6 +527,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.117.0
           option_routers: 192.168.117.254
           pool_range_start: 192.168.117.150
@@ -363,6 +539,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.108.0
           option_routers: 192.168.108.254
           pool_range_start: 192.168.108.150
@@ -371,6 +551,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.118.0
           option_routers: 192.168.118.254
           pool_range_start: 192.168.118.150
@@ -379,6 +563,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.120.0
           option_routers: 192.168.120.254
           pool_range_start: 192.168.120.150
@@ -387,6 +575,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.121.0
           option_routers: 192.168.121.254
           pool_range_start: 192.168.121.150
@@ -395,6 +587,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.119.0
           option_routers: 192.168.119.254
           pool_range_start: 192.168.119.150
@@ -403,6 +599,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.110.0
           option_routers: 192.168.110.254
           pool_range_start: 192.168.110.150
@@ -411,6 +611,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.122.0
           option_routers: 192.168.122.254
           pool_range_start: 192.168.122.150
@@ -419,6 +623,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.125.0
           option_routers: 192.168.125.254
           pool_range_start: 192.168.125.150
@@ -427,6 +635,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.126.0
           option_routers: 192.168.126.254
           pool_range_start: 192.168.126.150
@@ -435,6 +647,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.127.0
           option_routers: 192.168.127.254
           pool_range_start: 192.168.127.150
@@ -443,6 +659,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.128.0
           option_routers: 192.168.128.254
           pool_range_start: 192.168.128.150
@@ -451,6 +671,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.130.0
           option_routers: 192.168.130.254
           pool_range_start: 192.168.130.150
@@ -459,6 +683,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.131.0
           option_routers: 192.168.131.254
           pool_range_start: 192.168.131.150
@@ -467,6 +695,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.137.0
           option_routers: 192.168.137.254
           pool_range_start: 192.168.137.150
@@ -475,6 +707,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.146.0
           option_routers: 192.168.146.254
           pool_range_start: 192.168.146.150
@@ -483,6 +719,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.161.0
           option_routers: 192.168.161.254
           pool_range_start: 192.168.161.150
@@ -491,6 +731,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.162.0
           option_routers: 192.168.162.254
           pool_range_start: 192.168.162.150
@@ -499,6 +743,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.147.0
           option_routers: 192.168.147.254
           pool_range_start: 192.168.147.150
@@ -507,6 +755,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.163.0
           option_routers: 192.168.163.254
           pool_range_start: 192.168.163.150
@@ -515,6 +767,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.148.0
           option_routers: 192.168.148.254
           pool_range_start: 192.168.148.150
@@ -523,6 +779,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.149.0
           option_routers: 192.168.149.254
           pool_range_start: 192.168.149.150
@@ -531,6 +791,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.150.0
           option_routers: 192.168.150.254
           pool_range_start: 192.168.150.150
@@ -539,6 +803,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.151.0
           option_routers: 192.168.151.254
           pool_range_start: 192.168.151.150
@@ -547,6 +815,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.164.0
           option_routers: 192.168.164.254
           pool_range_start: 192.168.164.150
@@ -555,6 +827,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.165.0
           option_routers: 192.168.165.254
           pool_range_start: 192.168.165.150
@@ -563,6 +839,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.166.0
           option_routers: 192.168.166.254
           pool_range_start: 192.168.166.150
@@ -571,6 +851,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.168.0
           option_routers: 192.168.168.254
           pool_range_start: 192.168.168.150
@@ -579,6 +863,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.170.0
           option_routers: 192.168.170.254
           pool_range_start: 192.168.170.150
@@ -587,6 +875,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.171.0
           option_routers: 192.168.171.254
           pool_range_start: 192.168.171.150
@@ -595,6 +887,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.173.0
           option_routers: 192.168.173.254
           pool_range_start: 192.168.173.150
@@ -603,6 +899,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.174.0
           option_routers: 192.168.174.254
           pool_range_start: 192.168.174.150
@@ -611,6 +911,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.175.0
           option_routers: 192.168.175.254
           pool_range_start: 192.168.175.150
@@ -619,6 +923,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.177.0
           option_routers: 192.168.177.254
           pool_range_start: 192.168.177.150
@@ -627,6 +935,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.178.0
           option_routers: 192.168.178.254
           pool_range_start: 192.168.178.150
@@ -635,6 +947,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.179.0
           option_routers: 192.168.179.254
           pool_range_start: 192.168.179.150
@@ -643,6 +959,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.180.0
           option_routers: 192.168.180.254
           pool_range_start: 192.168.180.150
@@ -651,6 +971,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.181.0
           option_routers: 192.168.181.254
           pool_range_start: 192.168.181.150
@@ -659,6 +983,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.195.0
           option_routers: 192.168.195.254
           pool_range_start: 192.168.195.150
@@ -667,6 +995,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.223.0
           option_routers: 192.168.223.254
           pool_range_start: 192.168.223.150
@@ -675,6 +1007,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.224.0
           option_routers: 192.168.224.254
           pool_range_start: 192.168.224.150
@@ -683,6 +1019,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.225.0
           option_routers: 192.168.225.254
           pool_range_start: 192.168.225.150
@@ -691,6 +1031,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.226.0
           option_routers: 192.168.226.254
           pool_range_start: 192.168.226.150
@@ -699,6 +1043,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.227.0
           option_routers: 192.168.227.254
           pool_range_start: 192.168.227.150
@@ -707,6 +1055,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.228.0
           option_routers: 192.168.228.254
           pool_range_start: 192.168.228.150
@@ -715,6 +1067,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.229.0
           option_routers: 192.168.229.254
           pool_range_start: 192.168.229.150
@@ -723,6 +1079,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.230.0
           option_routers: 192.168.230.254
           pool_range_start: 192.168.230.150
@@ -731,6 +1091,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.231.0
           option_routers: 192.168.231.254
           pool_range_start: 192.168.231.150
@@ -739,6 +1103,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.233.0
           option_routers: 192.168.233.254
           pool_range_start: 192.168.233.150
@@ -747,6 +1115,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.234.0
           option_routers: 192.168.234.254
           pool_range_start: 192.168.234.150
@@ -755,6 +1127,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.235.0
           option_routers: 192.168.235.254
           pool_range_start: 192.168.235.150
@@ -763,6 +1139,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.237.0
           option_routers: 192.168.237.254
           pool_range_start: 192.168.237.150
@@ -771,6 +1151,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.238.0
           option_routers: 192.168.238.254
           pool_range_start: 192.168.238.150
@@ -779,6 +1163,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.239.0
           option_routers: 192.168.239.254
           pool_range_start: 192.168.239.150
@@ -787,6 +1175,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.240.0
           option_routers: 192.168.240.254
           pool_range_start: 192.168.240.150
@@ -795,6 +1187,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.242.0
           option_routers: 192.168.242.254
           pool_range_start: 192.168.242.150
@@ -803,6 +1199,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.243.0
           option_routers: 192.168.243.254
           pool_range_start: 192.168.243.150
@@ -811,6 +1211,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.244.0
           option_routers: 192.168.244.254
           pool_range_start: 192.168.244.150
@@ -819,6 +1223,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.245.0
           option_routers: 192.168.245.254
           pool_range_start: 192.168.245.150
@@ -827,6 +1235,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.250.0
           option_routers: 192.168.250.254
           pool_range_start: 192.168.250.150
@@ -835,6 +1247,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.251.0
           option_routers: 192.168.251.254
           pool_range_start: 192.168.251.150
@@ -843,6 +1259,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.159.0
           option_routers: 192.168.159.254
           pool_range_start: 192.168.159.150
@@ -851,6 +1271,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.158.0
           option_routers: 192.168.158.254
           pool_range_start: 192.168.158.150
@@ -859,6 +1283,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.157.0
           option_routers: 192.168.157.254
           pool_range_start: 192.168.157.150
@@ -867,6 +1295,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.152.0
           option_routers: 192.168.152.254
           pool_range_start: 192.168.152.150
@@ -875,6 +1307,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.156.0
           option_routers: 192.168.156.254
           pool_range_start: 192.168.156.150
@@ -883,6 +1319,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.153.0
           option_routers: 192.168.153.254
           pool_range_start: 192.168.153.150
@@ -891,6 +1331,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.155.0
           option_routers: 192.168.155.254
           pool_range_start: 192.168.155.150
@@ -899,6 +1343,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.154.0
           option_routers: 192.168.154.254
           pool_range_start: 192.168.154.150
@@ -907,6 +1355,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.183.0
           option_routers: 192.168.183.254
           pool_range_start: 192.168.183.150
@@ -915,6 +1367,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.184.0
           option_routers: 192.168.184.254
           pool_range_start: 192.168.184.150
@@ -923,6 +1379,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.94.0
           option_routers: 192.168.94.254
           pool_range_start: 192.168.94.150
@@ -931,6 +1391,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.185.0
           option_routers: 192.168.185.254
           pool_range_start: 192.168.185.150
@@ -939,6 +1403,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.69.0
           option_routers: 192.168.69.254
           pool_range_start: 192.168.69.150
@@ -947,6 +1415,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.76.0
           option_routers: 192.168.76.254
           pool_range_start: 192.168.76.150
@@ -955,6 +1427,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.160.0
           option_routers: 192.168.160.254
           pool_range_start: 192.168.160.150
@@ -963,6 +1439,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.246.0
           option_routers: 192.168.246.254
           pool_range_start: 192.168.246.150
@@ -971,6 +1451,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.67.0
           option_routers: 192.168.67.254
           pool_range_start: 192.168.67.150
@@ -979,6 +1463,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.77.0
           option_routers: 192.168.77.254
           pool_range_start: 192.168.77.150
@@ -987,6 +1475,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.78.0
           option_routers: 192.168.78.254
           pool_range_start: 192.168.78.150
@@ -995,6 +1487,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.48.0
           option_routers: 192.168.48.254
           pool_range_start: 192.168.48.150
@@ -1003,6 +1499,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.59.0
           option_routers: 192.168.59.254
           pool_range_start: 192.168.59.150
@@ -1011,6 +1511,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.61.0
           option_routers: 192.168.61.254
           pool_range_start: 192.168.61.150
@@ -1019,6 +1523,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.79.0
           option_routers: 192.168.79.254
           pool_range_start: 192.168.79.150
@@ -1027,6 +1535,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.62.0
           option_routers: 192.168.62.254
           pool_range_start: 192.168.62.150
@@ -1035,6 +1547,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.138.0
           option_routers: 192.168.138.254
           pool_range_start: 192.168.138.150
@@ -1043,6 +1559,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.109.0
           option_routers: 192.168.109.254
           pool_range_start: 192.168.109.150
@@ -1051,6 +1571,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.112.0
           option_routers: 192.168.112.254
           pool_range_start: 192.168.112.150
@@ -1059,6 +1583,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.95.0
           option_routers: 192.168.95.254
           pool_range_start: 192.168.95.150
@@ -1067,6 +1595,10 @@ Network:
           description: "initial"
           active: true
           guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.75.0
           option_routers: 192.168.75.254
           pool_range_start: 192.168.75.150

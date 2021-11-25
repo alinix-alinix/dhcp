@@ -19,6 +19,9 @@ authoritative;
 default-lease-time {{ DHCP_LEASE_TIME_DEFAULT }}; # 1 day
 max-lease-time {{ DHCP_LEASE_TIME_MAX }}; # 1 day
 
+allow booting;
+allow bootp;
+
 ddns-update-style interim;
 update-static-leases on;
 one-lease-per-client on;

@@ -1,0 +1,43 @@
+---
+
+extends: default
+
+locale: en_US.UTF-8
+
+ignore: |
+  /builds/
+
+yaml-files:
+  - '*.yaml'
+  - '*.yml'
+  - '.yamllint'
+
+rules:
+  braces: enable
+  brackets: enable
+  colons: enable
+  commas: enable
+  comments:
+    level: error
+  comments-indentation:
+    level: error
+  document-end: disable
+  document-start:
+    level: warning
+  empty-lines: enable
+  empty-values: enable
+  hyphens: enable
+  indentation: enable
+  key-duplicates: enable
+  key-ordering: disable
+  line-length:
+    max: 240
+    allow-non-breakable-words: true
+    allow-non-breakable-inline-mappings: false
+  new-line-at-end-of-file: enable
+  new-lines: enable
+  octal-values: disable
+  quoted-strings: disable
+  trailing-spaces: enable
+  truthy:
+    level: warning
