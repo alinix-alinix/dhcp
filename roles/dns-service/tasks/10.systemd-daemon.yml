@@ -1,4 +1,11 @@
 ---
+- name: enable now unbound-keygen 
+  systemd:
+    enabled: true
+    force: true
+    name: unbound-keygen.service
+    state: started
+
 - name: enable now unbound.service
   systemd:
     enabled: true

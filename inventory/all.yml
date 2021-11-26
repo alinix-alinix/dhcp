@@ -30,11 +30,11 @@ all:
                 infra_service_dns_forwards:
                   hosts:
                     dns-fw01:
-                      ansible_ssh_host: 84.38.182.25
+                      ansible_ssh_host: 192.168.19.201
                       ansible_ssh_port: 22
                       ansible_ssh_user: root
                     dns-fw02:
-                      ansible_ssh_host: 80.249.144.218
+                      ansible_ssh_host: 192.168.19.202
                       ansible_ssh_port: 22
                       ansible_ssh_user: root
                 infra_service_dns_zones:

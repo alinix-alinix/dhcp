@@ -2,18 +2,26 @@
 - name: "install packages"
   yum:
     name:
-      - centos-release
+      - epel-release
       - bash-completion
+    state: installed
+    update_cache: true
+
+- name: "install packages"
+  yum:
+    name:
       - atop
       - iftop
       - htop
       - sysstat
       - firewalld
       - jq
+      - nano
       - bird
+      - tree
       - unbound
       - bind-utils
       - fail2ban
       - tmux
-    state: present
+    state: installed
     update_cache: true
