@@ -36,3 +36,10 @@
     src: "dhcpd_conf_header.j2"
     validate: /usr/sbin/dhcpd -cf %s
   notify: Restart dhcpd instance
+
+- name: "alter owner user:group of /var/lib/dhcpd"
+  file: 
+    path: /var/lib/dhcpd/dhcpd.leases # may be reverted to root in some ocasions
+    owner: dhcpd
+    group: dhcpd
+    mode: '0644'
