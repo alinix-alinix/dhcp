@@ -16,16 +16,16 @@ failover peer "failover-dhcp" {
 }
 
 authoritative;
-default-lease-time {{ DHCP_LEASE_TIME_DEFAULT }}; # 1 day
-max-lease-time {{ DHCP_LEASE_TIME_MAX }}; # 1 day
+default-lease-time {{ DHCP_LEASE_TIME_DEFAULT }};
+max-lease-time {{ DHCP_LEASE_TIME_MAX }};
 
 allow booting;
 allow bootp;
 
-ddns-update-style interim;
 update-static-leases on;
 one-lease-per-client on;
 
+#ddns-update-style interim;
 ## We generated the rndc-key when setting up DNS servers
 #key "rndc-key" {
 #  algorithm hmac-md5;
