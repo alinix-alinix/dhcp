@@ -2,7 +2,7 @@
 - name: "install packages"
   yum:
     name:
-      - epel-release    
+      - epel-release
       - bash-completion
       - atop
       - htop
@@ -12,10 +12,7 @@
     state: latest
     update_cache: true
 
-
-
 - name: "yum update"
   yum:
     name: '*'
     state: latest
-    

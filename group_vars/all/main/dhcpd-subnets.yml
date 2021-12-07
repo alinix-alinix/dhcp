@@ -20,7 +20,7 @@ Network:
           active: true
           guest: true
           bootp: true
-          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"          
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
           bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 172.29.30.0
@@ -32,7 +32,7 @@ Network:
           active: false
           guest: true
           bootp: false
-          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"          
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
           bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 172.29.30.0

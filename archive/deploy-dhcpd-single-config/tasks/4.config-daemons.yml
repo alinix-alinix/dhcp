@@ -2,19 +2,19 @@
 - name: Start service dhcpd, if not started
   service:
     name: dhcpd
-    enabled: no
+    enabled: false
     state: stopped
 
 - name: enable and start firewalld
-  service: 
+  service:
     name: firewalld
-    enabled: yes
+    enabled: true
     state: started
 
 
 - name: allow dhcp in firewalld
   firewalld:
     service: dhcp
-    permanent: yes
+    permanent: true
     state: enabled
 #    immediate: yes
