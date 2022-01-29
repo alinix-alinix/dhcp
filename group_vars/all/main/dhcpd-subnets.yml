@@ -1316,8 +1316,8 @@ Network:
           pool_range_start: 192.168.152.150
           pool_range_end: 192.168.152.200
         - name: vlan319_spb-torzhkovsk1
-          description: "initial"
-          active: true
+          description: "closed because of OPS-1902"
+          active: false
           guest: false
           bootp: false
           bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
