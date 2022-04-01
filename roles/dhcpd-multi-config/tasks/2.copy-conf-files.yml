@@ -34,7 +34,7 @@
     backup: "no"
     dest: "{{DHCP_SYSTEM_PATH}}/{{DHCP_FILE_NAME}}"
     src: "dhcpd_conf_header.j2"
-    validate: /usr/sbin/dhcpd -cf %s
+    validate: "/usr/sbin/dhcpd -cf %s"
   notify: Restart dhcpd instance
 
 - name: "alter owner user:group of /var/lib/dhcpd"

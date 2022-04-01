@@ -1,10 +1,4 @@
 ---
-- name: copy tmux files
-  copy: 
-    src: ".tmux.conf"
-    dest: "/root/.tmux.conf"
-    owner: root
-
 - name: setting correct time offset
   timezone:
     name: Europe/Moscow

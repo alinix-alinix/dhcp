@@ -1,0 +1,26 @@
+---
+- name: added group ansible
+  group:
+    name: ansible
+  tags:
+    - ci
+
+- name: added groups for ansible
+  user:
+    name: "ansible"
+    groups: "wheel, ansible"
+    # SET PRIMARY GROUP
+    group: "ansible"
+    password: ""
+    state: present
+  tags:
+    - ci
+
+- name: added ssh key for ansible
+  authorized_key:
+    user: "ansible"
+    state: present
+    manage_dir: true
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAeFs4H9Z+zdBuzErLB78GbXkWJwb4EVw4XRYtG9v20U ansible@runners"
+  tags:
+    - ci
