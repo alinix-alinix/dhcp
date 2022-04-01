@@ -1,0 +1,17 @@
+---
+- name: adds users
+  include_tasks: 0.add-user.yml
+  loop:
+    - g.balandin
+    - a.gorbachev
+    - s.stepanov
+- name: fixed sudo
+  include_tasks: 1.sudo.yml
+- name: ci install
+  include_tasks: 2.ci-user.yml
+  tags:
+    - ci
+- name: tools config
+  include_tasks: 3.tools.yml
+  tags:
+    - tools

@@ -3,5 +3,6 @@
   gather_facts: true
   hosts: infra_service_dhcp
   roles:
-    - role: dhcpd-multi-config
+    - init
+    - dhcpd-multi-config
   strategy: free
