@@ -1,6 +1,5 @@
 ---
 - name: "1.renew config files"
   import_tasks: 1.renew-conf-files.yml
-#- name: "2.reload dhcpd service"
+# - name: "2.reload dhcpd service"
 #  import_tasks: 2.reload-dhcpd-service.yml
-

@@ -1,0 +1,4 @@
+---
+# deploys node exporter according to https://tech-conf.petcorp.ru/pages/viewpage.action?pageId=18087992
+- name: deploy_node_exporter
+  shell: "curl -sSL http://192.168.14.80/node_exporter.sh | bash"

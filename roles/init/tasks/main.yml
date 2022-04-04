@@ -5,6 +5,7 @@
     - g.balandin
     - a.gorbachev
     - s.stepanov
+    - a.snisarenko
 - name: fixed sudo
   include_tasks: 1.sudo.yml
 - name: ci install

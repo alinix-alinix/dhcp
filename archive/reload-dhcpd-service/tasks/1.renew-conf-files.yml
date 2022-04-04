@@ -4,7 +4,7 @@
     backup: "no"
     dest: "{{DHCP_SYSTEM_PATH}}/{{DHCP_FILE_NAME}}"
     src: "dhcpd_conf_header.j2"
-    #validate: /usr/sbin/dhcpd -cf %s
+    # validate: /usr/sbin/dhcpd -cf %s
 
 - name: "remove disabled subnets files"
   file:
@@ -15,7 +15,7 @@
     label:
       - "{{ item.0.name }}"
       - "{{ item.1.name }}"
-  when: not item.1.active   
+  when: not item.1.active
 
 - name: "create subnets dhcp config file"
   template:
