@@ -2,7 +2,7 @@
 - name: "install packages"
   yum:
     name:
-      - epel-release    
+      - epel-release
       - bash-completion
       - atop
       - htop
@@ -11,10 +11,6 @@
       - dhcp
       - nano
       - tmux
+      - bind-utils
     state: latest
     update_cache: true
-
-- name: "yum update"
-  yum:
-    name: '*'
-    state: latest

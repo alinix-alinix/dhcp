@@ -1,4 +1,0 @@
----
-- name: setting correct time offset
-  timezone:
-    name: Europe/Moscow

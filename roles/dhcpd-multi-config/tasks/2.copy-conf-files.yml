@@ -8,7 +8,7 @@
     label:
       - "{{ item.0.name }}"
       - "{{ item.1.name }}"
-  when: not item.1.active   
+  when: not item.1.active
 
 - name: "create directory for subnet conf files"
   file:
@@ -19,7 +19,6 @@
 
 - name: "create subnets dhcp config file"
   template:
-    backup: "no"
     dest: "{{ DHCP_SUBNET_CONF_PATH }}/{{item.1.name}}.conf"
     src: "dhcpd_conf_footer.j2"
   loop: "{{ Network.group|subelements('subnets') }}"
@@ -31,15 +30,7 @@
 
 - name: "create main dhcp config file"
   template:
-    backup: "no"
     dest: "{{DHCP_SYSTEM_PATH}}/{{DHCP_FILE_NAME}}"
     src: "dhcpd_conf_header.j2"
     validate: "/usr/sbin/dhcpd -cf %s"
   notify: Restart dhcpd instance
-
-- name: "alter owner user:group of /var/lib/dhcpd"
-  file: 
-    path: /var/lib/dhcpd/dhcpd.leases # may be reverted to root in some ocasions
-    owner: dhcpd
-    group: dhcpd
-    mode: '0644'

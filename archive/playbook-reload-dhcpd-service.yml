@@ -4,4 +4,3 @@
   name: deploy fresh dhcp master instance
   roles:
     - role: reload-dhcpd-service
-    

@@ -1,9 +1,7 @@
 ---
 - name: "1.yum install epel-release and update"
   import_tasks: 1.yum-install-epel-release.yml
-- name: copy config files 
+- name: copy config files
   import_tasks: 2.copy-conf-files.yml
-- name: config daemons 
+- name: config daemons
   import_tasks: 3.config-daemons.yml
-- name: env preparation
-  import_tasks: 4.prepare-env.yml

@@ -11,4 +11,3 @@
   import_tasks: 10.systemd-daemon.yml
 - name: "7.regen-conf-unbound.yml"
   import_tasks: 7.regen-conf-unbound.yml
-

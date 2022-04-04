@@ -1,5 +1,5 @@
 ---
-- name: enable now unbound-keygen 
+- name: enable now unbound-keygen
   systemd:
     enabled: true
     force: true
