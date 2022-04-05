@@ -29,7 +29,7 @@ Network:
           pool_range_end: 192.168.80.200
         - name: "network-25-dev-office"
           description: "ingineers"
-          active: true
+          active: false
           guest: false
           bootp: true
           bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
