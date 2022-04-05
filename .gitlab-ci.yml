@@ -20,7 +20,7 @@ yamllint:
     - git log -p -2 --color
     - yamllint .
 
-Check apache balancer:
+Check httpd configs:
   stage: predeploy
   script:
     - pwd
@@ -36,4 +36,4 @@ Check apache balancer:
       - group_vars/all/main/dhcpd-subnets.yml
     refs:
       - master
-    tags: test_balancer
+    tags: refresh_configs
