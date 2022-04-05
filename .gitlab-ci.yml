@@ -36,4 +36,5 @@ Check httpd configs:
       - group_vars/all/main/dhcpd-subnets.yml
     refs:
       - master
-    tags: refresh_configs
+  tags:
+    - refresh_configs
