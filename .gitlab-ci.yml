@@ -28,7 +28,24 @@ Check httpd configs:
     - git log -p -2 --color
     - echo "$GLCI_ANSIBLE_SSH_KEY" > secrets/ansible.key
     - chmod 400 secrets/ansible.key
-    - ansible-playbook --user $GLCI_ANSIBLE_SSH_USER --private-key secrets/ansible.key playbook-dhcpd-multi-config.yml --diff --check --tags refresh_configs
+    - ansible-playbook --user $GLCI_ANSIBLE_SSH_USER --private-key secrets/ansible.key playbook-dhcpd-multi-config.yml --diff --check --tags refresh_config
+    - rm -rfv secrets/ansible.key
+    - pwd
+  only:
+    changes:
+      - group_vars/all/main/dhcpd-subnets.yml
+    refs:
+      - master
+
+refresh httpd configs:
+  stage: deploy
+  script:
+    - pwd
+    - git rev-parse --short HEAD
+    - git log -p -2 --color
+    - echo "$GLCI_ANSIBLE_SSH_KEY" > secrets/ansible.key
+    - chmod 400 secrets/ansible.key
+    - ansible-playbook --user $GLCI_ANSIBLE_SSH_USER --private-key secrets/ansible.key playbook-dhcpd-multi-config.yml --tags refresh_config
     - rm -rfv secrets/ansible.key
     - pwd
   only:
