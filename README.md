@@ -1,4 +1,6 @@
-#DHCP failover configuration playbook
+# DHCP failover configuration playbook
+
+# Внимание, используем правильные теги. Запускаем задачу холодного старта с cold_start, обновление конфигов делаем с помощью refresh_config
 
 
 option ntp-servers ip-address [, ip-address... ];

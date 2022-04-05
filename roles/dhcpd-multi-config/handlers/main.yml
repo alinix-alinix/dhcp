@@ -3,3 +3,8 @@
   service:
     name: dhcpd
     state: restarted
+
+- name: "dhcpd_exporter restart"
+  service:
+    name: dhcpd_exporter
+    state: restarted

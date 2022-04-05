@@ -4,6 +4,7 @@
     name:
       - epel-release
       - bash-completion
+      - net-tools
       - atop
       - htop
       - iftop
@@ -12,5 +13,7 @@
       - nano
       - tmux
       - bind-utils
+      - dhcpd-pools
     state: latest
     update_cache: true
+  tags: cold_start

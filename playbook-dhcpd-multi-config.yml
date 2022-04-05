@@ -7,4 +7,4 @@
     - init
     - dhcpd-multi-config
     - node_exporter
-  strategy: free
+  strategy: linear
