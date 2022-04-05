@@ -1,0 +1,39 @@
+---
+stages:
+  - verify
+  - predeploy
+  - deploy
+
+syntax-check:
+  stage: verify
+  script:
+    - pwd
+    - git rev-parse --short HEAD
+    - git log -p -2 --color
+    - ansible-playbook --syntax-check *.yml
+
+yamllint:
+  stage: verify
+  script:
+    - pwd
+    - git rev-parse --short HEAD
+    - git log -p -2 --color
+    - yamllint .
+
+Check apache balancer:
+  stage: predeploy
+  script:
+    - pwd
+    - git rev-parse --short HEAD
+    - git log -p -2 --color
+    - echo "$GLCI_ANSIBLE_SSH_KEY" > secrets/ansible.key
+    - chmod 400 secrets/ansible.key
+    - ansible-playbook --user $GLCI_ANSIBLE_SSH_USER --private-key secrets/ansible.key playbook-dhcpd-multi-config.yml --diff --check
+    - rm -rfv secrets/ansible.key
+    - pwd
+  only:
+    changes:
+      - group_vars/all/main/dhcpd-subnets.yml
+    refs:
+      - master
+    tags: test_balancer

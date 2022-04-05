@@ -25,6 +25,8 @@ DHCP_SUBNET_CONF_PATH: "{{ DHCP_SYSTEM_PATH }}/subnets"
 DHCP_SYSTEM_PATH: "/etc/dhcp"
 DHCP_FILE_NAME: "dhcpd.conf"
 
+DHCP_EXPORTER_PORT: 9367
+
 git_repo:
   url: "https://gitlab.petcorp.ru/sysadmins/service/dhcp/"
   admin: "s.stepanov@petshop.ru"

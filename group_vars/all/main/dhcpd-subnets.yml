@@ -27,7 +27,7 @@ Network:
           option_routers: 192.168.80.1
           pool_range_start: 192.168.80.100
           pool_range_end: 192.168.80.200
-        - name: "network-25-offices"
+        - name: "network-25-dev-office"
           description: "ingineers"
           active: true
           guest: false

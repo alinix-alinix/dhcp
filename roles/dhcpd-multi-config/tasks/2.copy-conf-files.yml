@@ -9,6 +9,9 @@
       - "{{ item.0.name }}"
       - "{{ item.1.name }}"
   when: not item.1.active
+  tags:
+    - refresh_config
+    - cold_start
 
 - name: "create directory for subnet conf files"
   file:
@@ -16,6 +19,9 @@
     state: directory
     owner: dhcpd
     mode: '0755'
+  tags:
+    - refresh_config
+    - cold_start
 
 - name: "create subnets dhcp config file"
   template:
@@ -27,10 +33,49 @@
       - "{{ item.0.name }}"
       - "{{ item.1.name }}"
   when: item.1.active
+  tags:
+    - refresh_config
+    - cold_start
 
 - name: "create main dhcp config file"
   template:
     dest: "{{DHCP_SYSTEM_PATH}}/{{DHCP_FILE_NAME}}"
     src: "dhcpd_conf_header.j2"
-    validate: "/usr/sbin/dhcpd -cf %s"
-  notify: Restart dhcpd instance
+    validate: "/usr/sbin/dhcpd -t -cf %s"
+  tags:
+    - refresh_config
+    - cold_start
+
+- name: dhcpd-exporter download
+  get_url:
+    url: "https://github.com/spagno/iscdhcpd_exporter/releases/download/v0.1.6/iscdhcpd_exporter-0.1.6.linux-amd64.tar.gz"
+    dest: "/tmp/iscdhcpd_exporter-0.1.6.linux-amd64.tar.gz"
+  tags:
+    - cold_start
+
+- name: unarchive
+  unarchive:
+    remote_src: true
+    src: /tmp/iscdhcpd_exporter-0.1.6.linux-amd64.tar.gz
+    dest: /tmp/
+  tags:
+    - cold_start
+
+- name: put dhcpd-exporter to its place
+  copy:
+    remote_src: true
+    src: /tmp/iscdhcpd_exporter-0.1.6.linux-amd64/iscdhcpd_exporter
+    dest: /usr/local/bin/iscdhcpd_exporter
+    owner: root
+    group: root
+    mode: 0755
+  tags:
+    - cold_start
+
+- name: dhcpd-exporter systemd unit-file
+  template:
+    src: dhcpd_exporter.service.j2
+    dest: /etc/systemd/system/dhcpd_exporter.service
+  notify: dhcpd_exporter restart
+  tags:
+    - exporter

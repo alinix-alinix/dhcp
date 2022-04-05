@@ -1,0 +1,6 @@
+[Unit]
+Description=Dhcpd_exporter
+[Service]
+ExecStart=/usr/local/bin/iscdhcpd_exporter --dhcpd.leases-file=/var/lib/dhcpd/dhcpd.leases
+[Install]
+WantedBy=default.target
