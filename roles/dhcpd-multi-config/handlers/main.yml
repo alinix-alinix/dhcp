@@ -1,9 +1,4 @@
 ---
-- name: "Restart dhcpd instance"
-  service:
-    name: dhcpd
-    state: restarted
-
 - name: "dhcpd_exporter restart"
   service:
     name: dhcpd_exporter
