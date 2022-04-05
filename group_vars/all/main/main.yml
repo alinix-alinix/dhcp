@@ -27,6 +27,8 @@ DHCP_FILE_NAME: "dhcpd.conf"
 
 DHCP_EXPORTER_PORT: 9367
 
+DNS_DOMAIN_NAME: "local.petcorp.ru"
+
 git_repo:
   url: "https://gitlab.petcorp.ru/sysadmins/service/dhcp/"
   admin: "s.stepanov@petshop.ru"
