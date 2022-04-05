@@ -1,7 +1,0 @@
----
-- name: Startup DNS-forwards
-  gather_facts: true
-  hosts: infra_service_dns_forwards
-  roles:
-    - role: dns-service
-  strategy: free

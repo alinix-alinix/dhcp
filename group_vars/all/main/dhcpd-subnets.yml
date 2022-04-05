@@ -1,44 +1,8 @@
 ---
 Network:
   group:
-    - name: "Subnets_offices"
+    - name: "Subnets_REZON"
       subnets:
-        - name: "network-35-dev-office-wifi"
-          description: "OPS-2099"
-          active: true
-          guest: false
-          bootp: false
-          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
-          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
-          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
-          subnet: 192.168.35.0
-          option_routers: 192.168.35.1
-          pool_range_start: 192.168.35.20
-          pool_range_end: 192.168.35.250
-        - name: "network-80-dev-office-guest-wifi"
-          description: "OPS-2099"
-          active: true
-          guest: true
-          bootp: false
-          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
-          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
-          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
-          subnet: 192.168.80.0
-          option_routers: 192.168.80.1
-          pool_range_start: 192.168.80.100
-          pool_range_end: 192.168.80.200
-        - name: "network-25-dev-office"
-          description: "ingineers"
-          active: true
-          guest: false
-          bootp: true
-          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
-          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
-          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
-          subnet: 192.168.25.0
-          option_routers: 192.168.25.1
-          pool_range_start: 192.168.25.100
-          pool_range_end: 192.168.25.200
         - name: "network-40-offices"
           description: "initial"
           active: true
@@ -209,6 +173,45 @@ Network:
           pool_range_start: 192.168.10.150
           pool_range_end: 192.168.10.200
 
+    - name: "Subnets_DEV-OFFICE"
+      subnets:
+        - name: "network-35-dev-office-wifi"
+          description: "OPS-2099"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.35.0
+          option_routers: 192.168.35.1
+          pool_range_start: 192.168.35.20
+          pool_range_end: 192.168.35.250
+        - name: "network-80-dev-office-guest-wifi"
+          description: "OPS-2099"
+          active: true
+          guest: true
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.80.0
+          option_routers: 192.168.80.1
+          pool_range_start: 192.168.80.100
+          pool_range_end: 192.168.80.200
+        - name: "network-25-dev-office"
+          description: "ingineers"
+          active: true
+          guest: false
+          bootp: true
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.25.0
+          option_routers: 192.168.25.1
+          pool_range_start: 192.168.25.100
+          pool_range_end: 192.168.25.200
+
     - name: "Subnets_shops"
       subnets:
         - name: vlan344_spb-v-chugunova10-6
@@ -333,7 +336,7 @@ Network:
           pool_range_end: 192.168.56.200
         - name: vlan057_spb-fuchika2
           description: "initial"
-          active: true
+          active: false
           guest: false
           bootp: false
           bootp_filename: "{{ VAR_BOOTP_FILENAME }}"

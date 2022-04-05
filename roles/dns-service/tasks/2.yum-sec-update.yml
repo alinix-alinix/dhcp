@@ -1,6 +1,0 @@
----
-- name: checking and install updates
-  yum:
-    security: false
-    name: "*"
-    state: latest
