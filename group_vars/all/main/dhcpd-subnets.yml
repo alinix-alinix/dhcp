@@ -214,6 +214,30 @@ Network:
 
     - name: "Subnets_shops"
       subnets:
+        - name: vlan351_spb-krasnoe-selo-teatralnaya-4a
+          description: "EOC-16051 11.04.2022"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.172.0
+          option_routers: 192.168.172.254
+          pool_range_start: 192.168.172.150
+          pool_range_end: 192.168.172.200
+        - name: vlan319_spb-kushelevskay-3A-2
+          description: "EOC-16051 11.04.2022"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.169.0
+          option_routers: 192.168.169.254
+          pool_range_start: 192.168.169.150
+          pool_range_end: 192.168.169.200
         - name: vlan344_spb-v-chugunova10-6
           description: "OPS-1964 14.02.2022"
           active: true
