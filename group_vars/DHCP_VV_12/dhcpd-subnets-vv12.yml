@@ -224,7 +224,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.176.0
           option_routers: 192.168.176.254
-          pool_range_start: 192.168.176.150
+          pool_range_start: 192.168.176.160
           pool_range_end: 192.168.176.200
         - name: vlan351_spb-krasnoe-selo-teatralnaya-4a
           description: "EOC-16051 11.04.2022"
@@ -236,7 +236,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.172.0
           option_routers: 192.168.172.254
-          pool_range_start: 192.168.172.150
+          pool_range_start: 192.168.172.160
           pool_range_end: 192.168.172.200
         - name: vlan319_spb-kushelevskay-3A-2
           description: "EOC-16051 11.04.2022"
@@ -248,7 +248,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.169.0
           option_routers: 192.168.169.254
-          pool_range_start: 192.168.169.150
+          pool_range_start: 192.168.169.160
           pool_range_end: 192.168.169.200
         - name: vlan344_spb-v-chugunova10-6
           description: "OPS-1964 14.02.2022"
@@ -260,7 +260,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.186.0
           option_routers: 192.168.186.254
-          pool_range_start: 192.168.186.150
+          pool_range_start: 192.168.186.160
           pool_range_end: 192.168.186.200
         - name: vlan046_utochkina_6_k_1
           description: "initial"
@@ -272,7 +272,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.46.0
           option_routers: 192.168.46.254
-          pool_range_start: 192.168.46.150
+          pool_range_start: 192.168.46.160
           pool_range_end: 192.168.46.200
         - name: vlan045_spb-slodatakorzuna32
           description: "initial"
@@ -284,7 +284,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.45.0
           option_routers: 192.168.45.254
-          pool_range_start: 192.168.45.150
+          pool_range_start: 192.168.45.160
           pool_range_end: 192.168.45.200
         - name: vlan047_spb-pargolovskaya
           description: "initial"
@@ -296,7 +296,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.47.0
           option_routers: 192.168.47.254
-          pool_range_start: 192.168.47.150
+          pool_range_start: 192.168.47.160
           pool_range_end: 192.168.47.200
         - name: vlan049_spb-slavy15
           description: "initial"
@@ -308,7 +308,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.49.0
           option_routers: 192.168.49.254
-          pool_range_start: 192.168.49.150
+          pool_range_start: 192.168.49.160
           pool_range_end: 192.168.49.200
         - name: vlan052_spb-tulskaya_9
           description: "initial"
@@ -320,7 +320,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.52.0
           option_routers: 192.168.52.254
-          pool_range_start: 192.168.52.150
+          pool_range_start: 192.168.52.160
           pool_range_end: 192.168.52.200
         - name: vlan053_pushkin-moskovskaya25
           description: "initial"
@@ -332,7 +332,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.53.0
           option_routers: 192.168.53.254
-          pool_range_start: 192.168.53.150
+          pool_range_start: 192.168.53.160
           pool_range_end: 192.168.53.200
         - name: vlan054_spb-tarasova12
           description: "initial"
@@ -344,7 +344,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.54.0
           option_routers: 192.168.54.254
-          pool_range_start: 192.168.54.150
+          pool_range_start: 192.168.54.160
           pool_range_end: 192.168.54.200
         - name: vlan055_spb-razjezaya44
           description: "initial"
@@ -356,7 +356,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.55.0
           option_routers: 192.168.55.254
-          pool_range_start: 192.168.55.150
+          pool_range_start: 192.168.55.160
           pool_range_end: 192.168.55.200
         - name: vlan056_spb-kolpinskoe.sh32
           description: "initial"
@@ -368,7 +368,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.56.0
           option_routers: 192.168.56.254
-          pool_range_start: 192.168.56.150
+          pool_range_start: 192.168.56.160
           pool_range_end: 192.168.56.200
         - name: vlan057_spb-fuchika2
           description: "initial"
@@ -380,7 +380,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.57.0
           option_routers: 192.168.57.254
-          pool_range_start: 192.168.57.150
+          pool_range_start: 192.168.57.160
           pool_range_end: 192.168.57.200
         - name: vlan058_spb-optikov34
           description: "initial"
@@ -392,7 +392,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.58.0
           option_routers: 192.168.58.254
-          pool_range_start: 192.168.58.150
+          pool_range_start: 192.168.58.160
           pool_range_end: 192.168.58.200
         - name: vlan070_spb-vsevolozhskiy61
           description: "initial"
@@ -404,7 +404,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.70.0
           option_routers: 192.168.70.254
-          pool_range_start: 192.168.70.150
+          pool_range_start: 192.168.70.160
           pool_range_end: 192.168.70.200
         - name: vlan071_spb-lermontovky50
           description: "initial"
@@ -416,7 +416,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.71.0
           option_routers: 192.168.71.254
-          pool_range_start: 192.168.71.150
+          pool_range_start: 192.168.71.160
           pool_range_end: 192.168.71.200
         - name: vlan074_spb-varshavskaya48
           description: "initial"
@@ -428,7 +428,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.74.0
           option_routers: 192.168.74.254
-          pool_range_start: 192.168.74.150
+          pool_range_start: 192.168.74.160
           pool_range_end: 192.168.74.200
         - name: vlan086_spb-general_simonyaka1
           description: "initial"
@@ -440,7 +440,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.86.0
           option_routers: 192.168.86.254
-          pool_range_start: 192.168.86.150
+          pool_range_start: 192.168.86.160
           pool_range_end: 192.168.86.200
         - name: vlan096_spb-leningradskaya7
           description: "initial"
@@ -452,7 +452,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.96.0
           option_routers: 192.168.96.254
-          pool_range_start: 192.168.96.150
+          pool_range_start: 192.168.96.160
           pool_range_end: 192.168.96.200
         - name: vlan097_spb-arsenalnaya5
           description: "initial"
@@ -464,7 +464,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.97.0
           option_routers: 192.168.97.254
-          pool_range_start: 192.168.97.150
+          pool_range_start: 192.168.97.160
           pool_range_end: 192.168.97.200
         - name: vlan032_murino-tihaya14
           description: "initial"
@@ -476,7 +476,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.32.0
           option_routers: 192.168.32.254
-          pool_range_start: 192.168.32.150
+          pool_range_start: 192.168.32.160
           pool_range_end: 192.168.32.200
         - name: vlan259_spb-kolomjazhskij26
           description: "initial"
@@ -488,7 +488,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.102.0
           option_routers: 192.168.102.254
-          pool_range_start: 192.168.102.150
+          pool_range_start: 192.168.102.160
           pool_range_end: 192.168.102.200
         - name: vlan135_spb-kollontaj23
           description: "initial"
@@ -500,7 +500,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.101.0
           option_routers: 192.168.101.254
-          pool_range_start: 192.168.101.150
+          pool_range_start: 192.168.101.160
           pool_range_end: 192.168.101.200
         - name: vlan347_spb-pulkovskaja15
           description: "initial"
@@ -512,7 +512,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.115.0
           option_routers: 192.168.115.254
-          pool_range_start: 192.168.115.150
+          pool_range_start: 192.168.115.160
           pool_range_end: 192.168.115.200
         - name: vlan260_spb-stachek96
           description: "initial"
@@ -524,7 +524,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.103.0
           option_routers: 192.168.103.254
-          pool_range_start: 192.168.103.150
+          pool_range_start: 192.168.103.160
           pool_range_end: 192.168.103.200
         - name: vlan261_spb-karavaevskaja28
           description: "initial"
@@ -536,7 +536,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.104.0
           option_routers: 192.168.104.254
-          pool_range_start: 192.168.104.150
+          pool_range_start: 192.168.104.160
           pool_range_end: 192.168.104.200
         - name: vlan321_spb-perekopskaja3
           description: "initial"
@@ -548,7 +548,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.105.0
           option_routers: 192.168.105.254
-          pool_range_start: 192.168.105.150
+          pool_range_start: 192.168.105.160
           pool_range_end: 192.168.105.200
         - name: vlan322_spb-grazhdanskij116-5
           description: "initial"
@@ -560,7 +560,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.106.0
           option_routers: 192.168.106.254
-          pool_range_start: 192.168.106.150
+          pool_range_start: 192.168.106.160
           pool_range_end: 192.168.106.200
         - name: vlan416_spb-nekrasova44
           description: "initial"
@@ -572,7 +572,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.116.0
           option_routers: 192.168.116.254
-          pool_range_start: 192.168.116.150
+          pool_range_start: 192.168.116.160
           pool_range_end: 192.168.116.200
         - name: vlan346_spb-aviakonstruktorov3
           description: "initial"
@@ -584,7 +584,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.117.0
           option_routers: 192.168.117.254
-          pool_range_start: 192.168.117.150
+          pool_range_start: 192.168.117.160
           pool_range_end: 192.168.117.200
         - name: vlan324_spb-budapeshtskaja39
           description: "initial"
@@ -596,7 +596,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.108.0
           option_routers: 192.168.108.254
-          pool_range_start: 192.168.108.150
+          pool_range_start: 192.168.108.160
           pool_range_end: 192.168.108.200
         - name: vlan418_spb-savushkina1
           description: "initial"
@@ -608,7 +608,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.118.0
           option_routers: 192.168.118.254
-          pool_range_start: 192.168.118.150
+          pool_range_start: 192.168.118.160
           pool_range_end: 192.168.118.200
         - name: vlan120_spb-altayskaya21
           description: "initial"
@@ -620,7 +620,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.120.0
           option_routers: 192.168.120.254
-          pool_range_start: 192.168.120.150
+          pool_range_start: 192.168.120.160
           pool_range_end: 192.168.120.200
         - name: vlan121_spb-novatorov11
           description: "initial"
@@ -632,7 +632,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.121.0
           option_routers: 192.168.121.254
-          pool_range_start: 192.168.121.150
+          pool_range_start: 192.168.121.160
           pool_range_end: 192.168.121.200
         - name: vlan420_spb-udelnyj21
           description: "initial"
@@ -644,7 +644,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.119.0
           option_routers: 192.168.119.254
-          pool_range_start: 192.168.119.150
+          pool_range_start: 192.168.119.160
           pool_range_end: 192.168.119.200
         - name: vlan329_spb-jengel'sa115-1
           description: "initial"
@@ -656,7 +656,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.110.0
           option_routers: 192.168.110.254
-          pool_range_start: 192.168.110.150
+          pool_range_start: 192.168.110.160
           pool_range_end: 192.168.110.200
         - name: vlan122_spb-novatorov102
           description: "initial"
@@ -668,7 +668,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.122.0
           option_routers: 192.168.122.254
-          pool_range_start: 192.168.122.150
+          pool_range_start: 192.168.122.160
           pool_range_end: 192.168.122.200
         - name: vlan255_spb-8linia35
           description: "initial"
@@ -680,7 +680,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.125.0
           option_routers: 192.168.125.254
-          pool_range_start: 192.168.125.150
+          pool_range_start: 192.168.125.160
           pool_range_end: 192.168.125.200
         - name: vlan254_spb-pyatiletok3
           description: "initial"
@@ -692,7 +692,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.126.0
           option_routers: 192.168.126.254
-          pool_range_start: 192.168.126.150
+          pool_range_start: 192.168.126.160
           pool_range_end: 192.168.126.200
         - name: vlan423_gatch_avia_zver1-8
           description: "initial"
@@ -704,7 +704,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.127.0
           option_routers: 192.168.127.254
-          pool_range_start: 192.168.127.150
+          pool_range_start: 192.168.127.160
           pool_range_end: 192.168.127.200
         - name: vlan199_spb-komendant71
           description: "initial"
@@ -716,7 +716,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.128.0
           option_routers: 192.168.128.254
-          pool_range_start: 192.168.128.150
+          pool_range_start: 192.168.128.160
           pool_range_end: 192.168.128.200
         - name: vlan130_spb-marata80
           description: "initial"
@@ -728,7 +728,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.130.0
           option_routers: 192.168.130.254
-          pool_range_start: 192.168.130.150
+          pool_range_start: 192.168.130.160
           pool_range_end: 192.168.130.200
         - name: vlan131_spb-sadovaya97
           description: "initial"
@@ -740,7 +740,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.131.0
           option_routers: 192.168.131.254
-          pool_range_start: 192.168.131.150
+          pool_range_start: 192.168.131.160
           pool_range_end: 192.168.131.200
         - name: vlan137_murino-skandinavskiy4
           description: "initia"
@@ -752,7 +752,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.137.0
           option_routers: 192.168.137.254
-          pool_range_start: 192.168.137.150
+          pool_range_start: 192.168.137.160
           pool_range_end: 192.168.137.200
         - name: vlan146_spb-bzelenina3
           description: "initial"
@@ -764,7 +764,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.146.0
           option_routers: 192.168.146.254
-          pool_range_start: 192.168.146.150
+          pool_range_start: 192.168.146.160
           pool_range_end: 192.168.146.200
         - name: vlan161_spb-babushk48
           description: "initial"
@@ -776,7 +776,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.161.0
           option_routers: 192.168.161.254
-          pool_range_start: 192.168.161.150
+          pool_range_start: 192.168.161.160
           pool_range_end: 192.168.161.200
         - name: vlan162_spb-yargasheka4
           description: "initial"
@@ -788,7 +788,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.162.0
           option_routers: 192.168.162.254
-          pool_range_start: 192.168.162.150
+          pool_range_start: 192.168.162.160
           pool_range_end: 192.168.162.200
         - name: vlan147_spb-zanevskiy23
           description: "initial"
@@ -800,7 +800,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.147.0
           option_routers: 192.168.147.254
-          pool_range_start: 192.168.147.150
+          pool_range_start: 192.168.147.160
           pool_range_end: 192.168.147.200
         - name: vlan163_spb-belikuna8
           description: "initial"
@@ -812,7 +812,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.163.0
           option_routers: 192.168.163.254
-          pool_range_start: 192.168.163.150
+          pool_range_start: 192.168.163.160
           pool_range_end: 192.168.163.200
         - name: vlan148_spb-makarova22
           description: "initial"
@@ -824,7 +824,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.148.0
           option_routers: 192.168.148.254
-          pool_range_start: 192.168.148.150
+          pool_range_start: 192.168.148.160
           pool_range_end: 192.168.148.200
         - name: vlan149_spb-engelsa30
           description: "initial"
@@ -836,7 +836,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.149.0
           option_routers: 192.168.149.254
-          pool_range_start: 192.168.149.150
+          pool_range_start: 192.168.149.160
           pool_range_end: 192.168.149.200
         - name: vlan150_spb-sitninskoy20
           description: "initial"
@@ -848,7 +848,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.150.0
           option_routers: 192.168.150.254
-          pool_range_start: 192.168.150.150
+          pool_range_start: 192.168.150.160
           pool_range_end: 192.168.150.200
         - name: vlan151_spb-sikeyrosa6
           description: "initial"
@@ -860,7 +860,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.151.0
           option_routers: 192.168.151.254
-          pool_range_start: 192.168.151.150
+          pool_range_start: 192.168.151.160
           pool_range_end: 192.168.151.200
         - name: vlan164_spb-dibenko22
           description: "initial"
@@ -872,7 +872,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.164.0
           option_routers: 192.168.164.254
-          pool_range_start: 192.168.164.150
+          pool_range_start: 192.168.164.160
           pool_range_end: 192.168.164.200
         - name: vlan165_spb-elizarova18
           description: "initial"
@@ -884,7 +884,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.165.0
           option_routers: 192.168.165.254
-          pool_range_start: 192.168.165.150
+          pool_range_start: 192.168.165.160
           pool_range_end: 192.168.165.200
         - name: vlan166_spb-kosigina26
           description: "initial"
@@ -896,7 +896,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.166.0
           option_routers: 192.168.166.254
-          pool_range_start: 192.168.166.150
+          pool_range_start: 192.168.166.160
           pool_range_end: 192.168.166.200
         - name: vlan168_spb-moskovskiy155
           description: "initial"
@@ -908,7 +908,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.168.0
           option_routers: 192.168.168.254
-          pool_range_start: 192.168.168.150
+          pool_range_start: 192.168.168.160
           pool_range_end: 192.168.168.200
         - name: vlan258_spb-zvezdnaya9A
           description: "initial"
@@ -920,7 +920,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.170.0
           option_routers: 192.168.170.254
-          pool_range_start: 192.168.170.150
+          pool_range_start: 192.168.170.160
           pool_range_end: 192.168.170.200
         - name: vlan184_spb-pervomaiskaya15
           description: "initial"
@@ -932,7 +932,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.171.0
           option_routers: 192.168.171.254
-          pool_range_start: 192.168.171.150
+          pool_range_start: 192.168.171.160
           pool_range_end: 192.168.171.200
         - name: vlan227_spb-tosno_boyarova4
           description: "initial"
@@ -944,7 +944,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.173.0
           option_routers: 192.168.173.254
-          pool_range_start: 192.168.173.150
+          pool_range_start: 192.168.173.160
           pool_range_end: 192.168.173.200
         - name: vlan194_spb-savushkina124
           description: "initial"
@@ -956,7 +956,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.174.0
           option_routers: 192.168.174.254
-          pool_range_start: 192.168.174.150
+          pool_range_start: 192.168.174.160
           pool_range_end: 192.168.174.200
         - name: vlan175_spb-leninsky147
           description: "initial"
@@ -968,7 +968,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.175.0
           option_routers: 192.168.175.254
-          pool_range_start: 192.168.175.150
+          pool_range_start: 192.168.175.160
           pool_range_end: 192.168.175.200
         - name: vlan155_spb-f.abramova21
           description: "initial"
@@ -980,7 +980,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.177.0
           option_routers: 192.168.177.254
-          pool_range_start: 192.168.177.150
+          pool_range_start: 192.168.177.160
           pool_range_end: 192.168.177.200
         - name: vlan123_spb-murino16-9
           description: "initial"
@@ -992,7 +992,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.178.0
           option_routers: 192.168.178.254
-          pool_range_start: 192.168.178.150
+          pool_range_start: 192.168.178.160
           pool_range_end: 192.168.178.200
         - name: vlan179_spb-yuznaya5
           description: "initial"
@@ -1004,7 +1004,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.179.0
           option_routers: 192.168.179.254
-          pool_range_start: 192.168.179.150
+          pool_range_start: 192.168.179.160
           pool_range_end: 192.168.179.200
         - name: vlan180_spb-marshgovor14
           description: "initial"
@@ -1016,7 +1016,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.180.0
           option_routers: 192.168.180.254
-          pool_range_start: 192.168.180.150
+          pool_range_start: 192.168.180.160
           pool_range_end: 192.168.180.200
         - name: vlan181_spb-nastavnikov43
           description: "initial"
@@ -1028,7 +1028,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.181.0
           option_routers: 192.168.181.254
-          pool_range_start: 192.168.181.150
+          pool_range_start: 192.168.181.160
           pool_range_end: 192.168.181.200
         - name: vlan195_spb-ushinskogo25
           description: "initial"
@@ -1040,7 +1040,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.195.0
           option_routers: 192.168.195.254
-          pool_range_start: 192.168.195.150
+          pool_range_start: 192.168.195.160
           pool_range_end: 192.168.195.200
         - name: vlan177_kolpinotruda7k5
           description: "initial"
@@ -1052,7 +1052,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.223.0
           option_routers: 192.168.223.254
-          pool_range_start: 192.168.223.150
+          pool_range_start: 192.168.223.160
           pool_range_end: 192.168.223.200
         - name: vlan115_spb-piskarevsky40
           description: "initial"
@@ -1064,7 +1064,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.224.0
           option_routers: 192.168.224.254
-          pool_range_start: 192.168.224.150
+          pool_range_start: 192.168.224.160
           pool_range_end: 192.168.224.200
         - name: vlan325_spb-moskovsky172
           description: "initial"
@@ -1076,7 +1076,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.225.0
           option_routers: 192.168.225.254
-          pool_range_start: 192.168.225.150
+          pool_range_start: 192.168.225.160
           pool_range_end: 192.168.225.200
         - name: vlan116_spb-kultury29
           description: "initial"
@@ -1088,7 +1088,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.226.0
           option_routers: 192.168.226.254
-          pool_range_start: 192.168.226.150
+          pool_range_start: 192.168.226.160
           pool_range_end: 192.168.226.200
         - name: vlan153_spb-hudozhnikov10
           description: "initial"
@@ -1100,7 +1100,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.227.0
           option_routers: 192.168.227.254
-          pool_range_start: 192.168.227.150
+          pool_range_start: 192.168.227.160
           pool_range_end: 192.168.227.200
         - name: vlan156_spb-prosvyacheniya30
           description: "initial"
@@ -1112,7 +1112,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.228.0
           option_routers: 192.168.228.254
-          pool_range_start: 192.168.228.150
+          pool_range_start: 192.168.228.160
           pool_range_end: 192.168.228.200
         - name: vlan124_spb-savushkina127
           description: "initial"
@@ -1124,7 +1124,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.229.0
           option_routers: 192.168.229.254
-          pool_range_start: 192.168.229.150
+          pool_range_start: 192.168.229.160
           pool_range_end: 192.168.229.200
         - name: vlan388_spb_kirochnaya_8
           description: "initial"
@@ -1136,7 +1136,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.230.0
           option_routers: 192.168.230.254
-          pool_range_start: 192.168.230.150
+          pool_range_start: 192.168.230.160
           pool_range_end: 192.168.230.200
         - name: vlan176_kolpinotverskaya38
           description: "initial"
@@ -1148,7 +1148,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.231.0
           option_routers: 192.168.231.254
-          pool_range_start: 192.168.231.150
+          pool_range_start: 192.168.231.160
           pool_range_end: 192.168.231.200
         - name: vlan129_spb-smolyachkova14
           description: "initial"
@@ -1160,7 +1160,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.233.0
           option_routers: 192.168.233.254
-          pool_range_start: 192.168.233.150
+          pool_range_start: 192.168.233.160
           pool_range_end: 192.168.233.200
         - name: vlan133_spb-moskovskiy2
           description: "initial"
@@ -1172,7 +1172,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.234.0
           option_routers: 192.168.234.254
-          pool_range_start: 192.168.234.150
+          pool_range_start: 192.168.234.160
           pool_range_end: 192.168.234.200
         - name: vlan170_spb-olecodundycha33
           description: "initial"
@@ -1184,7 +1184,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.235.0
           option_routers: 192.168.235.254
-          pool_range_start: 192.168.235.150
+          pool_range_start: 192.168.235.160
           pool_range_end: 192.168.235.200
         - name: vlan154_spb-kondratievski51
           description: "initial"
@@ -1196,7 +1196,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.237.0
           option_routers: 192.168.237.254
-          pool_range_start: 192.168.237.150
+          pool_range_start: 192.168.237.160
           pool_range_end: 192.168.237.200
         - name: vlan104_spb-bogatyrsky49k2
           description: "initial"
@@ -1208,7 +1208,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.238.0
           option_routers: 192.168.238.254
-          pool_range_start: 192.168.238.150
+          pool_range_start: 192.168.238.160
           pool_range_end: 192.168.238.200
         - name: vlan142_spb-ilushina1
           description: "initial"
@@ -1220,7 +1220,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.239.0
           option_routers: 192.168.239.254
-          pool_range_start: 192.168.239.150
+          pool_range_start: 192.168.239.160
           pool_range_end: 192.168.239.200
         - name: vlan025_spb-s.kovalevskoy1
           description: "initial"
@@ -1232,7 +1232,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.240.0
           option_routers: 192.168.240.254
-          pool_range_start: 192.168.240.150
+          pool_range_start: 192.168.240.160
           pool_range_end: 192.168.240.200
         - name: vlan268_spb-novatorov10
           description: "initial"
@@ -1244,7 +1244,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.242.0
           option_routers: 192.168.242.254
-          pool_range_start: 192.168.242.150
+          pool_range_start: 192.168.242.160
           pool_range_end: 192.168.242.200
         - name: vlan243_spb-nabgriboed42
           description: "initial"
@@ -1256,7 +1256,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.243.0
           option_routers: 192.168.243.254
-          pool_range_start: 192.168.243.150
+          pool_range_start: 192.168.243.160
           pool_range_end: 192.168.243.200
         - name: vlan244_spb-kirovsk
           description: "initial"
@@ -1268,7 +1268,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.244.0
           option_routers: 192.168.244.254
-          pool_range_start: 192.168.244.150
+          pool_range_start: 192.168.244.160
           pool_range_end: 192.168.244.200
         - name: vlan517_spb-golikova50
           description: "initial"
@@ -1280,7 +1280,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.245.0
           option_routers: 192.168.245.254
-          pool_range_start: 192.168.245.150
+          pool_range_start: 192.168.245.160
           pool_range_end: 192.168.245.200
         - name: vlan250_spb-lunacharskogo54
           description: "initial"
@@ -1292,7 +1292,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.250.0
           option_routers: 192.168.250.254
-          pool_range_start: 192.168.250.150
+          pool_range_start: 192.168.250.160
           pool_range_end: 192.168.250.200
         - name: vlan251_spb-bolshevikov25
           description: "initial"
@@ -1304,7 +1304,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.251.0
           option_routers: 192.168.251.254
-          pool_range_start: 192.168.251.150
+          pool_range_start: 192.168.251.160
           pool_range_end: 192.168.251.200
         - name: vlan159_spb-nalichnoy40
           description: "initial"
@@ -1316,7 +1316,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.159.0
           option_routers: 192.168.159.254
-          pool_range_start: 192.168.159.150
+          pool_range_start: 192.168.159.160
           pool_range_end: 192.168.159.200
         - name: vlan158_spb-nauki8
           description: "initial"
@@ -1328,7 +1328,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.158.0
           option_routers: 192.168.158.254
-          pool_range_start: 192.168.158.150
+          pool_range_start: 192.168.158.160
           pool_range_end: 192.168.158.200
         - name: vlan157_spb-esenina32
           description: "initial"
@@ -1340,7 +1340,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.157.0
           option_routers: 192.168.157.254
-          pool_range_start: 192.168.157.150
+          pool_range_start: 192.168.157.160
           pool_range_end: 192.168.157.200
         - name: vlan152_spb-bporohovskaya
           description: "initial"
@@ -1352,7 +1352,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.152.0
           option_routers: 192.168.152.254
-          pool_range_start: 192.168.152.150
+          pool_range_start: 192.168.152.160
           pool_range_end: 192.168.152.200
         - name: vlan319_spb-torzhkovsk1
           description: "closed because of OPS-1902"
@@ -1364,7 +1364,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.156.0
           option_routers: 192.168.156.254
-          pool_range_start: 192.168.156.150
+          pool_range_start: 192.168.156.160
           pool_range_end: 192.168.156.200
         - name: vlan314_spb-murinskya-dor78
           description: "initial"
@@ -1376,7 +1376,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.153.0
           option_routers: 192.168.153.254
-          pool_range_start: 192.168.153.150
+          pool_range_start: 192.168.153.160
           pool_range_end: 192.168.153.200
         - name: vlan330_spb-f_abramova4
           description: "initial"
@@ -1388,7 +1388,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.155.0
           option_routers: 192.168.155.254
-          pool_range_start: 192.168.155.150
+          pool_range_start: 192.168.155.160
           pool_range_end: 192.168.155.200
         - name: vlan240_spb-dudina25
           description: "initial"
@@ -1400,7 +1400,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.154.0
           option_routers: 192.168.154.254
-          pool_range_start: 192.168.154.150
+          pool_range_start: 192.168.154.160
           pool_range_end: 192.168.154.200
         - name: vlan262_spb-Nauki-24A-1
           description: "initial"
@@ -1412,7 +1412,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.183.0
           option_routers: 192.168.183.254
-          pool_range_start: 192.168.183.150
+          pool_range_start: 192.168.183.160
           pool_range_end: 192.168.183.200
         - name: vlan263_spb-Leninskiy-87a-1
           description: "initial"
@@ -1424,7 +1424,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.184.0
           option_routers: 192.168.184.254
-          pool_range_start: 192.168.184.150
+          pool_range_start: 192.168.184.160
           pool_range_end: 192.168.184.200
         - name: vlan094_spb-Katernikov-7A
           description: "initial"
@@ -1436,7 +1436,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.94.0
           option_routers: 192.168.94.254
-          pool_range_start: 192.168.94.150
+          pool_range_start: 192.168.94.160
           pool_range_end: 192.168.94.200
         - name: vlan331_SPB-Yuntolovskiy-49a
           description: "initial"
@@ -1448,7 +1448,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.185.0
           option_routers: 192.168.185.254
-          pool_range_start: 192.168.185.150
+          pool_range_start: 192.168.185.160
           pool_range_end: 192.168.185.200
         - name: vlan069_spb-murinskayadoroga_53
           description: "initial"
@@ -1460,7 +1460,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.69.0
           option_routers: 192.168.69.254
-          pool_range_start: 192.168.69.150
+          pool_range_start: 192.168.69.160
           pool_range_end: 192.168.69.200
         - name: vlan076_SPB_Nalichnaya_33
           description: "initial"
@@ -1472,7 +1472,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.76.0
           option_routers: 192.168.76.254
-          pool_range_start: 192.168.76.150
+          pool_range_start: 192.168.76.160
           pool_range_end: 192.168.76.200
         - name: vlan160_spb-bolshevikov-9
           description: "initial"
@@ -1484,7 +1484,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.160.0
           option_routers: 192.168.160.254
-          pool_range_start: 192.168.160.150
+          pool_range_start: 192.168.160.160
           pool_range_end: 192.168.160.200
         - name: vlan224_spb-evropeiskii-16
           description: "initial"
@@ -1496,7 +1496,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.246.0
           option_routers: 192.168.246.254
-          pool_range_start: 192.168.246.150
+          pool_range_start: 192.168.246.160
           pool_range_end: 192.168.246.200
         - name: vlan067_spb-pogran-garkavy
           description: "initial"
@@ -1508,7 +1508,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.67.0
           option_routers: 192.168.67.254
-          pool_range_start: 192.168.67.150
+          pool_range_start: 192.168.67.160
           pool_range_end: 192.168.67.200
         - name: vlan349_SPB_Veteranov_169-6
           description: "initial"
@@ -1520,7 +1520,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.77.0
           option_routers: 192.168.77.254
-          pool_range_start: 192.168.77.150
+          pool_range_start: 192.168.77.160
           pool_range_end: 192.168.77.200
         - name: vlan348_SPB_Narodnaya16
           description: "initial"
@@ -1532,7 +1532,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.78.0
           option_routers: 192.168.78.254
-          pool_range_start: 192.168.78.150
+          pool_range_start: 192.168.78.160
           pool_range_end: 192.168.78.200
         - name: vlan320_spb-gatchina-25-oktyabrya
           description: "initial"
@@ -1544,7 +1544,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.48.0
           option_routers: 192.168.48.254
-          pool_range_start: 192.168.48.150
+          pool_range_start: 192.168.48.160
           pool_range_end: 192.168.48.200
         - name: vlan225_pushkin_kuzminskoe_sh_225
           description: "initial"
@@ -1556,7 +1556,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.59.0
           option_routers: 192.168.59.254
-          pool_range_start: 192.168.59.150
+          pool_range_start: 192.168.59.160
           pool_range_end: 192.168.59.200
         - name: vlan061_spb-baikonurskaya-22a
           description: "initial"
@@ -1568,7 +1568,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.61.0
           option_routers: 192.168.61.254
-          pool_range_start: 192.168.61.150
+          pool_range_start: 192.168.61.160
           pool_range_end: 192.168.61.200
         - name: vlan332_spb_Parashutnaya_63_k1
           description: "initial"
@@ -1580,7 +1580,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.79.0
           option_routers: 192.168.79.254
-          pool_range_start: 192.168.79.150
+          pool_range_start: 192.168.79.160
           pool_range_end: 192.168.79.200
         - name: vlan228_spb-murino-mendeleevskiy
           description: "initial"
@@ -1592,7 +1592,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.62.0
           option_routers: 192.168.62.254
-          pool_range_start: 192.168.62.150
+          pool_range_start: 192.168.62.160
           pool_range_end: 192.168.62.200
         - name: vlan226_Sertolovo_svirskaya_1_1
           description: "initial"
@@ -1604,7 +1604,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.138.0
           option_routers: 192.168.138.254
-          pool_range_start: 192.168.138.150
+          pool_range_start: 192.168.138.160
           pool_range_end: 192.168.138.200
         - name: vlan333_murino_vorontsovskii_14
           description: "initial"
@@ -1616,7 +1616,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.109.0
           option_routers: 192.168.109.254
-          pool_range_start: 192.168.109.150
+          pool_range_start: 192.168.109.160
           pool_range_end: 192.168.109.200
         - name: vlan350_spb-krasnoarmeiskii-15a
           description: "initial"
@@ -1628,7 +1628,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.112.0
           option_routers: 192.168.112.254
-          pool_range_start: 192.168.112.150
+          pool_range_start: 192.168.112.160
           pool_range_end: 192.168.112.200
         - name: vlan079_spb-svetlanovskii-66
           description: "initial"
@@ -1640,7 +1640,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.95.0
           option_routers: 192.168.95.254
-          pool_range_start: 192.168.95.150
+          pool_range_start: 192.168.95.160
           pool_range_end: 192.168.95.200
         - name: vlan075_spb-zarechnaya-19a
           description: "initial"
@@ -1652,7 +1652,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.75.0
           option_routers: 192.168.75.254
-          pool_range_start: 192.168.75.150
+          pool_range_start: 192.168.75.160
           pool_range_end: 192.168.75.200
         - name: vlan323_spb-geroev18
           description: "hepldesk issue #BOO-87128"
@@ -1664,5 +1664,5 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.50.0
           option_routers: 192.168.50.254
-          pool_range_start: 192.168.50.150
+          pool_range_start: 192.168.50.160
           pool_range_end: 192.168.50.200
