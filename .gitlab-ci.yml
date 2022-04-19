@@ -34,7 +34,7 @@ Check httpd configs:
     - sleep 10
   only:
     changes:
-      - group_vars/all/main/dhcpd-subnets.yml
+      - group_vars/infra_service_dhcp_vv12/dhcpd-subnets-vv12.yml
     refs:
       - master
 
@@ -52,6 +52,6 @@ refresh httpd configs:
     - sleep 10
   only:
     changes:
-      - group_vars/all/main/dhcpd-subnets.yml
+      - group_vars/infra_service_dhcp_vv12/dhcpd-subnets-vv12.yml
     refs:
       - master
