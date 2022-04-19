@@ -372,7 +372,7 @@ Network:
           pool_range_end: 192.168.56.200
         - name: vlan057_spb-fuchika2
           description: "initial"
-          active: false
+          active: true
           guest: false
           bootp: false
           bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
