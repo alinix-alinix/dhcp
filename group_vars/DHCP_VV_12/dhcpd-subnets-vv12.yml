@@ -101,8 +101,8 @@ Network:
           pool_range_start: 192.168.3.50
           pool_range_end: 192.168.3.200
         - name: "network-14-vlan302-RDPs"
-          description: "initial"
-          active: true
+          description: "OPS-2171 - disabled on 23.04.2022"
+          active: false
           guest: false
           bootp: false
           bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
