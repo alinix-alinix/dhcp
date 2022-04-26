@@ -35,6 +35,7 @@ Check httpd configs:
   only:
     changes:
       - group_vars/DHCP_VV_12/dhcpd-subnets-vv12.yml
+      - group_vars/DHCP_MIRAN2/dhcpd-subnets-MIRAN2.yml
     refs:
       - master
 
@@ -53,5 +54,6 @@ refresh httpd configs:
   only:
     changes:
       - group_vars/DHCP_VV_12/dhcpd-subnets-vv12.yml
+      - group_vars/DHCP_MIRAN2/dhcpd-subnets-MIRAN2.yml
     refs:
       - master
