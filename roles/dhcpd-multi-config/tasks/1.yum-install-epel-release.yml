@@ -14,6 +14,7 @@
       - tmux
       - bind-utils
       - dhcpd-pools
+      - nscd
     state: latest
     update_cache: true
   tags: cold_start

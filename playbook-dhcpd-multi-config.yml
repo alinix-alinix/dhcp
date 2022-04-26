@@ -1,7 +1,9 @@
 ---
 - name: deploy fresh dhcp master and slave instances
   gather_facts: true
-  hosts: DHCP_VV_12
+  hosts:
+    - DHCP_VV_12
+    - DHCP_MIRAN2
   become: true
   roles:
     - init

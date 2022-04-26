@@ -35,6 +35,7 @@
     - {name: 'dhcpd', enabled: "true", state: "started"}
     - {name: 'firewalld', enabled: "true", state: "started"}
     - {name: 'dhcpd_exporter', enabled: "true", state: "started"}
+    - {name: 'nscd', enabled: "true", state: "started"}
   loop_control:
     label:
       - "{{ item }}"
