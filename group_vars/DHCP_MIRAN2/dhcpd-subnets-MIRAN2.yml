@@ -1,0 +1,177 @@
+---
+Network:
+  group:
+    - name: "Subnets_MIRAN2"
+      subnets:
+        - name: "vlan140-RDPs"
+          description: "UDALENKAS"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.14.0
+          option_routers: 192.168.14.254
+          pool_range_start: 192.168.14.230
+          pool_range_end: 192.168.14.250
+          static: "none"
+        - name: "vlan10-networking"
+          description: "OPS-2174"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.98.0.0
+          option_routers: 10.98.0.254
+          pool_range_start: 10.98.0.150
+          pool_range_end: 10.98.0.200
+          static: "none"
+        - name: "vlan20-IPMI"
+          description: "OPS-2174"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.98.1.0
+          option_routers: 10.98.1.254
+          pool_range_start: 10.98.1.150
+          pool_range_end: 10.98.1.200
+          static:
+            - name: "some-ilo"
+              mac: "94:18:82:7D:D9:1A"
+              ip: "10.98.1.20"
+        - name: "vlan30-physical-and-baremetal"
+          description: "OPS-2174"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.98.2.0
+          option_routers: 10.98.2.254
+          pool_range_start: 10.98.2.150
+          pool_range_end: 10.98.2.200
+          static: "none"
+        - name: "vlan40-NAS-and-SAN"
+          description: "OPS-2174"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.98.5.0
+          option_routers: 10.98.5.254
+          pool_range_start: 10.98.5.150
+          pool_range_end: 10.98.5.200
+          static: "none"
+        - name: "vlan50-CRM1"
+          description: "OPS-2174"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.98.8.0
+          option_routers: 10.98.8.254
+          pool_range_start: 10.98.8.150
+          pool_range_end: 10.98.8.200
+          static: "none"
+        - name: "vlan60-CRM2"
+          description: "OPS-2174"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.98.9.0
+          option_routers: 10.98.9.254
+          pool_range_start: 10.98.9.150
+          pool_range_end: 10.98.9.200
+          static: "none"
+        - name: "vlan70-CRM3"
+          description: "OPS-2174"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.98.10.0
+          option_routers: 10.98.10.254
+          pool_range_start: 10.98.10.150
+          pool_range_end: 10.98.10.200
+          static: "none"
+        - name: "vlan80-CRM4"
+          description: "OPS-2174"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.98.11.0
+          option_routers: 10.98.11.254
+          pool_range_start: 10.98.11.150
+          pool_range_end: 10.98.11.200
+          static: "none"
+        - name: "vlan90-WEB1"
+          description: "OPS-2174"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.98.100.0
+          option_routers: 10.98.100.254
+          pool_range_start: 10.98.100.150
+          pool_range_end: 10.98.100.200
+          static: "none"
+        - name: "vlan100-WEB2"
+          description: "OPS-2174"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.98.101.0
+          option_routers: 10.98.101.254
+          pool_range_start: 10.98.101.150
+          pool_range_end: 10.98.101.200
+          static: "none"
+        - name: "vlan110-WEB3"
+          description: "OPS-2174"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.98.102.0
+          option_routers: 10.98.102.254
+          pool_range_start: 10.98.102.150
+          pool_range_end: 10.98.102.200
+          static: "none"
+        - name: "vlan120-WEB4"
+          description: "OPS-2174"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.98.103.0
+          option_routers: 10.98.103.254
+          pool_range_start: 10.98.103.150
+          pool_range_end: 10.98.103.200
+          static: "none"

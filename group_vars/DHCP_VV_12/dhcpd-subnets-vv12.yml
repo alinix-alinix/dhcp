@@ -15,6 +15,7 @@ Network:
           option_routers: 192.168.40.254
           pool_range_start: 192.168.40.40
           pool_range_end: 192.168.40.230
+          static: "none"
         - name: "network-41-offices"
           description: "initial"
           active: true
@@ -27,6 +28,7 @@ Network:
           option_routers: 192.168.41.254
           pool_range_start: 192.168.41.40
           pool_range_end: 192.168.41.230
+          static: "none"
         - name: "network-200-wifi"
           description: "initial"
           active: true
@@ -39,7 +41,7 @@ Network:
           option_routers: 192.168.200.254
           pool_range_start: 192.168.200.50
           pool_range_end: 192.168.200.200
-          reason: "initial"
+          static: "none"
         - name: "network-201-wifi-guests"
           description: "initial"
           active: true
@@ -52,6 +54,7 @@ Network:
           option_routers: 192.168.201.254
           pool_range_start: 192.168.201.50
           pool_range_end: 192.168.201.200
+          static: "none"
         - name: "network-213-IT-Dept"
           description: "initial"
           active: true
@@ -64,6 +67,7 @@ Network:
           option_routers: 192.168.213.254
           pool_range_start: 192.168.213.51
           pool_range_end: 192.168.213.100
+          static: "none"
         - name: "network-214-Development"
           description: "initial"
           active: true
@@ -76,6 +80,7 @@ Network:
           option_routers: 192.168.214.254
           pool_range_start: 192.168.214.150
           pool_range_end: 192.168.214.200
+          static: "none"
         - name: "network-36-vlan222-RDP-BOSSES"
           description: "initial"
           active: false
@@ -88,6 +93,7 @@ Network:
           option_routers: 192.168.36.254
           pool_range_start: 192.168.36.150
           pool_range_end: 192.168.36.200
+          static: "none"
         - name: "network-3-vlan303-CRM"
           description: "initial"
           active: true
@@ -100,6 +106,7 @@ Network:
           option_routers: 192.168.3.254
           pool_range_start: 192.168.3.50
           pool_range_end: 192.168.3.200
+          static: "none"
         - name: "network-14-vlan302-RDPs"
           description: "OPS-2171 - disabled on 23.04.2022"
           active: false
@@ -112,6 +119,7 @@ Network:
           option_routers: 192.168.14.254
           pool_range_start: 192.168.14.150
           pool_range_end: 192.168.14.200
+          static: "none"
         - name: "network-5-vlan305-IT-MGMT"
           description: "initial"
           active: true
@@ -124,6 +132,7 @@ Network:
           option_routers: 192.168.5.254
           pool_range_start: 192.168.5.100
           pool_range_end: 192.168.5.200
+          static: "none"
         - name: "network-6-vlan306-1c"
           description: "initial"
           active: true
@@ -136,6 +145,7 @@ Network:
           option_routers: 192.168.6.254
           pool_range_start: 192.168.6.100
           pool_range_end: 192.168.6.200
+          static: "none"
         - name: "network-7-vlan307-IPMI"
           description: "initial"
           active: true
@@ -148,6 +158,7 @@ Network:
           option_routers: 192.168.7.254
           pool_range_start: 192.168.7.100
           pool_range_end: 192.168.7.200
+          static: "none"
         - name: "network-9-vlan309-Crystalls"
           description: "initial"
           active: true
@@ -160,6 +171,7 @@ Network:
           option_routers: 192.168.9.254
           pool_range_start: 192.168.9.100
           pool_range_end: 192.168.9.200
+          static: "none"
         - name: "network-10-vlan310-Networking"
           description: "initial"
           active: true
@@ -172,6 +184,7 @@ Network:
           option_routers: 192.168.10.254
           pool_range_start: 192.168.10.150
           pool_range_end: 192.168.10.200
+          static: "none"
 
     - name: "Subnets_DEV-OFFICE"
       subnets:
@@ -187,6 +200,7 @@ Network:
           option_routers: 192.168.35.1
           pool_range_start: 192.168.35.20
           pool_range_end: 192.168.35.250
+          static: "none"
         - name: "network-80-dev-office-guest-wifi"
           description: "OPS-2099"
           active: true
@@ -199,6 +213,7 @@ Network:
           option_routers: 192.168.80.1
           pool_range_start: 192.168.80.100
           pool_range_end: 192.168.80.200
+          static: "none"
         - name: "network-25-dev-office"
           description: "ingineers"
           active: true
@@ -211,6 +226,7 @@ Network:
           option_routers: 192.168.25.1
           pool_range_start: 192.168.25.100
           pool_range_end: 192.168.25.200
+          static: "none"
 
     - name: "Subnets_shops"
       subnets:
@@ -226,6 +242,7 @@ Network:
           option_routers: 192.168.176.254
           pool_range_start: 192.168.176.160
           pool_range_end: 192.168.176.200
+          static: "none"
         - name: vlan351_spb-krasnoe-selo-teatralnaya-4a
           description: "EOC-16051 11.04.2022"
           active: true
@@ -238,6 +255,7 @@ Network:
           option_routers: 192.168.172.254
           pool_range_start: 192.168.172.160
           pool_range_end: 192.168.172.200
+          static: "none"
         - name: vlan319_spb-kushelevskay-3A-2
           description: "EOC-16051 11.04.2022"
           active: true
@@ -250,6 +268,7 @@ Network:
           option_routers: 192.168.169.254
           pool_range_start: 192.168.169.160
           pool_range_end: 192.168.169.200
+          static: "none"
         - name: vlan344_spb-v-chugunova10-6
           description: "OPS-1964 14.02.2022"
           active: true
@@ -262,6 +281,7 @@ Network:
           option_routers: 192.168.186.254
           pool_range_start: 192.168.186.160
           pool_range_end: 192.168.186.200
+          static: "none"
         - name: vlan046_utochkina_6_k_1
           description: "initial"
           active: true
@@ -274,6 +294,7 @@ Network:
           option_routers: 192.168.46.254
           pool_range_start: 192.168.46.160
           pool_range_end: 192.168.46.200
+          static: "none"
         - name: vlan045_spb-slodatakorzuna32
           description: "initial"
           active: true
@@ -286,6 +307,7 @@ Network:
           option_routers: 192.168.45.254
           pool_range_start: 192.168.45.160
           pool_range_end: 192.168.45.200
+          static: "none"
         - name: vlan047_spb-pargolovskaya
           description: "initial"
           active: true
@@ -298,6 +320,7 @@ Network:
           option_routers: 192.168.47.254
           pool_range_start: 192.168.47.160
           pool_range_end: 192.168.47.200
+          static: "none"
         - name: vlan049_spb-slavy15
           description: "initial"
           active: true
@@ -310,6 +333,7 @@ Network:
           option_routers: 192.168.49.254
           pool_range_start: 192.168.49.160
           pool_range_end: 192.168.49.200
+          static: "none"
         - name: vlan052_spb-tulskaya_9
           description: "initial"
           active: true
@@ -322,6 +346,7 @@ Network:
           option_routers: 192.168.52.254
           pool_range_start: 192.168.52.160
           pool_range_end: 192.168.52.200
+          static: "none"
         - name: vlan053_pushkin-moskovskaya25
           description: "initial"
           active: true
@@ -334,6 +359,7 @@ Network:
           option_routers: 192.168.53.254
           pool_range_start: 192.168.53.160
           pool_range_end: 192.168.53.200
+          static: "none"
         - name: vlan054_spb-tarasova12
           description: "initial"
           active: true
@@ -346,6 +372,7 @@ Network:
           option_routers: 192.168.54.254
           pool_range_start: 192.168.54.160
           pool_range_end: 192.168.54.200
+          static: "none"
         - name: vlan055_spb-razjezaya44
           description: "initial"
           active: true
@@ -358,6 +385,7 @@ Network:
           option_routers: 192.168.55.254
           pool_range_start: 192.168.55.160
           pool_range_end: 192.168.55.200
+          static: "none"
         - name: vlan056_spb-kolpinskoe.sh32
           description: "initial"
           active: true
@@ -370,6 +398,7 @@ Network:
           option_routers: 192.168.56.254
           pool_range_start: 192.168.56.160
           pool_range_end: 192.168.56.200
+          static: "none"
         - name: vlan057_spb-fuchika2
           description: "initial"
           active: false
@@ -382,6 +411,7 @@ Network:
           option_routers: 192.168.57.254
           pool_range_start: 192.168.57.160
           pool_range_end: 192.168.57.200
+          static: "none"
         - name: vlan058_spb-optikov34
           description: "initial"
           active: true
@@ -394,6 +424,7 @@ Network:
           option_routers: 192.168.58.254
           pool_range_start: 192.168.58.160
           pool_range_end: 192.168.58.200
+          static: "none"
         - name: vlan070_spb-vsevolozhskiy61
           description: "initial"
           active: true
@@ -406,6 +437,7 @@ Network:
           option_routers: 192.168.70.254
           pool_range_start: 192.168.70.160
           pool_range_end: 192.168.70.200
+          static: "none"
         - name: vlan071_spb-lermontovky50
           description: "initial"
           active: true
@@ -418,6 +450,7 @@ Network:
           option_routers: 192.168.71.254
           pool_range_start: 192.168.71.160
           pool_range_end: 192.168.71.200
+          static: "none"
         - name: vlan074_spb-varshavskaya48
           description: "initial"
           active: true
@@ -430,6 +463,7 @@ Network:
           option_routers: 192.168.74.254
           pool_range_start: 192.168.74.160
           pool_range_end: 192.168.74.200
+          static: "none"
         - name: vlan086_spb-general_simonyaka1
           description: "initial"
           active: true
@@ -442,6 +476,7 @@ Network:
           option_routers: 192.168.86.254
           pool_range_start: 192.168.86.160
           pool_range_end: 192.168.86.200
+          static: "none"
         - name: vlan096_spb-leningradskaya7
           description: "initial"
           active: true
@@ -454,6 +489,7 @@ Network:
           option_routers: 192.168.96.254
           pool_range_start: 192.168.96.160
           pool_range_end: 192.168.96.200
+          static: "none"
         - name: vlan097_spb-arsenalnaya5
           description: "initial"
           active: true
@@ -466,6 +502,7 @@ Network:
           option_routers: 192.168.97.254
           pool_range_start: 192.168.97.160
           pool_range_end: 192.168.97.200
+          static: "none"
         - name: vlan032_murino-tihaya14
           description: "initial"
           active: true
@@ -478,6 +515,7 @@ Network:
           option_routers: 192.168.32.254
           pool_range_start: 192.168.32.160
           pool_range_end: 192.168.32.200
+          static: "none"
         - name: vlan259_spb-kolomjazhskij26
           description: "initial"
           active: true
@@ -490,6 +528,7 @@ Network:
           option_routers: 192.168.102.254
           pool_range_start: 192.168.102.160
           pool_range_end: 192.168.102.200
+          static: "none"
         - name: vlan135_spb-kollontaj23
           description: "initial"
           active: true
@@ -502,6 +541,7 @@ Network:
           option_routers: 192.168.101.254
           pool_range_start: 192.168.101.160
           pool_range_end: 192.168.101.200
+          static: "none"
         - name: vlan347_spb-pulkovskaja15
           description: "initial"
           active: true
@@ -514,6 +554,7 @@ Network:
           option_routers: 192.168.115.254
           pool_range_start: 192.168.115.160
           pool_range_end: 192.168.115.200
+          static: "none"
         - name: vlan260_spb-stachek96
           description: "initial"
           active: true
@@ -526,6 +567,7 @@ Network:
           option_routers: 192.168.103.254
           pool_range_start: 192.168.103.160
           pool_range_end: 192.168.103.200
+          static: "none"
         - name: vlan261_spb-karavaevskaja28
           description: "initial"
           active: true
@@ -538,6 +580,7 @@ Network:
           option_routers: 192.168.104.254
           pool_range_start: 192.168.104.160
           pool_range_end: 192.168.104.200
+          static: "none"
         - name: vlan321_spb-perekopskaja3
           description: "initial"
           active: true
@@ -550,6 +593,7 @@ Network:
           option_routers: 192.168.105.254
           pool_range_start: 192.168.105.160
           pool_range_end: 192.168.105.200
+          static: "none"
         - name: vlan322_spb-grazhdanskij116-5
           description: "initial"
           active: true
@@ -562,6 +606,7 @@ Network:
           option_routers: 192.168.106.254
           pool_range_start: 192.168.106.160
           pool_range_end: 192.168.106.200
+          static: "none"
         - name: vlan416_spb-nekrasova44
           description: "initial"
           active: true
@@ -574,6 +619,7 @@ Network:
           option_routers: 192.168.116.254
           pool_range_start: 192.168.116.160
           pool_range_end: 192.168.116.200
+          static: "none"
         - name: vlan346_spb-aviakonstruktorov3
           description: "initial"
           active: true
@@ -586,6 +632,7 @@ Network:
           option_routers: 192.168.117.254
           pool_range_start: 192.168.117.160
           pool_range_end: 192.168.117.200
+          static: "none"
         - name: vlan324_spb-budapeshtskaja39
           description: "initial"
           active: true
@@ -598,6 +645,7 @@ Network:
           option_routers: 192.168.108.254
           pool_range_start: 192.168.108.160
           pool_range_end: 192.168.108.200
+          static: "none"
         - name: vlan418_spb-savushkina1
           description: "initial"
           active: true
@@ -610,6 +658,7 @@ Network:
           option_routers: 192.168.118.254
           pool_range_start: 192.168.118.160
           pool_range_end: 192.168.118.200
+          static: "none"
         - name: vlan120_spb-altayskaya21
           description: "initial"
           active: true
@@ -622,6 +671,7 @@ Network:
           option_routers: 192.168.120.254
           pool_range_start: 192.168.120.160
           pool_range_end: 192.168.120.200
+          static: "none"
         - name: vlan121_spb-novatorov11
           description: "initial"
           active: true
@@ -634,6 +684,7 @@ Network:
           option_routers: 192.168.121.254
           pool_range_start: 192.168.121.160
           pool_range_end: 192.168.121.200
+          static: "none"
         - name: vlan420_spb-udelnyj21
           description: "initial"
           active: true
@@ -646,6 +697,7 @@ Network:
           option_routers: 192.168.119.254
           pool_range_start: 192.168.119.160
           pool_range_end: 192.168.119.200
+          static: "none"
         - name: vlan329_spb-jengel'sa115-1
           description: "initial"
           active: true
@@ -658,6 +710,7 @@ Network:
           option_routers: 192.168.110.254
           pool_range_start: 192.168.110.160
           pool_range_end: 192.168.110.200
+          static: "none"
         - name: vlan122_spb-novatorov102
           description: "initial"
           active: true
@@ -670,6 +723,7 @@ Network:
           option_routers: 192.168.122.254
           pool_range_start: 192.168.122.160
           pool_range_end: 192.168.122.200
+          static: "none"
         - name: vlan255_spb-8linia35
           description: "initial"
           active: true
@@ -682,6 +736,7 @@ Network:
           option_routers: 192.168.125.254
           pool_range_start: 192.168.125.160
           pool_range_end: 192.168.125.200
+          static: "none"
         - name: vlan254_spb-pyatiletok3
           description: "initial"
           active: true
@@ -694,6 +749,7 @@ Network:
           option_routers: 192.168.126.254
           pool_range_start: 192.168.126.160
           pool_range_end: 192.168.126.200
+          static: "none"
         - name: vlan423_gatch_avia_zver1-8
           description: "initial"
           active: true
@@ -706,6 +762,7 @@ Network:
           option_routers: 192.168.127.254
           pool_range_start: 192.168.127.160
           pool_range_end: 192.168.127.200
+          static: "none"
         - name: vlan199_spb-komendant71
           description: "initial"
           active: true
@@ -718,6 +775,7 @@ Network:
           option_routers: 192.168.128.254
           pool_range_start: 192.168.128.160
           pool_range_end: 192.168.128.200
+          static: "none"
         - name: vlan130_spb-marata80
           description: "initial"
           active: true
@@ -730,6 +788,7 @@ Network:
           option_routers: 192.168.130.254
           pool_range_start: 192.168.130.160
           pool_range_end: 192.168.130.200
+          static: "none"
         - name: vlan131_spb-sadovaya97
           description: "initial"
           active: true
@@ -742,6 +801,7 @@ Network:
           option_routers: 192.168.131.254
           pool_range_start: 192.168.131.160
           pool_range_end: 192.168.131.200
+          static: "none"
         - name: vlan137_murino-skandinavskiy4
           description: "initia"
           active: false
@@ -754,6 +814,7 @@ Network:
           option_routers: 192.168.137.254
           pool_range_start: 192.168.137.160
           pool_range_end: 192.168.137.200
+          static: "none"
         - name: vlan146_spb-bzelenina3
           description: "initial"
           active: true
@@ -766,6 +827,7 @@ Network:
           option_routers: 192.168.146.254
           pool_range_start: 192.168.146.160
           pool_range_end: 192.168.146.200
+          static: "none"
         - name: vlan161_spb-babushk48
           description: "initial"
           active: true
@@ -778,6 +840,7 @@ Network:
           option_routers: 192.168.161.254
           pool_range_start: 192.168.161.160
           pool_range_end: 192.168.161.200
+          static: "none"
         - name: vlan162_spb-yargasheka4
           description: "initial"
           active: true
@@ -790,6 +853,7 @@ Network:
           option_routers: 192.168.162.254
           pool_range_start: 192.168.162.160
           pool_range_end: 192.168.162.200
+          static: "none"
         - name: vlan147_spb-zanevskiy23
           description: "initial"
           active: true
@@ -802,6 +866,7 @@ Network:
           option_routers: 192.168.147.254
           pool_range_start: 192.168.147.160
           pool_range_end: 192.168.147.200
+          static: "none"
         - name: vlan163_spb-belikuna8
           description: "initial"
           active: true
@@ -814,6 +879,7 @@ Network:
           option_routers: 192.168.163.254
           pool_range_start: 192.168.163.160
           pool_range_end: 192.168.163.200
+          static: "none"
         - name: vlan148_spb-makarova22
           description: "initial"
           active: true
@@ -826,6 +892,7 @@ Network:
           option_routers: 192.168.148.254
           pool_range_start: 192.168.148.160
           pool_range_end: 192.168.148.200
+          static: "none"
         - name: vlan149_spb-engelsa30
           description: "initial"
           active: true
@@ -838,6 +905,7 @@ Network:
           option_routers: 192.168.149.254
           pool_range_start: 192.168.149.160
           pool_range_end: 192.168.149.200
+          static: "none"
         - name: vlan150_spb-sitninskoy20
           description: "initial"
           active: true
@@ -850,6 +918,7 @@ Network:
           option_routers: 192.168.150.254
           pool_range_start: 192.168.150.160
           pool_range_end: 192.168.150.200
+          static: "none"
         - name: vlan151_spb-sikeyrosa6
           description: "initial"
           active: true
@@ -862,6 +931,7 @@ Network:
           option_routers: 192.168.151.254
           pool_range_start: 192.168.151.160
           pool_range_end: 192.168.151.200
+          static: "none"
         - name: vlan164_spb-dibenko22
           description: "initial"
           active: true
@@ -874,6 +944,7 @@ Network:
           option_routers: 192.168.164.254
           pool_range_start: 192.168.164.160
           pool_range_end: 192.168.164.200
+          static: "none"
         - name: vlan165_spb-elizarova18
           description: "initial"
           active: true
@@ -886,6 +957,7 @@ Network:
           option_routers: 192.168.165.254
           pool_range_start: 192.168.165.160
           pool_range_end: 192.168.165.200
+          static: "none"
         - name: vlan166_spb-kosigina26
           description: "initial"
           active: true
@@ -898,6 +970,7 @@ Network:
           option_routers: 192.168.166.254
           pool_range_start: 192.168.166.160
           pool_range_end: 192.168.166.200
+          static: "none"
         - name: vlan168_spb-moskovskiy155
           description: "initial"
           active: true
@@ -910,6 +983,7 @@ Network:
           option_routers: 192.168.168.254
           pool_range_start: 192.168.168.160
           pool_range_end: 192.168.168.200
+          static: "none"
         - name: vlan258_spb-zvezdnaya9A
           description: "initial"
           active: true
@@ -922,6 +996,7 @@ Network:
           option_routers: 192.168.170.254
           pool_range_start: 192.168.170.160
           pool_range_end: 192.168.170.200
+          static: "none"
         - name: vlan184_spb-pervomaiskaya15
           description: "initial"
           active: true
@@ -934,6 +1009,7 @@ Network:
           option_routers: 192.168.171.254
           pool_range_start: 192.168.171.160
           pool_range_end: 192.168.171.200
+          static: "none"
         - name: vlan227_spb-tosno_boyarova4
           description: "initial"
           active: true
@@ -946,6 +1022,7 @@ Network:
           option_routers: 192.168.173.254
           pool_range_start: 192.168.173.160
           pool_range_end: 192.168.173.200
+          static: "none"
         - name: vlan194_spb-savushkina124
           description: "initial"
           active: true
@@ -958,6 +1035,7 @@ Network:
           option_routers: 192.168.174.254
           pool_range_start: 192.168.174.160
           pool_range_end: 192.168.174.200
+          static: "none"
         - name: vlan175_spb-leninsky147
           description: "initial"
           active: true
@@ -970,6 +1048,7 @@ Network:
           option_routers: 192.168.175.254
           pool_range_start: 192.168.175.160
           pool_range_end: 192.168.175.200
+          static: "none"
         - name: vlan155_spb-f.abramova21
           description: "initial"
           active: true
@@ -982,6 +1061,7 @@ Network:
           option_routers: 192.168.177.254
           pool_range_start: 192.168.177.160
           pool_range_end: 192.168.177.200
+          static: "none"
         - name: vlan123_spb-murino16-9
           description: "initial"
           active: true
@@ -994,6 +1074,7 @@ Network:
           option_routers: 192.168.178.254
           pool_range_start: 192.168.178.160
           pool_range_end: 192.168.178.200
+          static: "none"
         - name: vlan179_spb-yuznaya5
           description: "initial"
           active: true
@@ -1006,6 +1087,7 @@ Network:
           option_routers: 192.168.179.254
           pool_range_start: 192.168.179.160
           pool_range_end: 192.168.179.200
+          static: "none"
         - name: vlan180_spb-marshgovor14
           description: "initial"
           active: true
@@ -1018,6 +1100,7 @@ Network:
           option_routers: 192.168.180.254
           pool_range_start: 192.168.180.160
           pool_range_end: 192.168.180.200
+          static: "none"
         - name: vlan181_spb-nastavnikov43
           description: "initial"
           active: true
@@ -1030,6 +1113,7 @@ Network:
           option_routers: 192.168.181.254
           pool_range_start: 192.168.181.160
           pool_range_end: 192.168.181.200
+          static: "none"
         - name: vlan195_spb-ushinskogo25
           description: "initial"
           active: true
@@ -1042,6 +1126,7 @@ Network:
           option_routers: 192.168.195.254
           pool_range_start: 192.168.195.160
           pool_range_end: 192.168.195.200
+          static: "none"
         - name: vlan177_kolpinotruda7k5
           description: "initial"
           active: true
@@ -1054,6 +1139,7 @@ Network:
           option_routers: 192.168.223.254
           pool_range_start: 192.168.223.160
           pool_range_end: 192.168.223.200
+          static: "none"
         - name: vlan115_spb-piskarevsky40
           description: "initial"
           active: true
@@ -1066,6 +1152,7 @@ Network:
           option_routers: 192.168.224.254
           pool_range_start: 192.168.224.160
           pool_range_end: 192.168.224.200
+          static: "none"
         - name: vlan325_spb-moskovsky172
           description: "initial"
           active: true
@@ -1078,6 +1165,7 @@ Network:
           option_routers: 192.168.225.254
           pool_range_start: 192.168.225.160
           pool_range_end: 192.168.225.200
+          static: "none"
         - name: vlan116_spb-kultury29
           description: "initial"
           active: true
@@ -1090,6 +1178,7 @@ Network:
           option_routers: 192.168.226.254
           pool_range_start: 192.168.226.160
           pool_range_end: 192.168.226.200
+          static: "none"
         - name: vlan153_spb-hudozhnikov10
           description: "initial"
           active: true
@@ -1102,6 +1191,7 @@ Network:
           option_routers: 192.168.227.254
           pool_range_start: 192.168.227.160
           pool_range_end: 192.168.227.200
+          static: "none"
         - name: vlan156_spb-prosvyacheniya30
           description: "initial"
           active: true
@@ -1114,6 +1204,7 @@ Network:
           option_routers: 192.168.228.254
           pool_range_start: 192.168.228.160
           pool_range_end: 192.168.228.200
+          static: "none"
         - name: vlan124_spb-savushkina127
           description: "initial"
           active: true
@@ -1126,6 +1217,7 @@ Network:
           option_routers: 192.168.229.254
           pool_range_start: 192.168.229.160
           pool_range_end: 192.168.229.200
+          static: "none"
         - name: vlan388_spb_kirochnaya_8
           description: "initial"
           active: true
@@ -1138,6 +1230,7 @@ Network:
           option_routers: 192.168.230.254
           pool_range_start: 192.168.230.160
           pool_range_end: 192.168.230.200
+          static: "none"
         - name: vlan176_kolpinotverskaya38
           description: "initial"
           active: true
@@ -1150,6 +1243,7 @@ Network:
           option_routers: 192.168.231.254
           pool_range_start: 192.168.231.160
           pool_range_end: 192.168.231.200
+          static: "none"
         - name: vlan129_spb-smolyachkova14
           description: "initial"
           active: true
@@ -1162,6 +1256,7 @@ Network:
           option_routers: 192.168.233.254
           pool_range_start: 192.168.233.160
           pool_range_end: 192.168.233.200
+          static: "none"
         - name: vlan133_spb-moskovskiy2
           description: "initial"
           active: true
@@ -1174,6 +1269,7 @@ Network:
           option_routers: 192.168.234.254
           pool_range_start: 192.168.234.160
           pool_range_end: 192.168.234.200
+          static: "none"
         - name: vlan170_spb-olecodundycha33
           description: "initial"
           active: true
@@ -1186,6 +1282,7 @@ Network:
           option_routers: 192.168.235.254
           pool_range_start: 192.168.235.160
           pool_range_end: 192.168.235.200
+          static: "none"
         - name: vlan154_spb-kondratievski51
           description: "initial"
           active: true
@@ -1198,6 +1295,7 @@ Network:
           option_routers: 192.168.237.254
           pool_range_start: 192.168.237.160
           pool_range_end: 192.168.237.200
+          static: "none"
         - name: vlan104_spb-bogatyrsky49k2
           description: "initial"
           active: true
@@ -1210,6 +1308,7 @@ Network:
           option_routers: 192.168.238.254
           pool_range_start: 192.168.238.160
           pool_range_end: 192.168.238.200
+          static: "none"
         - name: vlan142_spb-ilushina1
           description: "initial"
           active: true
@@ -1222,6 +1321,7 @@ Network:
           option_routers: 192.168.239.254
           pool_range_start: 192.168.239.160
           pool_range_end: 192.168.239.200
+          static: "none"
         - name: vlan025_spb-s.kovalevskoy1
           description: "initial"
           active: true
@@ -1234,6 +1334,7 @@ Network:
           option_routers: 192.168.240.254
           pool_range_start: 192.168.240.160
           pool_range_end: 192.168.240.200
+          static: "none"
         - name: vlan268_spb-novatorov10
           description: "initial"
           active: true
@@ -1246,6 +1347,7 @@ Network:
           option_routers: 192.168.242.254
           pool_range_start: 192.168.242.160
           pool_range_end: 192.168.242.200
+          static: "none"
         - name: vlan243_spb-nabgriboed42
           description: "initial"
           active: true
@@ -1258,6 +1360,7 @@ Network:
           option_routers: 192.168.243.254
           pool_range_start: 192.168.243.160
           pool_range_end: 192.168.243.200
+          static: "none"
         - name: vlan244_spb-kirovsk
           description: "initial"
           active: true
@@ -1270,6 +1373,7 @@ Network:
           option_routers: 192.168.244.254
           pool_range_start: 192.168.244.160
           pool_range_end: 192.168.244.200
+          static: "none"
         - name: vlan517_spb-golikova50
           description: "initial"
           active: true
@@ -1282,6 +1386,7 @@ Network:
           option_routers: 192.168.245.254
           pool_range_start: 192.168.245.160
           pool_range_end: 192.168.245.200
+          static: "none"
         - name: vlan250_spb-lunacharskogo54
           description: "initial"
           active: true
@@ -1294,6 +1399,7 @@ Network:
           option_routers: 192.168.250.254
           pool_range_start: 192.168.250.160
           pool_range_end: 192.168.250.200
+          static: "none"
         - name: vlan251_spb-bolshevikov25
           description: "initial"
           active: true
@@ -1306,6 +1412,7 @@ Network:
           option_routers: 192.168.251.254
           pool_range_start: 192.168.251.160
           pool_range_end: 192.168.251.200
+          static: "none"
         - name: vlan159_spb-nalichnoy40
           description: "initial"
           active: true
@@ -1318,6 +1425,7 @@ Network:
           option_routers: 192.168.159.254
           pool_range_start: 192.168.159.160
           pool_range_end: 192.168.159.200
+          static: "none"
         - name: vlan158_spb-nauki8
           description: "initial"
           active: true
@@ -1330,6 +1438,7 @@ Network:
           option_routers: 192.168.158.254
           pool_range_start: 192.168.158.160
           pool_range_end: 192.168.158.200
+          static: "none"
         - name: vlan157_spb-esenina32
           description: "initial"
           active: true
@@ -1342,6 +1451,7 @@ Network:
           option_routers: 192.168.157.254
           pool_range_start: 192.168.157.160
           pool_range_end: 192.168.157.200
+          static: "none"
         - name: vlan152_spb-bporohovskaya
           description: "initial"
           active: true
@@ -1354,6 +1464,7 @@ Network:
           option_routers: 192.168.152.254
           pool_range_start: 192.168.152.160
           pool_range_end: 192.168.152.200
+          static: "none"
         - name: vlan319_spb-torzhkovsk1
           description: "closed because of OPS-1902"
           active: false
@@ -1366,6 +1477,7 @@ Network:
           option_routers: 192.168.156.254
           pool_range_start: 192.168.156.160
           pool_range_end: 192.168.156.200
+          static: "none"
         - name: vlan314_spb-murinskya-dor78
           description: "initial"
           active: true
@@ -1378,6 +1490,7 @@ Network:
           option_routers: 192.168.153.254
           pool_range_start: 192.168.153.160
           pool_range_end: 192.168.153.200
+          static: "none"
         - name: vlan330_spb-f_abramova4
           description: "initial"
           active: true
@@ -1390,6 +1503,7 @@ Network:
           option_routers: 192.168.155.254
           pool_range_start: 192.168.155.160
           pool_range_end: 192.168.155.200
+          static: "none"
         - name: vlan240_spb-dudina25
           description: "initial"
           active: true
@@ -1402,6 +1516,7 @@ Network:
           option_routers: 192.168.154.254
           pool_range_start: 192.168.154.160
           pool_range_end: 192.168.154.200
+          static: "none"
         - name: vlan262_spb-Nauki-24A-1
           description: "initial"
           active: true
@@ -1414,6 +1529,7 @@ Network:
           option_routers: 192.168.183.254
           pool_range_start: 192.168.183.160
           pool_range_end: 192.168.183.200
+          static: "none"
         - name: vlan263_spb-Leninskiy-87a-1
           description: "initial"
           active: true
@@ -1426,6 +1542,7 @@ Network:
           option_routers: 192.168.184.254
           pool_range_start: 192.168.184.160
           pool_range_end: 192.168.184.200
+          static: "none"
         - name: vlan094_spb-Katernikov-7A
           description: "initial"
           active: true
@@ -1438,6 +1555,7 @@ Network:
           option_routers: 192.168.94.254
           pool_range_start: 192.168.94.160
           pool_range_end: 192.168.94.200
+          static: "none"
         - name: vlan331_SPB-Yuntolovskiy-49a
           description: "initial"
           active: true
@@ -1450,6 +1568,7 @@ Network:
           option_routers: 192.168.185.254
           pool_range_start: 192.168.185.160
           pool_range_end: 192.168.185.200
+          static: "none"
         - name: vlan069_spb-murinskayadoroga_53
           description: "initial"
           active: true
@@ -1462,6 +1581,7 @@ Network:
           option_routers: 192.168.69.254
           pool_range_start: 192.168.69.160
           pool_range_end: 192.168.69.200
+          static: "none"
         - name: vlan076_SPB_Nalichnaya_33
           description: "initial"
           active: true
@@ -1474,6 +1594,7 @@ Network:
           option_routers: 192.168.76.254
           pool_range_start: 192.168.76.160
           pool_range_end: 192.168.76.200
+          static: "none"
         - name: vlan160_spb-bolshevikov-9
           description: "initial"
           active: true
@@ -1486,6 +1607,7 @@ Network:
           option_routers: 192.168.160.254
           pool_range_start: 192.168.160.160
           pool_range_end: 192.168.160.200
+          static: "none"
         - name: vlan224_spb-evropeiskii-16
           description: "initial"
           active: true
@@ -1498,6 +1620,7 @@ Network:
           option_routers: 192.168.246.254
           pool_range_start: 192.168.246.160
           pool_range_end: 192.168.246.200
+          static: "none"
         - name: vlan067_spb-pogran-garkavy
           description: "initial"
           active: true
@@ -1510,6 +1633,7 @@ Network:
           option_routers: 192.168.67.254
           pool_range_start: 192.168.67.160
           pool_range_end: 192.168.67.200
+          static: "none"
         - name: vlan349_SPB_Veteranov_169-6
           description: "initial"
           active: true
@@ -1522,6 +1646,7 @@ Network:
           option_routers: 192.168.77.254
           pool_range_start: 192.168.77.160
           pool_range_end: 192.168.77.200
+          static: "none"
         - name: vlan348_SPB_Narodnaya16
           description: "initial"
           active: true
@@ -1534,6 +1659,7 @@ Network:
           option_routers: 192.168.78.254
           pool_range_start: 192.168.78.160
           pool_range_end: 192.168.78.200
+          static: "none"
         - name: vlan320_spb-gatchina-25-oktyabrya
           description: "initial"
           active: true
@@ -1546,6 +1672,7 @@ Network:
           option_routers: 192.168.48.254
           pool_range_start: 192.168.48.160
           pool_range_end: 192.168.48.200
+          static: "none"
         - name: vlan225_pushkin_kuzminskoe_sh_225
           description: "initial"
           active: true
@@ -1558,6 +1685,7 @@ Network:
           option_routers: 192.168.59.254
           pool_range_start: 192.168.59.160
           pool_range_end: 192.168.59.200
+          static: "none"
         - name: vlan061_spb-baikonurskaya-22a
           description: "initial"
           active: true
@@ -1570,6 +1698,7 @@ Network:
           option_routers: 192.168.61.254
           pool_range_start: 192.168.61.160
           pool_range_end: 192.168.61.200
+          static: "none"
         - name: vlan332_spb_Parashutnaya_63_k1
           description: "initial"
           active: true
@@ -1582,6 +1711,7 @@ Network:
           option_routers: 192.168.79.254
           pool_range_start: 192.168.79.160
           pool_range_end: 192.168.79.200
+          static: "none"
         - name: vlan228_spb-murino-mendeleevskiy
           description: "initial"
           active: true
@@ -1594,6 +1724,7 @@ Network:
           option_routers: 192.168.62.254
           pool_range_start: 192.168.62.160
           pool_range_end: 192.168.62.200
+          static: "none"
         - name: vlan226_Sertolovo_svirskaya_1_1
           description: "initial"
           active: true
@@ -1606,6 +1737,7 @@ Network:
           option_routers: 192.168.138.254
           pool_range_start: 192.168.138.160
           pool_range_end: 192.168.138.200
+          static: "none"
         - name: vlan333_murino_vorontsovskii_14
           description: "initial"
           active: true
@@ -1618,6 +1750,7 @@ Network:
           option_routers: 192.168.109.254
           pool_range_start: 192.168.109.160
           pool_range_end: 192.168.109.200
+          static: "none"
         - name: vlan350_spb-krasnoarmeiskii-15a
           description: "initial"
           active: true
@@ -1630,6 +1763,7 @@ Network:
           option_routers: 192.168.112.254
           pool_range_start: 192.168.112.160
           pool_range_end: 192.168.112.200
+          static: "none"
         - name: vlan079_spb-svetlanovskii-66
           description: "initial"
           active: true
@@ -1642,6 +1776,7 @@ Network:
           option_routers: 192.168.95.254
           pool_range_start: 192.168.95.160
           pool_range_end: 192.168.95.200
+          static: "none"
         - name: vlan075_spb-zarechnaya-19a
           description: "initial"
           active: true
@@ -1654,6 +1789,7 @@ Network:
           option_routers: 192.168.75.254
           pool_range_start: 192.168.75.160
           pool_range_end: 192.168.75.200
+          static: "none"
         - name: vlan323_spb-geroev18
           description: "hepldesk issue #BOO-87128"
           active: true
@@ -1666,3 +1802,4 @@ Network:
           option_routers: 192.168.50.254
           pool_range_start: 192.168.50.160
           pool_range_end: 192.168.50.200
+          static: "none"

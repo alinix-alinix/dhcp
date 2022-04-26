@@ -22,4 +22,12 @@ subnet {{ item.1.subnet }} netmask {{ DEFAULT_NETMASK }}
     next-server {{ item.1.bootp_server_name }};{% endif %}
     
 }
-
+{% if item.1.static != "none" %}
+{% for i in range(item.1.static|length) %}
+host {{item.1.static[loop.index0].name}}
+{
+    hardware ethernet {{item.1.static[loop.index0].mac}};
+    fixed-address {{item.1.static[loop.index0].ip}};
+}
+{% endfor %}
+{% endif %}
