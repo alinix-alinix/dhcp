@@ -55,7 +55,7 @@ Network:
               mac: "C4:34:6B:BF:C7:88"
               ip: "10.98.1.25"
             - name: "srv-mir006"
-              mac: ""
+              mac: "AC:1F:6B:AE:62:0C"
               ip: "10.98.1.26"
             - name: "srv-mir007"
               mac: "0C:C4:7A:91:F2:0C"
