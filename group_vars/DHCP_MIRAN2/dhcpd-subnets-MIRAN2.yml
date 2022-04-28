@@ -15,7 +15,10 @@ Network:
           option_routers: 192.168.14.254
           pool_range_start: 192.168.14.230
           pool_range_end: 192.168.14.250
-          static: "none"
+          static:
+            - name: "sys-adm-ent001"  # entry point g.balandin
+              mac: "00:50:56:9A:15:D8"
+              ip: "192.168.14.230"
         - name: "vlan10-networking"
           description: "OPS-2174"
           active: true
