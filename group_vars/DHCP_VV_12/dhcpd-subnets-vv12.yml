@@ -202,8 +202,23 @@ Network:
           pool_range_end: 192.168.35.250
           static:
             - name: "wifi-spot-java"
-              mac: 14:EB:B6:EC:DE:D8
+              mac: "14:EB:B6:EC:DE:D8"
               ip: "192.168.35.39"
+            - name: "wifi-spot-peregovorka"
+              mac: "0c:80:63:07:1b:f2"
+              ip: "192.168.35.41"
+            - name: "wifi-spot-inzineri"
+              mac: "0c:80:63:07:1B:44"
+              ip: "192.168.35.42"
+            - name: "wifi-spot-vhod-stolovaya"
+              mac: "0c:80:63:07:04:6c"
+              ip: "192.168.35.43"
+            - name: "wifi-spot-vhod-prods-peregovorka"
+              mac: "50:D4:F7:77:94:94"
+              ip: "192.168.35.44"
+            - name: "wifi-spot-vhod-prods-u-okna"
+              mac: "50:d4:F7:77:94:cA"
+              ip: "192.168.35.45"
         - name: "network-80-dev-office-guest-wifi"
           description: "OPS-2099"
           active: true
