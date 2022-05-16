@@ -104,7 +104,19 @@ Network:
           option_routers: 10.98.8.254
           pool_range_start: 10.98.8.150
           pool_range_end: 10.98.8.200
-          static: "none"
+          static:
+            - name: "prd-jav-blr001"
+              mac: "00:50:56:95:7b:0b"
+              ip: "10.98.8.1"
+            - name: "prd-jav-blr002"
+              mac: "00:50:56:95:2b:5f"
+              ip: "10.98.8.2"
+            - name: "prd-jav-blr001-vip"
+              mac: "00:00:bb:bb:00:00"
+              ip: "10.98.8.3"
+            - name: "prd-jav-blr002-vip"
+              mac: "00:00:aa:aa:00:00"
+              ip: "10.98.8.4"
         - name: "vlan60-CRM2"
           description: "OPS-2174"
           active: true
