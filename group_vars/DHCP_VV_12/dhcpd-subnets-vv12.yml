@@ -200,9 +200,9 @@ Network:
           bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.221.0
-          option_routers: 192.168.221.40
-          pool_range_start: 192.168.221.250
-          pool_range_end: 192.168.88.130
+          option_routers: 192.168.221.1
+          pool_range_start: 192.168.221.40
+          pool_range_end: 192.168.221.250
           static:
             - name: "dev-web-srv008"
               mac: "00:15:17:D0:FB:2D"
