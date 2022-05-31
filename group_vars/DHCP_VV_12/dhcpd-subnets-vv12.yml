@@ -191,6 +191,70 @@ Network:
 
     - name: "Subnets_DEV-OFFICE"
       subnets:
+        - name: "network-221-dev-office-JAVA-AND-CRM"
+          description: "OPS-2257"
+          active: true
+          guest: false
+          bootp: true
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.221.0
+          option_routers: 192.168.221.40
+          pool_range_start: 192.168.221.250
+          pool_range_end: 192.168.88.130
+          static:
+            - name: "dev-web-srv008"
+              mac: "00:15:17:D0:FB:2D"
+              ip: "192.168.221.197"
+            - name: "prn-web-dpt"
+              mac: "30:E1:71:3F:34:66"
+              ip: "192.168.221.230"
+            - name: "s.stepanov-thinkpad"
+              mac: "30:E1:71:3F:34:66"
+              ip: "192.168.221.150"
+        - name: "network-88-dev-office-CHEF-AND-SWITCH"
+          description: "OPS-2257"
+          active: true
+          guest: false
+          bootp: true
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.88.0
+          option_routers: 192.168.88.1
+          pool_range_start: 192.168.88.70
+          pool_range_end: 192.168.88.130
+          static: "none"
+        - name: "network-33-dev-office-test-stand"
+          description: "OPS-2257"
+          active: true
+          guest: false
+          bootp: true
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.33.0
+          option_routers: 192.168.33.1
+          pool_range_start: 192.168.33.100
+          pool_range_end: 192.168.33.200
+          static: "none"
+        - name: "network-30-dev-office-designers"
+          description: "OPS-2257"
+          active: true
+          guest: false
+          bootp: true
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.30.0
+          option_routers: 192.168.30.1
+          pool_range_start: 192.168.30.100
+          pool_range_end: 192.168.30.200
+          static:
+            - name: "Disigners-printer"
+              mac: "10:62:E5:AC:89:36"
+              ip: "192.168.30.20"
         - name: "network-35-dev-office-wifi"
           description: "OPS-2099"
           active: true
@@ -247,7 +311,10 @@ Network:
           option_routers: 192.168.25.1
           pool_range_start: 192.168.25.100
           pool_range_end: 192.168.25.200
-          static: "none"
+          static:
+            - name: "192.168.25.20-BMC"
+              mac: "02:25:90:F4:29:7E"
+              ip: "192.168.25.18"
 
     - name: "Subnets_shops"
       subnets:
