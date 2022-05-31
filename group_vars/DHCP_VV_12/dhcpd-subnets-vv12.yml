@@ -82,7 +82,7 @@ Network:
           pool_range_end: 192.168.214.200
           static:
             - name: "static-Olga-Konovalova"  # JKY-27390 helpdesk
-              mac: "84:A9:38:C9:C3:7C"
+              mac: "40:B0:76:0F:A1:A1"
               ip: "192.168.214.157"
         - name: "network-36-vlan222-RDP-BOSSES"
           description: "initial"
