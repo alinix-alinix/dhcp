@@ -324,8 +324,8 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 192.168.25.0
           option_routers: 192.168.25.1
-          pool_range_start: 192.168.25.100
-          pool_range_end: 192.168.25.200
+          pool_range_start: 192.168.25.10
+          pool_range_end: 192.168.25.100
           static:
             - name: "192.168.25.20-BMC"
               mac: "02:25:90:F4:29:7E"
