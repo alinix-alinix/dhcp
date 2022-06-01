@@ -210,9 +210,6 @@ Network:
             - name: "clikhousetestproddb"
               mac: "00:50:56:9A:C3:55"
               ip: "192.168.221.140"
-            - name: "s.stepanov-thinkpad"
-              mac: "30:E1:71:3F:34:66"
-              ip: "192.168.221.150"
             - name: "ZookeeperTest2"
               mac: "00:0C:29:A8:D4:13"
               ip: "192.168.221.174"
@@ -330,7 +327,9 @@ Network:
             - name: "192.168.25.20-BMC"
               mac: "02:25:90:F4:29:7E"
               ip: "192.168.25.18"
-
+            - name: "s.stepanov-thinkpad"
+              mac: "30:E1:71:3F:34:66"
+              ip: "192.168.25.150"
     - name: "Subnets_shops"
       subnets:
         - name: vlan352_spb-pr-nepokorennih-6a
