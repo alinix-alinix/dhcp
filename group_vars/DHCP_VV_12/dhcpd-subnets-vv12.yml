@@ -332,8 +332,8 @@ Network:
               ip: "192.168.25.150"
     - name: "Subnets_shops"
       subnets:
-        - name: vlan334_spb-suzdolskiy
-          description: "initial"
+        - name: vlan334_spb-suzdalskoe_sh_26
+          description: "TUZ-85858"
           active: true
           guest: false
           bootp: false
