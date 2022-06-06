@@ -340,10 +340,10 @@ Network:
           bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
           bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
-          subnet: 192.168.182.0
-          option_routers: 192.168.182.254
-          pool_range_start: 192.168.182.160
-          pool_range_end: 192.168.182.200
+          subnet: 192.168.196.0
+          option_routers: 192.168.196.254
+          pool_range_start: 192.168.196.160
+          pool_range_end: 192.168.196.200
           static: "none"
         - name: vlan352_spb-pr-nepokorennih-6a
           description: "VFN-08115 14.04.2022"
