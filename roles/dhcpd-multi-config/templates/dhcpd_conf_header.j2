@@ -1,7 +1,7 @@
 {{ ansible_managed | comment }}
 # {{ git_repo.url }}
 # admin {{ git_repo.admin }} bus {{ git_repo.bus }}
-# commit ref name: {{ lookup ("env", "CI_COMMIT_REF_NAME") }}, commit timestamp: {{ lookup ("env", "CI_COMMIT_TIMESTAMP") }}
+# commit: {{ lookup ("env", "CI_COMMIT_REF_SLUG") }}, commit timestamp: {{ lookup ("env", "CI_COMMIT_TIMESTAMP") }}
 failover peer "failover-dhcp" {
   {{ INV_VAR_HOST_STATUS }} # This defines the master or slave
   address {{ ansible_ssh_host }}; 
