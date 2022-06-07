@@ -23,7 +23,7 @@
     - refresh_config
     - cold_start
 
-- name: "create subnets dhcp config file"
+- name: "create subnets dhcp config files"
   template:
     dest: "{{ DHCP_SUBNET_CONF_PATH }}/{{item.1.name}}.conf"
     src: "dhcpd_conf_footer.j2"
