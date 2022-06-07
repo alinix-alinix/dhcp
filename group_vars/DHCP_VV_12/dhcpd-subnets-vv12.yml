@@ -285,7 +285,7 @@ Network:
               mac: "30:E1:71:3F:34:66"
               ip: "192.168.221.230"
 
-            - name: "192.168.25.19 BMC"
+            - name: "192.168.25.19-BMC"
               mac: "b4:b5:2f:68:21:c0"
               ip: "192.168.221.5"
         - name: "network-88-dev-office-CHEF-AND-SWITCH"
