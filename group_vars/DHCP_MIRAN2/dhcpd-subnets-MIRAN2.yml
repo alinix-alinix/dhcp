@@ -105,7 +105,7 @@ Network:
           pool_range_start: 10.98.8.150
           pool_range_end: 10.98.8.200
           static:
-            - name: "prd-jav-blr001"
+            - name: "prd jav-blr001"
               mac: "00:50:56:95:7b:0b"
               ip: "10.98.8.1"
             - name: "prd-jav-blr002"
