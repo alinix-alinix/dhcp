@@ -5,8 +5,8 @@
 ##################name: {{ item.1.name }}, description: {{ item.1.description }}#################
 subnet {{ item.1.subnet }} netmask {{ DEFAULT_NETMASK }}
 {
-    option domain-name "{{ DHCP_OPTION_DOMAIN_NAME }}";
-    option domain-search "{{ DHCP_OPTION_DNS_SEARCH }}";
+    {% if not item.1.guest %}option domain-name "{{ DHCP_OPTION_DOMAIN_NAME }}";
+    option domain-search "{{ DHCP_OPTION_DNS_SEARCH }}";{% endif %}
     option subnet-mask {{ DEFAULT_NETMASK }};
     option routers {{ item.1.option_routers }};
     option ntp-servers {{ item.1.option_ntp_server }};
