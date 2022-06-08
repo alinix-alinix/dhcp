@@ -6,8 +6,8 @@
 subnet {{ item.1.subnet }} netmask {{ DEFAULT_NETMASK }}
 {
     {% if not item.1.guest %}option domain-name "{{ DHCP_OPTION_DOMAIN_NAME }}";
-    option domain-search "{{ DHCP_OPTION_DNS_SEARCH }}";{% endif %}
-    option subnet-mask {{ DEFAULT_NETMASK }};
+    option domain-search "{{ DHCP_OPTION_DNS_SEARCH }}"; 
+    {% endif %}option subnet-mask {{ DEFAULT_NETMASK }};
     option routers {{ item.1.option_routers }};
     option ntp-servers {{ item.1.option_ntp_server }};
     {% if item.1.guest %}option domain-name-servers {{ GUEST_DOMAIN_NAME_SERVER_1 }}, {{ GUEST_DOMAIN_NAME_SERVER_2 }};    
