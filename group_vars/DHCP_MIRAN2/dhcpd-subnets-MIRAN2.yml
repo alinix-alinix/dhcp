@@ -29,7 +29,7 @@ Network:
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
           subnet: 10.98.0.0
           option_routers: 10.98.0.254
-          pool_range_start: 10.98.0.151
+          pool_range_start: 10.98.0.150
           pool_range_end: 10.98.0.200
           static: "none"
         - name: "vlan20-IPMI"
