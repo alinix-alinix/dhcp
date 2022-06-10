@@ -19,6 +19,7 @@ Network:
             - name: "static-Alena.Vasilevich"  # WSK-08185 helpdesk
               mac: "04:92:26:C4:D6:DE"
               ip: "192.168.40.91"
+
         - name: "network-41-offices"
           description: "initial"
           active: true
@@ -130,22 +131,7 @@ Network:
             - name: "192.168.5.35-BMC"
               mac: "6c:ae:8b:41:7a:46"
               ip: "192.168.213.35"
-        - name: "network-214-Development"
-          description: "initial"
-          active: true
-          guest: false
-          bootp: false
-          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
-          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
-          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
-          subnet: 192.168.214.0
-          option_routers: 192.168.214.254
-          pool_range_start: 192.168.214.150
-          pool_range_end: 192.168.214.200
-          static:
-            - name: "static-Olga-Konovalova"  # JKY-27390 helpdesk
-              mac: "40:B0:76:0F:A1:A1"
-              ip: "192.168.214.157"
+
         - name: "network-36-vlan222-RDP-BOSSES"
           description: "initial"
           active: false
@@ -159,84 +145,7 @@ Network:
           pool_range_start: 192.168.36.150
           pool_range_end: 192.168.36.200
           static: "none"
-        - name: "network-3-vlan303-CRM"
-          description: "initial"
-          active: true
-          guest: false
-          bootp: false
-          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
-          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
-          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
-          subnet: 192.168.3.0
-          option_routers: 192.168.3.254
-          pool_range_start: 192.168.3.50
-          pool_range_end: 192.168.3.200
-          static: "none"
-        - name: "network-14-vlan302-RDPs"
-          description: "OPS-2171 - disabled on 23.04.2022"
-          active: false
-          guest: false
-          bootp: false
-          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
-          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
-          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
-          subnet: 192.168.14.0
-          option_routers: 192.168.14.254
-          pool_range_start: 192.168.14.150
-          pool_range_end: 192.168.14.200
-          static: "none"
-        - name: "network-5-vlan305-IT-MGMT"
-          description: "initial"
-          active: true
-          guest: false
-          bootp: false
-          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
-          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
-          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
-          subnet: 192.168.5.0
-          option_routers: 192.168.5.254
-          pool_range_start: 192.168.5.100
-          pool_range_end: 192.168.5.200
-          static: "none"
-        - name: "network-6-vlan306-1c"
-          description: "initial"
-          active: true
-          guest: false
-          bootp: false
-          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
-          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
-          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
-          subnet: 192.168.6.0
-          option_routers: 192.168.6.254
-          pool_range_start: 192.168.6.100
-          pool_range_end: 192.168.6.200
-          static: "none"
-        - name: "network-7-vlan307-IPMI"
-          description: "initial"
-          active: true
-          guest: false
-          bootp: false
-          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
-          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
-          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
-          subnet: 192.168.7.0
-          option_routers: 192.168.7.254
-          pool_range_start: 192.168.7.100
-          pool_range_end: 192.168.7.200
-          static: "none"
-        - name: "network-9-vlan309-Crystalls"
-          description: "initial"
-          active: true
-          guest: false
-          bootp: false
-          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
-          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
-          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
-          subnet: 192.168.9.0
-          option_routers: 192.168.9.254
-          pool_range_start: 192.168.9.100
-          pool_range_end: 192.168.9.200
-          static: "none"
+
         - name: "network-10-vlan310-Networking"
           description: "initial"
           active: true

@@ -3,6 +3,90 @@ Network:
   group:
     - name: "Subnets_MIRAN2"
       subnets:
+        - name: "network-3-vlan303-CRM"
+          description: "initial"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.3.0
+          option_routers: 192.168.3.254
+          pool_range_start: 192.168.3.50
+          pool_range_end: 192.168.3.200
+          static: "none"
+
+        - name: "network-5-vlan305-IT-MGMT"
+          description: "initial"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.5.0
+          option_routers: 192.168.5.254
+          pool_range_start: 192.168.5.100
+          pool_range_end: 192.168.5.200
+          static: "none"
+
+        - name: "network-6-vlan306-1c"
+          description: "initial"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.6.0
+          option_routers: 192.168.6.254
+          pool_range_start: 192.168.6.100
+          pool_range_end: 192.168.6.200
+          static: "none"
+
+        - name: "network-7-vlan307-IPMI"
+          description: "initial"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.7.0
+          option_routers: 192.168.7.254
+          pool_range_start: 192.168.7.100
+          pool_range_end: 192.168.7.200
+          static: "none"
+
+        - name: "network-9-vlan309-Crystalls"
+          description: "initial"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.9.0
+          option_routers: 192.168.9.254
+          pool_range_start: 192.168.9.100
+          pool_range_end: 192.168.9.200
+          static: "none"
+
+        - name: "network-214-Development"
+          description: "initial"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.214.0
+          option_routers: 192.168.214.254
+          pool_range_start: 192.168.214.150
+          pool_range_end: 192.168.214.200
+          static: "none"
+
         - name: "vlan140-RDPs"
           description: "UDALENKAS"
           active: true
