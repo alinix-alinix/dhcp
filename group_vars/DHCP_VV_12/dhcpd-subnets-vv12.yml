@@ -3,6 +3,20 @@ Network:
   group:
     - name: "Subnets_REZON"
       subnets:
+        - name: "network-7-vlan307-ROZNITSA"
+          description: "OPS-2294"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.7.0
+          option_routers: 192.168.7.254
+          pool_range_start: 192.168.7.100
+          pool_range_end: 192.168.7.200
+          static: "none"
+
         - name: "network-40-offices"
           description: "initial"
           active: true
