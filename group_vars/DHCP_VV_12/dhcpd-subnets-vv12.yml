@@ -332,6 +332,11 @@ Network:
             - name: "s.stepanov-thinkpad"
               mac: "30:E1:71:3F:34:66"
               ip: "192.168.25.150"
+
+            - name: "sys-stg-srv002.bmc.petcorp.ru"
+              mac: "02:25:90:F0:52:26"
+              ip: "192.168.25.238"
+
     - name: "Subnets_shops"
       subnets:
         - name: vlan353_spb-buharestskaya_67A
