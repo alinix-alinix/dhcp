@@ -214,6 +214,11 @@ Network:
             - name: "192.168.25.19-BMC"
               mac: "b4:b5:2f:68:21:c0"
               ip: "192.168.221.5"
+
+            - name: "192.168.221.135-a.gorbachev-desktop"
+              mac: "d4:5d:64:3a:f2:a1"
+              ip: "192.168.221.135"
+
         - name: "network-88-dev-office-CHEF-AND-SWITCH"
           description: "OPS-2257"
           active: true
