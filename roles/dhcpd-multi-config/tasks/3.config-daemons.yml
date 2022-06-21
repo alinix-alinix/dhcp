@@ -17,6 +17,7 @@
     port: "{{ DHCP_EXPORTER_PORT }}/tcp"
     permanent: true
     state: enabled
+    immediate: true
   tags: cold_start
 
 - name: allow dhcp in firewalld
