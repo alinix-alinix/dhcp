@@ -330,7 +330,7 @@ Network:
               mac: "a4:5d:36:fc:83:92"
               ip: "192.168.25.4"
 
-            - name: "192.168.25.205-BMC"
+            - name: "srv-chk002.bmc.petcorp.ru"
               mac: "14:58:d0:5e:1d:5a"
               ip: "192.168.25.6"
 
