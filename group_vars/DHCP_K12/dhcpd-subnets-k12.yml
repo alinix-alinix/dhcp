@@ -1,0 +1,189 @@
+---
+Network:
+  group:
+    - name: "Subnets_k12"
+      subnets:
+        - name: "vlan10-networking"
+          description: "OPS-2350"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.178.0.0
+          option_routers: 10.178.0.254
+          pool_range_start: 10.178.0.150
+          pool_range_end: 10.178.0.200
+          static: "none"
+
+        - name: "vlan20-IPMI"
+          description: "OPS-2350"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.178.1.0
+          option_routers: 10.178.1.254
+          pool_range_start: 10.178.1.150
+          pool_range_end: 10.178.1.200
+          static:
+            - name: "sys-adm-kvm001.bmc.petcorp.ru"
+              mac: "00:25:90:1B:D4:62"
+              ip: "10.178.1.1"
+
+        - name: "vlan30-physical-and-baremetal"
+          description: "OPS-2350"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.178.2.0
+          option_routers: 10.178.2.254
+          pool_range_start: 10.178.2.150
+          pool_range_end: 10.178.2.200
+          static: "none"
+
+        - name: "vlan33-infra-services"
+          description: "OPS-2343"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.178.3.0
+          option_routers: 10.178.3.254
+          pool_range_start: 10.178.3.150
+          pool_range_end: 10.178.3.200
+          static: "none"
+
+        - name: "vlan40-NAS-and-SAN"
+          description: "OPS-2350"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.178.5.0
+          option_routers: 10.178.5.254
+          pool_range_start: 10.178.5.150
+          pool_range_end: 10.178.5.200
+          static: "none"
+
+        - name: "vlan50-CRM1"
+          description: "OPS-2350"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.178.8.0
+          option_routers: 10.178.8.254
+          pool_range_start: 10.178.8.150
+          pool_range_end: 10.178.8.200
+          static: "none"
+
+        - name: "vlan60-CRM2"
+          description: "OPS-2350"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.178.9.0
+          option_routers: 10.178.9.254
+          pool_range_start: 10.178.9.150
+          pool_range_end: 10.178.9.200
+          static: "none"
+
+        - name: "vlan70-CRM3"
+          description: "OPS-2350"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.178.10.0
+          option_routers: 10.178.10.254
+          pool_range_start: 10.178.10.150
+          pool_range_end: 10.178.10.200
+          static: "none"
+
+        - name: "vlan80-CRM4"
+          description: "OPS-2350"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.178.11.0
+          option_routers: 10.178.11.254
+          pool_range_start: 10.178.11.150
+          pool_range_end: 10.178.11.200
+          static: "none"
+
+        - name: "vlan90-WEB1"
+          description: "OPS-2350"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.178.100.0
+          option_routers: 10.178.100.254
+          pool_range_start: 10.178.100.150
+          pool_range_end: 10.178.100.200
+          static: "none"
+
+        - name: "vlan100-WEB2"
+          description: "OPS-2350"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.178.101.0
+          option_routers: 10.178.101.254
+          pool_range_start: 10.178.101.150
+          pool_range_end: 10.178.101.200
+          static: "none"
+
+        - name: "vlan110-WEB3"
+          description: "OPS-2350"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.178.102.0
+          option_routers: 10.178.102.254
+          pool_range_start: 10.178.102.150
+          pool_range_end: 10.178.102.200
+          static: "none"
+
+        - name: "vlan120-WEB4"
+          description: "OPS-2350"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.178.103.0
+          option_routers: 10.178.103.254
+          pool_range_start: 10.178.103.150
+          pool_range_end: 10.178.103.200
+          static: "none"
