@@ -4,6 +4,7 @@
   hosts:
     - DHCP_VV_12
     - DHCP_MIRAN2
+    - DHCP_K12
   become: true
   roles:
     - init
