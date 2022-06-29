@@ -150,6 +150,10 @@ Network:
               mac: "6c:ae:8b:41:7a:46"
               ip: "192.168.213.33"
 
+            - name: "srv-vis022.tech.petcorp.ru"
+              mac: "3C:7C:3F:BC:6B:20"
+              ip: "192.168.213.79"
+
         - name: "network-36-vlan222-RDP-BOSSES"
           description: "initial"
           active: false
