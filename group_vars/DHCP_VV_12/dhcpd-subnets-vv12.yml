@@ -86,6 +86,10 @@ Network:
           pool_range_start: 192.168.213.51
           pool_range_end: 192.168.213.100
           static:
+            - name: "sys-stg-bkp002.bmc.petcorp.ru"
+              mac: "00:1e:67:14:d0:d2"
+              ip: "192.168.213.59"
+
             - name: "192.168.5.115-BMC"
               mac: "00:25:90:3d:6d:e6"
               ip: "192.168.213.49"
