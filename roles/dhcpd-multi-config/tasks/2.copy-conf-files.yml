@@ -53,7 +53,7 @@
   tags:
     - cold_start
 
-- name: unarchive
+- name: "unarchive dhcpd-exporter"
   unarchive:
     remote_src: true
     src: /tmp/iscdhcpd_exporter-0.1.6.linux-amd64.tar.gz
@@ -61,7 +61,7 @@
   tags:
     - cold_start
 
-- name: put dhcpd-exporter to its place
+- name: "put dhcpd-exporter to its place"
   copy:
     remote_src: true
     src: /tmp/iscdhcpd_exporter-0.1.6.linux-amd64/iscdhcpd_exporter
@@ -72,7 +72,7 @@
   tags:
     - cold_start
 
-- name: dhcpd-exporter systemd unit-file
+- name: "dhcpd-exporter systemd unit-file"
   template:
     src: dhcpd_exporter.service.j2
     dest: /etc/systemd/system/dhcpd_exporter.service

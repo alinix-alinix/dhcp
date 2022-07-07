@@ -20,7 +20,7 @@ yamllint:
     - git log -p -2 --color
     - yamllint .
 
-Check httpd configs:
+Check dhcpd configs:
   stage: predeploy
   script:
     - pwd
@@ -40,7 +40,7 @@ Check httpd configs:
     refs:
       - master
 
-refresh httpd configs:
+refresh dhcpd configs:
   stage: deploy
   script:
     - pwd
