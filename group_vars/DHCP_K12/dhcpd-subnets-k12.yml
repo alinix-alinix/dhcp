@@ -33,6 +33,9 @@ Network:
             - name: "sys-adm-kvm001.bmc.petcorp.ru"
               mac: "00:25:90:1B:D4:62"
               ip: "10.178.1.1"
+            - name: "srv-k12001.bmc.petcorp.ru"
+              mac: "C4:34:6B:BF:B7:B0"
+              ip: "10.178.1.2"
 
         - name: "vlan30-physical-and-baremetal"
           description: "OPS-2350"
