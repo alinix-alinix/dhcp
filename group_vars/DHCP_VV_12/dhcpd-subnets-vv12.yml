@@ -90,7 +90,7 @@ Network:
               mac: "00:1e:67:14:d0:d2"
               ip: "192.168.213.59"
 
-            - name: "192.168.213.25-BMC"
+            - name: "srv-vis024.bmc.petcorp.ru"
               mac: "6c:ae:8b:41:7a:de"
               ip: "192.168.213.39"
 
