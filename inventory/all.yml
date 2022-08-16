@@ -7,21 +7,15 @@ all:
           children:
             infra_service_dhcp:
               children:
-                DHCP_VV_12:
+                infra_service_dhcp_vis:
                   hosts:
-                    master_vv12:
-                      ansible_ssh_host: 192.168.10.155
-                    slave_vv12:
-                      ansible_ssh_host: 192.168.213.155
-                DHCP_MIRAN2:
+                    sys-net-dhp301.tech.petcorp.ru:
+                    sys-net-dhp302.tech.petcorp.ru:
+                infra_service_dhcp_mir:
                   hosts:
-                    master_MIRAN2:
-                      ansible_ssh_host: 10.98.0.1
-                    slave_MIRAN2:
-                      ansible_ssh_host: 10.98.2.1
-                DHCP_K12:
+                    sys-net-dhp101.tech.petcorp.ru:
+                    sys-net-dhp102.tech.petcorp.ru:
+                infra_service_dhcp_k12:
                   hosts:
-                    master_K12:
-                      ansible_ssh_host: 10.178.0.1
-                    slave_K12:
-                      ansible_ssh_host: 10.178.3.1
+                    sys-net-dhp201.tech.petcorp.ru:
+                    sys-net-dhp202.tech.petcorp.ru:

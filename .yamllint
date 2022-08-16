@@ -1,5 +1,4 @@
 ---
-
 extends: default
 
 locale: en_US.UTF-8
@@ -25,7 +24,8 @@ rules:
   document-start:
     level: warning
   empty-lines: enable
-  empty-values: enable
+  empty-values:
+    level: warning
   hyphens: enable
   indentation: enable
   key-duplicates: enable

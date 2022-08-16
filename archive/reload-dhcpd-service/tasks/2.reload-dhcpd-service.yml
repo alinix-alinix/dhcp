@@ -1,5 +1,0 @@
----
-- name: reload-dhcpd-service
-  service:
-    name: dhcpd
-    state: restarted

@@ -3,31 +3,33 @@
 # admin {{ git_repo.admin }} bus {{ git_repo.bus }}
 
 ##################name: {{ item.1.name }}, description: {{ item.1.description }}#################
-subnet {{ item.1.subnet }} netmask {{ DEFAULT_NETMASK }}
-{
-    {% if not item.1.guest %}option domain-name "{{ DHCP_OPTION_DOMAIN_NAME }}";
-    option domain-search "{{ DHCP_OPTION_DNS_SEARCH }}"; 
-    {% endif %}option subnet-mask {{ DEFAULT_NETMASK }};
+subnet {{ item.1.subnet }} netmask {{ DEFAULT_NETMASK }} {
+{% if not item.1.guest %}
+    option domain-name "{{ DHCP_OPTION_DOMAIN_NAME }}";
+    option domain-search "{{ DHCP_OPTION_DNS_SEARCH }}";
+{% endif %}
+    option subnet-mask {{ DEFAULT_NETMASK }};
     option routers {{ item.1.option_routers }};
     option ntp-servers {{ item.1.option_ntp_server }};
-    {% if item.1.guest %}option domain-name-servers {{ GUEST_DOMAIN_NAME_SERVER_1 }}, {{ GUEST_DOMAIN_NAME_SERVER_2 }};    
-    {% else %}option domain-name-servers {{ DOMAIN_NAME_SERVER_1 }}, {{ DOMAIN_NAME_SERVER_2 }};{% endif %}
-    
-    pool
-    {
-    failover peer "failover-dhcp";        
-    range {{ item.1.pool_range_start }} {{ item.1.pool_range_end }};
+{% if item.1.guest %}
+    option domain-name-servers {{ GUEST_DOMAIN_NAME_SERVER_1 }}, {{ GUEST_DOMAIN_NAME_SERVER_2 }};    
+{% else %}
+    option domain-name-servers {{ DOMAIN_NAME_SERVER_1 }}, {{ DOMAIN_NAME_SERVER_2 }};
+{% endif %}
+    pool {
+        failover peer "failover-dhcp";
+        range {{ item.1.pool_range_start }} {{ item.1.pool_range_end }};
     }
-    {% if item.1.bootp %}filename "{{ item.1.bootp_filename }}";
-    next-server {{ item.1.bootp_server_name }};{% endif %}
-    
+{% if item.1.bootp %}
+    filename "{{ item.1.bootp_filename }}";
+    next-server {{ item.1.bootp_server_name }};
+{% endif %}
 }
 {% if item.1.static != "none" %}
 {% for i in range(item.1.static|length) %}
-host {{item.1.static[loop.index0].name}}
-{
-    hardware ethernet {{item.1.static[loop.index0].mac}};
-    fixed-address {{item.1.static[loop.index0].ip}};
+host {{ item.1.static[loop.index0].name }} {
+    hardware ethernet {{ item.1.static[loop.index0].mac }};
+    fixed-address {{ item.1.static[loop.index0].ip }};
 }
 {% endfor %}
 {% endif %}

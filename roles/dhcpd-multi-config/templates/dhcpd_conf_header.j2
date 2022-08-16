@@ -1,18 +1,20 @@
 {{ ansible_managed | comment }}
 # {{ git_repo.url }}
 # admin {{ git_repo.admin }} bus {{ git_repo.bus }}
-# commit: {{ lookup ("env", "CI_COMMIT_SHORT_SHA") }}, commit timestamp: {{ lookup ("env", "CI_COMMIT_TIMESTAMP") }}
 failover peer "failover-dhcp" {
   {{ INV_VAR_HOST_STATUS }} # This defines the master or slave
-  address {{ ansible_ssh_host }}; 
-  port {{ DHCP_PEER_PORT }}; ##for data exchange between hosts
-  peer address {{ INV_VAR_SECONDARY_HOST }};
-  peer port {{ DHCP_PEER_PORT }}; ##for data exchange between hosts
+  address {{ lookup('dig', ansible_host) }};
+  port {{ DHCP_PEER_PORT }}; # for data exchange between hosts
+  peer address {{ lookup('dig', INV_VAR_SECONDARY_HOST) }};
+  peer port {{ DHCP_PEER_PORT }}; # for data exchange between hosts
   max-response-delay 60;
   max-unacked-updates 10;
+{% if INV_VAR_MCLT is defined and INV_VAR_MCLT != "" %}
   {{ INV_VAR_MCLT }} #MCLT is declared on MASTER
   {{ INV_VAR_HOST_LOAD_BALANCE_SPLIT }} # split is declared on MASTER. 128 is balanced; use 255 if primary is 100% responsible until failure
-  {{ INV_VAR_HOST_LOAD_BALANCE }} #load balance is declared on MASTER
+  {{ INV_VAR_HOST_LOAD_BALANCE }} # load balance is declared on MASTER
+{% else %}
+{% endif %}
 }
 
 authoritative;

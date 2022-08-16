@@ -34,9 +34,9 @@ Check dhcpd configs:
     - sleep 10
   only:
     changes:
-      - group_vars/DHCP_VV_12/dhcpd-subnets-vv12.yml
-      - group_vars/DHCP_MIRAN2/dhcpd-subnets-MIRAN2.yml
-      - group_vars/DHCP_K12/dhcpd-subnets-k12.yml
+      - group_vars/infra_service_dhcp_vis/dhcpd-subnets-vis.yml
+      - group_vars/infra_service_dhcp_mir/dhcpd-subnets-mir.yml
+      - group_vars/infra_service_dhcp_k12/dhcpd-subnets-k12.yml
     refs:
       - master
 
@@ -54,8 +54,8 @@ refresh dhcpd configs:
     - sleep 10
   only:
     changes:
-      - group_vars/DHCP_VV_12/dhcpd-subnets-vv12.yml
-      - group_vars/DHCP_MIRAN2/dhcpd-subnets-MIRAN2.yml
-      - group_vars/DHCP_K12/dhcpd-subnets-k12.yml
+      - group_vars/infra_service_dhcp_vis/dhcpd-subnets-vis.yml
+      - group_vars/infra_service_dhcp_mir/dhcpd-subnets-mir.yml
+      - group_vars/infra_service_dhcp_k12/dhcpd-subnets-k12.yml
     refs:
       - master
