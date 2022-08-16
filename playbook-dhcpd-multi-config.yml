@@ -2,12 +2,10 @@
 - name: deploy fresh dhcp master and slave instances
   gather_facts: true
   hosts:
-    - DHCP_VV_12
-    - DHCP_MIRAN2
-    - DHCP_K12
+    - infra_service_dhcp_vis
+    - infra_service_dhcp_mir
+    - infra_service_dhcp_k12
   become: true
   roles:
-    - init
     - dhcpd-multi-config
-    - node_exporter
   strategy: linear

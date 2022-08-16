@@ -1,0 +1,6 @@
+---
+- name: sets hostname
+  hostname:
+    name: "{{ inventory_hostname }}"
+  tags:
+    - cold_start

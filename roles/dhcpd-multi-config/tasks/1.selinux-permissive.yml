@@ -1,0 +1,7 @@
+---
+- name: Selinux set permissive
+  selinux:
+    policy: targeted
+    state: permissive
+  tags:
+    - cold_start

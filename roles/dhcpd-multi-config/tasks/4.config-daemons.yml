@@ -1,30 +1,27 @@
 ---
-- name: "disable selinux"
-  selinux:
-    policy: targeted
-    state: permissive
-  tags: cold_start
-
 - name: allow dhcp peer port in firewalld
   firewalld:
     port: "{{ DHCP_PEER_PORT }}/tcp"
     permanent: true
     state: enabled
-  tags: cold_start
+  tags:
+    - cold_start
 
 - name: allow dhcp exporter port in firewalld
   firewalld:
     port: "{{ DHCP_EXPORTER_PORT }}/tcp"
     permanent: true
     state: enabled
-  tags: cold_start
+  tags:
+    - cold_start
 
 - name: allow dhcp in firewalld
   firewalld:
     service: dhcp
     permanent: true
     state: enabled
-  tags: cold_start
+  tags:
+    - cold_start
 
 - name: Start services, if not started
   service:
@@ -39,7 +36,8 @@
   loop_control:
     label:
       - "{{ item }}"
-  tags: cold_start
+  tags:
+    - cold_start
 
 - name: "alter owner user:group of /var/lib/dhcpd"
   file:
@@ -47,23 +45,27 @@
     owner: dhcpd
     group: dhcpd
     mode: '0644'
-  tags: cold_start
+  tags:
+    - cold_start
 
 - name: restart dhcpd service on a slave instance  # according to https://kb.isc.org/docs/aa-01043
   service:
     name: dhcpd
     state: restarted
   when: '"secondary;" in INV_VAR_HOST_STATUS'
-  tags: refresh_config
+  tags:
+    - refresh_config
 
 - name: waiting 10 secs
   pause:
     seconds: 10
-  tags: refresh_config
+  tags:
+    - refresh_config
 
 - name: restart dhcpd service on a master instance
   service:
     name: dhcpd
     state: restarted
   when: '"primary;" in INV_VAR_HOST_STATUS'
-  tags: refresh_config
+  tags:
+    - refresh_config

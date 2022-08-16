@@ -1,6 +1,0 @@
----
-- gather_facts: false
-  hosts: dhcp_hosts
-  name: deploy fresh dhcp master instance
-  roles:
-    - role: reload-dhcpd-service

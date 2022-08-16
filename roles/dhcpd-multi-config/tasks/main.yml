@@ -1,7 +1,15 @@
 ---
-- name: "1.yum install epel-release and update"
-  import_tasks: 1.yum-install-epel-release.yml
-- name: copy config files
-  import_tasks: 2.copy-conf-files.yml
+- name: 0.set hostname
+  import_tasks: 0.set-hostname.yml
+
+- name: 1.selinux-permissive.yml
+  import_tasks: 1.selinux-permissive.yml
+
+- name: 2.yum install epel-release and update
+  import_tasks: 2.yum-install-epel-release.yml
+
+- name: 3.copy config files
+  import_tasks: 3.copy-conf-files.yml
+
 - name: config daemons
-  import_tasks: 3.config-daemons.yml
+  import_tasks: 4.config-daemons.yml

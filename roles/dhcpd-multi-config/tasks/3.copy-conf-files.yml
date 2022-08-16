@@ -18,7 +18,7 @@
     path: "{{ DHCP_SUBNET_CONF_PATH }}"
     state: directory
     owner: dhcpd
-    mode: '0755'
+    mode: 0755
   tags:
     - refresh_config
     - cold_start
@@ -27,6 +27,9 @@
   template:
     dest: "{{ DHCP_SUBNET_CONF_PATH }}/{{item.1.name}}.conf"
     src: "dhcpd_conf_footer.j2"
+    owner: dhcpd
+    group: dhcpd
+    mode: 0644
   loop: "{{ Network.group|subelements('subnets') }}"
   loop_control:
     label:
@@ -42,30 +45,17 @@
     dest: "{{DHCP_SYSTEM_PATH}}/{{DHCP_FILE_NAME}}"
     src: "dhcpd_conf_header.j2"
     validate: "/usr/sbin/dhcpd -t -cf %s"
+    owner: dhcpd
+    group: dhcpd
+    mode: 0644
   tags:
     - refresh_config
     - cold_start
 
 - name: dhcpd-exporter download
   get_url:
-    url: "https://github.com/spagno/iscdhcpd_exporter/releases/download/v0.1.6/iscdhcpd_exporter-0.1.6.linux-amd64.tar.gz"
-    dest: "/tmp/iscdhcpd_exporter-0.1.6.linux-amd64.tar.gz"
-  tags:
-    - cold_start
-
-- name: "unarchive dhcpd-exporter"
-  unarchive:
-    remote_src: true
-    src: /tmp/iscdhcpd_exporter-0.1.6.linux-amd64.tar.gz
-    dest: /tmp/
-  tags:
-    - cold_start
-
-- name: "put dhcpd-exporter to its place"
-  copy:
-    remote_src: true
-    src: /tmp/iscdhcpd_exporter-0.1.6.linux-amd64/iscdhcpd_exporter
-    dest: /usr/local/bin/iscdhcpd_exporter
+    url: "https://store.petcorp.ru/D/iscdhcpd_exporter"
+    dest: "/usr/local/bin/iscdhcpd_exporter"
     owner: root
     group: root
     mode: 0755
@@ -76,6 +66,9 @@
   template:
     src: dhcpd_exporter.service.j2
     dest: /etc/systemd/system/dhcpd_exporter.service
+    owner: root
+    group: root
+    mode: 0644
   notify: dhcpd_exporter restart
   tags:
     - exporter
