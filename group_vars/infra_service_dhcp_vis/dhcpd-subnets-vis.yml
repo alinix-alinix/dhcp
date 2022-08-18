@@ -1272,7 +1272,7 @@ Network:
           static: "none"
         - name: vlan116_spb-kultury29
           description: "initial"
-          active: true
+          active: false  # Shop Closed. BUT-87269
           guest: false
           bootp: false
           bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
