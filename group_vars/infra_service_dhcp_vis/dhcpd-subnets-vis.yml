@@ -195,7 +195,10 @@ Network:
           option_routers: 192.168.88.1
           pool_range_start: 192.168.88.10
           pool_range_end: 192.168.88.240
-          static: "none"
+          static:
+            - name: "192.168.33.2-BMC"
+              mac: "02:25:90:02:4b:58"
+              ip: "192.168.88.2"
         - name: "network-33-dev-office-test-stand"
           description: "OPS-2257"
           active: true
