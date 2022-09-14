@@ -198,6 +198,20 @@ Network:
           pool_range_end: 10.98.3.200
           static: "none"
 
+        - name: "vlan34-infra-services-2"
+          description: "OPS-2532"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.98.4.0
+          option_routers: 10.98.4.254
+          pool_range_start: 10.98.4.150
+          pool_range_end: 10.98.4.200
+          static: "none"
+
         - name: "vlan40-NAS-and-SAN"
           description: "OPS-2174"
           active: true
