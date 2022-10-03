@@ -110,6 +110,10 @@ Network:
               mac: "3C:7C:3F:BC:6A:6F"
               ip: "192.168.213.54"
 
+            - name: "dev-web-srv011.tech.petcorp.ru"
+              mac: "18:c0:4d:89:2a:31"
+              ip: "192.168.213.56"
+
         - name: "network-36-vlan222-RDP-BOSSES"
           description: "initial"
           active: false
