@@ -3,7 +3,7 @@ Network:
   group:
     - name: "Subnets_REZON"
       subnets:
-        - name: "network-10.78.3.0/24-vlan33-INFRA-services"
+        - name: "network-vlan33-INFRA-services"
           description: "OPS-2554"
           active: true
           guest: false
@@ -16,7 +16,7 @@ Network:
           pool_range_start: 10.78.3.150
           pool_range_end: 10.78.3.200
           static: "none"
-        - name: "network-10.78.4.0/24-vlan34-INFRA-services-2"
+        - name: "network-vlan34-INFRA-services-2"
           description: "OPS-2554"
           active: true
           guest: false
