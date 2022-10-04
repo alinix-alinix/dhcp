@@ -3,20 +3,32 @@ Network:
   group:
     - name: "Subnets_REZON"
       subnets:
-        - name: "network-7-vlan307-ROZNITSA"
-          description: "OPS-2294"
+        - name: "network-10.78.3.0/24-vlan33-INFRA-services"
+          description: "OPS-2554"
           active: true
           guest: false
           bootp: false
           bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
           bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
-          subnet: 192.168.7.0
-          option_routers: 192.168.7.254
-          pool_range_start: 192.168.7.100
-          pool_range_end: 192.168.7.200
+          subnet: 10.78.3.0
+          option_routers: 10.78.3.254
+          pool_range_start: 10.78.3.150
+          pool_range_end: 10.78.3.200
           static: "none"
-
+        - name: "network-10.78.4.0/24-vlan34-INFRA-services-2"
+          description: "OPS-2554"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.78.4.0
+          option_routers: 10.78.4.254
+          pool_range_start: 10.78.4.150
+          pool_range_end: 10.78.4.200
+          static: "none"
         - name: "network-40-offices"
           description: "initial"
           active: true
@@ -33,7 +45,6 @@ Network:
             - name: "static-Alena.Vasilevich"  # WSK-08185 helpdesk
               mac: "04:92:26:C4:D6:DE"
               ip: "192.168.40.91"
-
         - name: "network-41-offices"
           description: "initial"
           active: true
@@ -89,45 +100,37 @@ Network:
             - name: "sys-stg-bkp002.bmc.petcorp.ru"
               mac: "00:1e:67:14:d0:d2"
               ip: "192.168.213.59"
-
             - name: "srv-vis024.bmc.petcorp.ru"
               mac: "6c:ae:8b:41:7a:de"
               ip: "192.168.213.39"
-
             - name: "srv-vis021.bmc.petcorp.ru"
               mac: "ac:1f:6b:ae:62:0c"
               ip: "192.168.213.96"
-
             - name: "192.168.213.35-BMC"
               mac: "6c:ae:8b:41:7a:46"
               ip: "192.168.213.33"
-
             - name: "srv-vis022.tech.petcorp.ru"
               mac: "3C:7C:3F:BC:6B:20"
               ip: "192.168.213.79"
-
             - name: "srv-vis023.tech.petcorp.ru"
               mac: "3C:7C:3F:BC:6A:6F"
               ip: "192.168.213.54"
-
             - name: "dev-web-srv011.tech.petcorp.ru"
               mac: "18:c0:4d:89:a2:31"
               ip: "192.168.213.56"
-
-        - name: "network-36-vlan222-RDP-BOSSES"
-          description: "initial"
-          active: false
+        - name: "network-7-vlan307-ROZNITSA"
+          description: "OPS-2294"
+          active: true
           guest: false
           bootp: false
           bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
           bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
           option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
-          subnet: 192.168.36.0
-          option_routers: 192.168.36.254
-          pool_range_start: 192.168.36.150
-          pool_range_end: 192.168.36.200
+          subnet: 192.168.7.0
+          option_routers: 192.168.7.254
+          pool_range_start: 192.168.7.100
+          pool_range_end: 192.168.7.200
           static: "none"
-
         - name: "network-10-vlan310-Networking"
           description: "initial"
           active: true
@@ -141,7 +144,6 @@ Network:
           pool_range_start: 192.168.10.150
           pool_range_end: 192.168.10.200
           static: "none"
-
     - name: "Subnets_DEV-OFFICE"
       subnets:
         - name: "network-221-dev-office-JAVA-AND-CRM"
@@ -178,15 +180,12 @@ Network:
             - name: "prn-web-dpt"
               mac: "30:E1:71:3F:34:66"
               ip: "192.168.221.230"
-
             - name: "192.168.25.19-BMC"
               mac: "b4:b5:2f:68:21:c0"
               ip: "192.168.221.5"
-
             - name: "192.168.221.135-a.gorbachev-desktop"
               mac: "d4:5d:64:3a:f2:a1"
               ip: "192.168.221.135"
-
         - name: "network-88-dev-office-CHEF-AND-SWITCH"
           description: "OPS-2257"
           active: true
@@ -292,27 +291,21 @@ Network:
             - name: "192.168.25.20-BMC"
               mac: "02:25:90:F4:29:7E"
               ip: "192.168.25.5"
-
             - name: "192.168.25.200-BMC"
               mac: "a4:5d:36:fc:83:92"
               ip: "192.168.25.4"
-
             - name: "srv-chk002.bmc.petcorp.ru"
               mac: "14:58:d0:5e:1d:5a"
               ip: "192.168.25.6"
-
             - name: "sys-adm-kvm002.bmc.petcorp.ru"
               mac: "00:15:17:9e:7c:66"
               ip: "192.168.25.7"
-
             - name: "s.stepanov-thinkpad"
               mac: "30:E1:71:3F:34:66"
               ip: "192.168.25.150"
-
             - name: "sys-stg-srv002.bmc.petcorp.ru"
               mac: "02:25:90:F0:52:26"
               ip: "192.168.25.238"
-
     - name: "Subnets_shops"
       subnets:
         - name: vlan353_spb-buharestskaya_67A
