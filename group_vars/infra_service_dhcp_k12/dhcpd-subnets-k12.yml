@@ -81,7 +81,10 @@ Network:
           option_routers: 10.178.3.254
           pool_range_start: 10.178.3.150
           pool_range_end: 10.178.3.200
-          static: "none"
+          static:
+            - name: "sys-adm-blx201.tech.petcorp.ru"
+              mac: "00:50:56:95:91:45"
+              ip: "10.178.3.186"
 
         - name: "vlan34-infra-services-2"
           description: "OPS-2532"

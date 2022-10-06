@@ -118,6 +118,9 @@ Network:
             - name: "dev-web-srv011.tech.petcorp.ru"
               mac: "18:c0:4d:89:a2:31"
               ip: "192.168.213.56"
+            - name: "sys-adm-blx301.tech.petcorp.ru"
+              mac: "00:50:56:95:ab:54"
+              ip: "192.168.213.99"
         - name: "network-7-vlan307-ROZNITSA"
           description: "OPS-2294"
           active: true
@@ -306,6 +309,9 @@ Network:
             - name: "sys-stg-srv002.bmc.petcorp.ru"
               mac: "02:25:90:F0:52:26"
               ip: "192.168.25.238"
+            - name: "sys-adm-blx302.tech.petcorp.ru"
+              mac: "00:50:56:95:54:8b"
+              ip: "192.168.25.82"
     - name: "Subnets_shops"
       subnets:
         - name: vlan353_spb-buharestskaya_67A
