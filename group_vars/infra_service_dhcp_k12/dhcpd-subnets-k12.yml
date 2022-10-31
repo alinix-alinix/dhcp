@@ -54,6 +54,9 @@ Network:
             - name: "srv-k12008.bmc.petcorp.ru"
               mac: "78:e3:b5:07:44:70"
               ip: "10.178.1.8"
+            - name: "srv-k12009.bmc.petcorp.ru"
+              mac: "44:1E:A1:57:29:DC"
+              ip: "10.178.1.9"
 
         - name: "vlan30-physical-and-baremetal"
           description: "OPS-2350"
