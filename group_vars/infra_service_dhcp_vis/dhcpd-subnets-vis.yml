@@ -29,6 +29,19 @@ Network:
           pool_range_start: 10.78.4.150
           pool_range_end: 10.78.4.200
           static: "none"
+        - name: "network-vlan50-CRM1"
+          description: "OPS-2597"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.78.8.0
+          option_routers: 10.78.8.254
+          pool_range_start: 10.78.8.150
+          pool_range_end: 10.78.8.200
+          static: "none"
         - name: "network-40-offices"
           description: "initial"
           active: true
