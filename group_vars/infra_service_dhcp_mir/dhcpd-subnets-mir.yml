@@ -188,7 +188,7 @@ Network:
               mac: "44:1e:a1:38:a5:5c"
               ip: "10.98.1.131"
             - name: "srv-mir043.bmc.petcorp.ru"
-              mac: "80:c1:6e:65:a3:1a"
+              mac: "80:c1:6e:70:f9:4c"
               ip: "10.98.1.143"
 
         - name: "vlan30-physical-and-baremetal"
