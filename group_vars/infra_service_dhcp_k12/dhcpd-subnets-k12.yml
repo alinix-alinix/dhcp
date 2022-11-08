@@ -61,7 +61,7 @@ Network:
               mac: "a4:5d:36:fb:ea:82"
               ip: "10.178.1.111"
             - name: "srv-k12042.bmc.petcorp.ru"
-              mac: "80:c1:6e:70:f9:4c"
+              mac: "80:c1:6e:65:a3:1a"
               ip: "10.178.1.112"
 
 
