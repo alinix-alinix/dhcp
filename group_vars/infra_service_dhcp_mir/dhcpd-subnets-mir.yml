@@ -184,6 +184,12 @@ Network:
             - name: "192-168-5-170-BMC"
               mac: "0e:c4:7a:30:2e:28"
               ip: "10.98.1.52"
+            - name: "srv-mir051.bmc.petcorp.ru"
+              mac: "44:1e:a1:38:a5:5c"
+              ip: "10.98.1.131"
+            - name: "srv-mir043.bmc.petcorp.ru"
+              mac: "80:c1:6e:65:a3:1a"
+              ip: "10.98.1.143"
 
         - name: "vlan30-physical-and-baremetal"
           description: "OPS-2174"
