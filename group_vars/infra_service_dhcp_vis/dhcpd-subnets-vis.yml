@@ -55,6 +55,9 @@ Network:
           pool_range_start: 192.168.40.40
           pool_range_end: 192.168.40.230
           static:
+            - name: "static-Irina.Perova"  # NQY-44305 helpdesk
+              mac: "9C:5C:8E:7B:6C:05"
+              ip: "192.168.40.222"
             - name: "static-Alena.Vasilevich"  # WSK-08185 helpdesk
               mac: "04:92:26:C4:D6:DE"
               ip: "192.168.40.91"
