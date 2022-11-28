@@ -163,6 +163,9 @@ Network:
             - name: "sys-adm-blx301.tech.petcorp.ru"
               mac: "00:50:56:95:ab:54"
               ip: "192.168.213.99"
+            - name: "tst-ops-pql301.tech.petcorp.ru"
+              mac: "00:50:56:95:25:34"
+              ip: "192.168.213.64"
         - name: "network-7-vlan307-ROZNITSA"
           description: "OPS-2294"
           active: true
