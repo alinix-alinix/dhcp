@@ -360,6 +360,9 @@ Network:
             - name: "sys-adm-blx302.tech.petcorp.ru"
               mac: "00:50:56:95:54:8b"
               ip: "192.168.25.82"
+            - name: "prd-jav-ent301.tech.petcorp.ru"
+              mac: "00:50:56:95:6f:f0"
+              ip: "192.168.25.33"
     - name: "Subnets_shops"
       subnets:
         - name: vlan353_spb-buharestskaya_67A
