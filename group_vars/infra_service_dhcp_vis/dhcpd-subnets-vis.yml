@@ -456,6 +456,19 @@ Network:
           pool_range_start: 192.168.187.160
           pool_range_end: 192.168.187.200
           static: "none"
+        - name: vlan523_spb-shushari-vilerovskiy6
+          description: "CQE-39090 06.12.2022"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.188.0
+          option_routers: 192.168.188.254
+          pool_range_start: 192.168.188.160
+          pool_range_end: 192.168.188.200
+          static: "none"
         - name: vlan046_utochkina_6_k_1
           description: "initial"
           active: true
