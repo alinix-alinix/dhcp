@@ -88,7 +88,7 @@ Network:
               mac: "04:92:26:C4:D6:DE"
               ip: "192.168.40.91"
             - name: "static-Olga.Kuchevasova"  # HHX-56427 helpdesk
-              mac: "40-B0-76-DC-81-88"
+              mac: "40:B0:76:DC:81:88"
               ip: "192.168.40.96"
         - name: "network-41-offices"
           description: "initial"
