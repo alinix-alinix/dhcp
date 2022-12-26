@@ -795,6 +795,19 @@ Network:
           pool_range_start: 192.168.118.160
           pool_range_end: 192.168.118.200
           static: "none"
+        - name: vlan528_spb-moskovskiy73  # add new magaz from YUD-81549
+          description: "initial"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.189.0
+          option_routers: 192.168.189.254
+          pool_range_start: 192.168.189.160
+          pool_range_end: 192.168.189.200
+          static: "none"
         - name: vlan120_spb-altayskaya21
           description: "initial"
           active: true
