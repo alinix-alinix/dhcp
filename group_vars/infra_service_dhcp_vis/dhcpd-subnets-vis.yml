@@ -102,7 +102,10 @@ Network:
           option_routers: 192.168.41.254
           pool_range_start: 192.168.41.40
           pool_range_end: 192.168.41.230
-          static: "none"
+          static:
+            - name: "static-Lubov.Pavlova"  # JXS-96760 helpdesk
+              mac: "BC:5F:F4:CE:F3:5B"
+              ip: "192.168.41.49"
         - name: "network-200-wifi"
           description: "initial"
           active: true
