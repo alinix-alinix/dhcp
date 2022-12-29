@@ -213,9 +213,6 @@ Network:
           pool_range_start: 192.168.221.10
           pool_range_end: 192.168.221.250
           static:
-            - name: "dev-jav-pql002.tech.petcorp.ru"
-              mac: "00:50:56:9A:75:22"
-              ip: "192.168.221.136"
             - name: "dev-jav-clk301.tech.petcorp.ru"
               mac: "00:50:56:9A:C3:55"
               ip: "192.168.221.140"
