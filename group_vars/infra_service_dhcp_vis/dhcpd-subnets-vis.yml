@@ -3,6 +3,32 @@ Network:
   group:
     - name: "Subnets_REZON"
       subnets:
+        - name: "vlan20-IPMI"
+          description: "OPS-2862"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.78.1.0
+          option_routers: 10.78.1.254
+          pool_range_start: 10.78.1.150
+          pool_range_end: 10.78.1.200
+          static: "none"
+        - name: "vlan30-physical-and-baremetal"
+          description: "OPS-2862"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 10.78.2.0
+          option_routers: 10.78.2.254
+          pool_range_start: 10.78.2.150
+          pool_range_end: 10.78.2.200
+          static: "none"
         - name: "network-vlan33-INFRA-services"
           description: "OPS-2554"
           active: true
