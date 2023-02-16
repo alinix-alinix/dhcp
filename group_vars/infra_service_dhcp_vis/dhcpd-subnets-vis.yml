@@ -1335,7 +1335,7 @@ Network:
           static: "none"
         - name: vlan179_spb-yuznaya5
           description: "initial"
-          active: true
+          active: false  # Closed HJA-14991
           guest: false
           bootp: false
           bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
