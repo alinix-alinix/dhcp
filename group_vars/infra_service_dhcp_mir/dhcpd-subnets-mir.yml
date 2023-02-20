@@ -154,7 +154,7 @@ Network:
             - name: "srv-mir024"
               mac: "00:25:90:f7:4d:29"
               ip: "10.98.1.47"
-            - name: "192-168-5-160-BMC"
+            - name: "srv-mir017.bmc.petcorp.ru"
               mac: "02:25:90:87:ad:40"
               ip: "10.98.1.50"
             - name: "srv-mir051.bmc.petcorp.ru"
