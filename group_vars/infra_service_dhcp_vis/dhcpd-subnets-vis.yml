@@ -260,7 +260,7 @@ Network:
             - name: "prn-web-dpt"
               mac: "30:E1:71:3F:34:66"
               ip: "192.168.221.230"
-            - name: "192.168.25.19-BMC"
+            - name: "srv-chk001.bmc.petcorp.ru"
               mac: "b4:b5:2f:68:21:c0"
               ip: "192.168.221.5"
             - name: "192.168.221.135-a.gorbachev-desktop"
@@ -281,10 +281,7 @@ Network:
           option_routers: 192.168.88.1
           pool_range_start: 192.168.88.10
           pool_range_end: 192.168.88.240
-          static:
-            - name: "srv-chk001.bmc.petcorp.ru"
-              mac: "02:25:90:02:4b:58"
-              ip: "192.168.88.2"
+          static: "none"
         - name: "network-33-dev-office-test-stand"
           description: "OPS-2257"
           active: true
@@ -374,7 +371,7 @@ Network:
             - name: "192.168.25.20-BMC"
               mac: "02:25:90:F4:29:7E"
               ip: "192.168.25.5"
-            - name: "192.168.25.200-BMC"
+            - name: "srv-chk006.bmc.petcorp.ru"
               mac: "a4:5d:36:fc:83:92"
               ip: "192.168.25.4"
             - name: "srv-chk002.bmc.petcorp.ru"
@@ -395,6 +392,9 @@ Network:
             - name: "prd-jav-ent301.tech.petcorp.ru"
               mac: "00:50:56:95:6f:f0"
               ip: "192.168.25.33"
+            - name: "srv-chk005.bmc.petcorp.ru"
+              mac: "6c:3b:e5:b4:14:ea"
+              ip: "192.168.25.49"
     - name: "Subnets_shops"
       subnets:
         - name: vlan353_spb-buharestskaya_67A
