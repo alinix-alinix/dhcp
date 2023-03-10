@@ -311,7 +311,10 @@ Network:
           option_routers: 10.98.101.254
           pool_range_start: 10.98.101.150
           pool_range_end: 10.98.101.200
-          static: "none"
+          static:
+            - name: "prd-imp-nxc101.tech.petcorp.ru"
+              mac: "00:50:56:95:9F:9C"
+              ip: "10.98.101.182"
         - name: "vlan110-WEB3"
           description: "OPS-2174"
           active: true
