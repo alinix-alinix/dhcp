@@ -1905,6 +1905,19 @@ Network:
           pool_range_start: 192.168.246.160
           pool_range_end: 192.168.246.200
           static: "none"
+        - name: vlan531_spb-Yanino-Vetryanyh3
+          description: "initial"
+          active: true
+          guest: false
+          bootp: false
+          bootp_filename: "{{ VAR_BOOTP_FILENAME }}"
+          bootp_server_name: "{{ VAR_BOOTP_SERVER_NAME }}"
+          option_ntp_server: "{{ VAR_OPTION_NTP_SERVER }}"
+          subnet: 192.168.247.0
+          option_routers: 192.168.247.254
+          pool_range_start: 192.168.247.160
+          pool_range_end: 192.168.247.200
+          static: "none"
         - name: vlan067_spb-pogran-garkavy
           description: "initial"
           active: true
