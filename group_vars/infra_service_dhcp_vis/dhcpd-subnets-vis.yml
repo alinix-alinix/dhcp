@@ -1905,7 +1905,7 @@ Network:
           pool_range_start: 192.168.246.160
           pool_range_end: 192.168.246.200
           static: "none"
-        - name: vlan531_spb-Yanino_Vetryanyh3
+        - name: vlan531_spb-Yanino-Vetryanyh3
           description: "initial"
           active: true
           guest: false
