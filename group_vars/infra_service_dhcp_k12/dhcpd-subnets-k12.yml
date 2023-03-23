@@ -110,6 +110,9 @@ Network:
             - name: "sys-adm-blx201.tech.petcorp.ru"
               mac: "00:50:56:95:91:45"
               ip: "10.178.3.186"
+            - name: "tst-ops-mon201.tech.petcorp.ru"
+              mac: "4A:9E:D5:B9:E1:96"
+              ip: "10.178.3.189"
 
         - name: "vlan34-infra-services-2"
           description: "OPS-2532"

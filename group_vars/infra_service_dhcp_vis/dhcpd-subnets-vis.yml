@@ -395,6 +395,10 @@ Network:
             - name: "srv-chk005.bmc.petcorp.ru"
               mac: "6c:3b:e5:b4:14:ea"
               ip: "192.168.25.49"
+            - name: "tst-ops-mon301.tech.petcorp.ru"
+              mac: "B6:49:00:61:0E:E9"
+              ip: "192.168.25.22"
+
     - name: "Subnets_shops"
       subnets:
         - name: vlan353_spb-buharestskaya_67A
