@@ -3,6 +3,7 @@
   firewalld:
     port: "{{ DHCP_PEER_PORT }}/tcp"
     permanent: true
+    immediate: true
     state: enabled
   tags:
     - cold_start
@@ -11,6 +12,7 @@
   firewalld:
     port: "{{ DHCP_EXPORTER_PORT }}/tcp"
     permanent: true
+    immediate: true
     state: enabled
   tags:
     - cold_start
@@ -19,6 +21,7 @@
   firewalld:
     service: dhcp
     permanent: true
+    immediate: true
     state: enabled
   tags:
     - cold_start
