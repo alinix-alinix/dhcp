@@ -7,15 +7,15 @@ all:
           children:
             infra_service_dhcp:
               children:
-                infra_service_dhcp_vis:
+                infra_service_dhcp_DC1:
                   hosts:
-                    sys-net-dhp301.tech.petcorp.ru:
-                    sys-net-dhp302.tech.petcorp.ru:
-                infra_service_dhcp_mir:
+                    DC1HOST1:
+                    DC1HOST2:
+                infra_service_dhcp_DC2:
                   hosts:
-                    sys-net-dhp101.tech.petcorp.ru:
-                    sys-net-dhp102.tech.petcorp.ru:
-                infra_service_dhcp_k12:
-                  hosts:
-                    sys-net-dhp201.tech.petcorp.ru:
-                    sys-net-dhp202.tech.petcorp.ru:
+                    DC2HOST1:
+                    DC2HOST2:
+                infra_service_dhcp_DC3:
+                  hosts:                    
+                    DC3HOST1:
+                    DC3HOST2:
