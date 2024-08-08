@@ -1,5 +1,5 @@
 ---
-INV_VAR_SECONDARY_HOST: sys-net-dhp301.tech.petcorp.ru  # must match master ip-address
+INV_VAR_SECONDARY_HOST: sys-net-dhp201.tech  # must match master ip-address
 INV_VAR_MCLT: ""
 INV_VAR_HOST_STATUS: "secondary;"
 INV_VAR_HOST_LOAD_BALANCE: ""

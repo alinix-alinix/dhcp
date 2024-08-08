@@ -9,13 +9,13 @@ all:
               children:
                 infra_service_dhcp_DC1:
                   hosts:
-                    DC1HOST1:
-                    DC1HOST2:
+                    sys-net-dhp101.tech:
+                    sys-net-dhp102.tech:
                 infra_service_dhcp_DC2:
                   hosts:
-                    DC2HOST1:
-                    DC2HOST2:
+                    sys-net-dhp201.tech:
+                    sys-net-dhp202.tech:
                 infra_service_dhcp_DC3:
                   hosts:                    
-                    DC3HOST1:
-                    DC3HOST2:
+                    sys-net-dhp301.tech:
+                    sys-net-dhp302.tech:

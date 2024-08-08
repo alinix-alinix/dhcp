@@ -54,7 +54,7 @@
 
 - name: dhcpd-exporter download
   get_url:
-    url: "https://store.petcorp.ru/D/iscdhcpd_exporter"
+    url: "https://store.local/D/iscdhcpd_exporter"
     dest: "/usr/local/bin/iscdhcpd_exporter"
     owner: root
     group: root

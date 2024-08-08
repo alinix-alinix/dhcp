@@ -1,5 +1,5 @@
 ---
-INV_VAR_SECONDARY_HOST: sys-net-dhp302.tech.petcorp.ru  # must match slave ip-address
+INV_VAR_SECONDARY_HOST: sys-net-dhp302.tech  # must match slave ip-address
 INV_VAR_MCLT: "mclt 3600;"
 INV_VAR_HOST_STATUS: "primary;"
 INV_VAR_HOST_LOAD_BALANCE_SPLIT: "split 128;"

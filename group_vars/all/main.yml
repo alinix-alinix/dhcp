@@ -12,8 +12,8 @@ DHCP_LEASE_TIME_DEFAULT: 86400  # 1 day
 VAR_BOOTP_FILENAME: "/ipxelinux.0"
 VAR_BOOTP_SERVER_NAME: "192.168.14.80"
 VAR_OPTION_NTP_SERVER: 88.147.254.232  # ntp2.stratum2.ru
-DHCP_OPTION_DOMAIN_NAME: "local.petcorp.ru"
-DHCP_OPTION_DNS_SEARCH: 'tech.petcorp.ru", "local.petcorp.ru'
+DHCP_OPTION_DOMAIN_NAME: "local"
+DHCP_OPTION_DNS_SEARCH: 'tech", "local'
 DOMAIN_NAME_SERVER_1: 10.10.10.10
 DOMAIN_NAME_SERVER_2: 10.10.11.11
 GUEST_DOMAIN_NAME_SERVER_1: 8.8.8.8
@@ -27,9 +27,9 @@ DHCP_FILE_NAME: "dhcpd.conf"
 
 DHCP_EXPORTER_PORT: 9367
 
-DNS_DOMAIN_NAME: "local.petcorp.ru"
+DNS_DOMAIN_NAME: "local"
 
 git_repo:
-  url: "https://gitlab.petcorp.ru/sysadmins/service/dhcp/"
-  admin: "s.stepanov@petshop.ru"
-  bus: "alexey.gorbachev@petshop.ru"
+  url: "https://gitlab/sysadmins/service/dhcp/"
+  admin: "s.stepanov"
+  bus: "s.stepanov"
